@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="AvMusic.Android/AvMusic.Android.csproj" />
+  <Project Path="AvMusic.Audio/AvMusic.Audio.csproj" />
+  <Project Path="AvMusic.Browser/AvMusic.Browser.csproj" />
+  <Project Path="AvMusic.Core/AvMusic.Core.csproj" />
+  <Project Path="AvMusic.Desktop/AvMusic.Desktop.csproj" />
+  <Project Path="AvMusic.iOS/AvMusic.iOS.csproj" />
+  <Project Path="AvMusic.Synology.Tests/AvMusic.Synology.Tests.csproj" />
+  <Project Path="AvMusic.Synology/AvMusic.Synology.csproj" />
+  <Project Path="AvMusic/AvMusic.csproj" />
+</Solution>

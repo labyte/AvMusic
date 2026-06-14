@@ -1,0 +1,52 @@
+﻿{
+  "data": {
+    "offset": 0,
+    "playlists": [
+      {
+        "id": "playlist_personal_normal/__SYNO_AUDIO_SHARED_SONGS__",
+        "library": "personal",
+        "name": "__SYNO_AUDIO_SHARED_SONGS__",
+        "sharing_status": "none",
+        "type": "normal"
+      },
+      {
+        "id": "playlist_personal_normal/开车",
+        "library": "personal",
+        "name": "开车",
+        "sharing_status": "none",
+        "type": "normal"
+      },
+      {
+        "id": "playlist_personal_normal/放松",
+        "library": "personal",
+        "name": "放松",
+        "sharing_status": "none",
+        "type": "normal"
+      },
+      {
+        "id": "playlist_personal_normal/欢快周杰伦",
+        "library": "personal",
+        "name": "欢快周杰伦",
+        "sharing_status": "none",
+        "type": "normal"
+      },
+      {
+        "id": "playlist_personal_normal/粤语",
+        "library": "personal",
+        "name": "粤语",
+        "sharing_status": "none",
+        "type": "normal"
+      },
+      {
+        "id": "playlist_shared_normal/1",
+        "library": "shared",
+        "name": "热门",
+        "path": "/music/playlists",
+        "sharing_status": "none",
+        "type": "normal"
+      }
+    ],
+    "total": 6
+  },
+  "success": true
+}

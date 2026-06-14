@@ -1,0 +1,592 @@
+﻿{
+    "data": {
+        "current": 0,
+        "mode": "normal",
+        "shuffle": 0,
+        "songs": [
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 800000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 248,
+                        "filesize": 25501506,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7111.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7111",
+                "path": "/music/薛之谦/意外/薛之谦-丑八怪.flac",
+                "title": "丑八怪",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 710000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 310,
+                        "filesize": 28257902,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7112.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7112",
+                "path": "/music/薛之谦/意外/薛之谦-你还要我怎样.flac",
+                "title": "你还要我怎样",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 700000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 242,
+                        "filesize": 21189020,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7103.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7103",
+                "path": "/music/薛之谦/意外/薛之谦-其实.flac",
+                "title": "其实",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 947000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 287,
+                        "filesize": 34033139,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7104.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7104",
+                "path": "/music/薛之谦/意外/薛之谦-意外.flac",
+                "title": "意外",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 777000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 230,
+                        "filesize": 23049607,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7109.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7109",
+                "path": "/music/薛之谦/意外/薛之谦-我想起你了.flac",
+                "title": "我想起你了",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 810000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 263,
+                        "filesize": 26685404,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7106.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7106",
+                "path": "/music/薛之谦/意外/薛之谦-方圆几里.flac",
+                "title": "方圆几里",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 738000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 261,
+                        "filesize": 24086154,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7105.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7105",
+                "path": "/music/薛之谦/意外/薛之谦-方圆几里(吉他版).flac",
+                "title": "方圆几里(吉他版)",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 848000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 252,
+                        "filesize": 26734849,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7107.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7107",
+                "path": "/music/薛之谦/意外/薛之谦-有没有.flac",
+                "title": "有没有",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 320000,
+                        "channel": 2,
+                        "codec": "mp3",
+                        "container": "mp3",
+                        "duration": 240,
+                        "filesize": 9607908,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7110.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7110",
+                "path": "/music/薛之谦/意外/薛之谦-潮流季.mp3",
+                "title": "潮流季",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 791000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 297,
+                        "filesize": 29474691,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "意外",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7108.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7108",
+                "path": "/music/薛之谦/意外/薛之谦-等我回家.flac",
+                "title": "等我回家",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 903000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 301,
+                        "filesize": 35054709,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7101.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7101",
+                "path": "/music/薛之谦/初学者/薛之谦-Stay Here.flac",
+                "title": "Stay Here",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 910000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 286,
+                        "filesize": 32555438,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7093.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7093",
+                "path": "/music/薛之谦/初学者/薛之谦-一半.flac",
+                "title": "一半",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 790000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 305,
+                        "filesize": 30154981,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7094.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7094",
+                "path": "/music/薛之谦/初学者/薛之谦-下雨了.flac",
+                "title": "下雨了",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 772000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 250,
+                        "filesize": 24193890,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7095.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7095",
+                "path": "/music/薛之谦/初学者/薛之谦-刚刚好.flac",
+                "title": "刚刚好",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 912000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 280,
+                        "filesize": 31943788,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7096.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7096",
+                "path": "/music/薛之谦/初学者/薛之谦-初学者.flac",
+                "title": "初学者",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 759000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 321,
+                        "filesize": 31540823,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7102.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7102",
+                "path": "/music/薛之谦/初学者/薛之谦-小孩.flac",
+                "title": "小孩",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 783000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 279,
+                        "filesize": 27333498,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7097.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7097",
+                "path": "/music/薛之谦/初学者/薛之谦-我好像在哪见过你.flac",
+                "title": "我好像在哪见过你",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 781000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 261,
+                        "filesize": 25502672,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7098.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7098",
+                "path": "/music/薛之谦/初学者/薛之谦-演员.flac",
+                "title": "演员",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 871000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 290,
+                        "filesize": 31701387,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7100.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7100",
+                "path": "/music/薛之谦/初学者/薛之谦-绅士.flac",
+                "title": "绅士",
+                "type": "file"
+            },
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 888000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 262,
+                        "filesize": 29198223,
+                        "frequency": 44100
+                    },
+                    "song_rating": { "rating": 0 },
+                    "song_tag": {
+                        "album": "初学者",
+                        "album_artist": "薛之谦",
+                        "artist": "薛之谦",
+                        "comment": "3rdparty/AudioStation/webUI/getcover.cgi/ebdart/7099.jpg",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7099",
+                "path": "/music/薛之谦/初学者/薛之谦-花儿和少年.flac",
+                "title": "花儿和少年",
+                "type": "file"
+            }
+        ],
+        "timestamp": 1742106641,
+        "total": 20
+    },
+    "success": true
+}

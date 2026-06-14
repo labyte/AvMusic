@@ -1,0 +1,48 @@
+{
+    "data": {
+        "albumTotal": 1,
+        "albums": [
+            {
+                "album_artist": "华晨宇",
+                "artist": "",
+                "display_artist": "华晨宇",
+                "name": "寒鸦少年",
+                "year": 0
+            }
+        ],
+        "artistTotal": 0,
+        "artists": [],
+        "songTotal": 1,
+        "songs": [
+            {
+                "additional": {
+                    "song_audio": {
+                        "bitrate": 924000,
+                        "channel": 2,
+                        "codec": "flac",
+                        "container": "flac",
+                        "duration": 315,
+                        "filesize": 36653748,
+                        "frequency": 44100
+                    },
+                    "song_tag": {
+                        "album": "寒鸦少年",
+                        "album_artist": "华晨宇",
+                        "artist": "华晨宇",
+                        "comment": "",
+                        "composer": "",
+                        "disc": 0,
+                        "genre": "",
+                        "track": 0,
+                        "year": 0
+                    }
+                },
+                "id": "music_7765",
+                "path": "/music/华晨宇/华晨宇 - 寒鸦少年.flac",
+                "title": "寒鸦少年",
+                "type": "file"
+            }
+        ]
+    },
+    "success": true
+}

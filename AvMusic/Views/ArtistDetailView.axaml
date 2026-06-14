@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels.Library"
+             x:Class="AvMusic.Views.ArtistDetailView"
+             x:DataType="vm:ArtistDetailViewModel">
+  <Grid RowDefinitions="Auto,Auto,*">
+    <TextBlock Grid.Row="0" Text="{Binding ErrorMessage}" Foreground="IndianRed" Margin="8,0"
+               IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+    <Button Grid.Row="1" Content="播放全部" Command="{Binding PlayAllCommand}" Margin="8,8,8,4" HorizontalAlignment="Left"/>
+    <ListBox Grid.Row="2" ItemsSource="{Binding SongRows}" Margin="8">
+      <ListBox.ItemTemplate>
+        <DataTemplate x:DataType="vm:SongRowViewModel">
+          <Button Command="{Binding PlayCommand}" Background="Transparent"
+                  HorizontalContentAlignment="Stretch" Padding="8,6">
+            <Grid ColumnDefinitions="*,Auto">
+              <StackPanel Grid.Column="0" Spacing="2">
+                <TextBlock Text="{Binding Title}" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding Subtitle}" Opacity="0.7" FontSize="12"/>
+              </StackPanel>
+              <TextBlock Grid.Column="1" Text="{Binding DurationText}" Opacity="0.5" VerticalAlignment="Center"/>
+            </Grid>
+          </Button>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+    <ProgressBar Grid.Row="2" VerticalAlignment="Top" IsIndeterminate="True" IsVisible="{Binding IsLoading}" Height="4"/>
+  </Grid>
+</UserControl>

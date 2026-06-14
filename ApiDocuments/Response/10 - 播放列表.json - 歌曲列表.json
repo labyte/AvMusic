@@ -1,0 +1,85 @@
+﻿{
+  "data": {
+    "playlists": [
+      {
+        "additional": {
+          "sharing_info": {
+            "date_available": "0",
+            "date_expired": "0",
+            "id": "",
+            "status": "none",
+            "url": ""
+          },
+          "songs": [
+            {
+              "additional": {
+                "song_audio": {
+                  "bitrate": 885000,
+                  "channel": 2,
+                  "codec": "flac",
+                  "container": "flac",
+                  "duration": 315,
+                  "filesize": 34983453,
+                  "frequency": 44100
+                },
+                "song_rating": { "rating": 0 },
+                "song_tag": {
+                  "album": "叶惠美",
+                  "album_artist": "周杰伦",
+                  "artist": "周杰伦",
+                  "comment": "",
+                  "composer": "",
+                  "disc": 1,
+                  "genre": "",
+                  "track": 5,
+                  "year": 2003
+                }
+              },
+              "id": "music_6012",
+              "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 东风破.FLAC",
+              "title": "东风破",
+              "type": "file"
+            },
+            {
+              "additional": {
+                "song_audio": {
+                  "bitrate": 1644000,
+                  "channel": 2,
+                  "codec": "flac",
+                  "container": "flac",
+                  "duration": 257,
+                  "filesize": 53001397,
+                  "frequency": 48000
+                },
+                "song_rating": { "rating": 0 },
+                "song_tag": {
+                  "album": "最伟大的作品",
+                  "album_artist": "周杰伦",
+                  "artist": "周杰伦",
+                  "comment": "",
+                  "composer": "",
+                  "disc": 0,
+                  "genre": "",
+                  "track": 0,
+                  "year": 0
+                }
+              },
+              "id": "music_6134",
+              "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 红颜如霜.flac",
+              "title": "红颜如霜",
+              "type": "file"
+            }
+          ],
+          "songs_offset": 0,
+          "songs_total": 2
+        },
+        "id": "playlist_personal_normal/欢快周杰伦",
+        "library": "personal",
+        "name": "欢快周杰伦",
+        "sharing_status": "none",
+        "type": "normal"
+      }
+    ]
+  },
+  "success": true
+}

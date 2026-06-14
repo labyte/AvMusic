@@ -1,0 +1,16 @@
+{
+    "data": {
+        "list": [
+            {
+                "cover": "",
+                "id": " http://192.168.3.103:50001/ContentDirectory/control",
+                "path": "http://192.168.3.103:50001/ContentDirectory/control",
+                "title": "IGN",
+                "type": "folder"
+            }
+        ],
+        "offset": 0,
+        "total": 1
+    },
+    "success": true
+}

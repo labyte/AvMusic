@@ -1,0 +1,59 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AvMusic.ViewModels"
+             xmlns:views="using:AvMusic.Views"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="700"
+             x:Class="AvMusic.Views.HomeView"
+             x:DataType="vm:MainViewModel">
+  <Grid RowDefinitions="*,Auto">
+    <Grid Grid.Row="0" ColumnDefinitions="200,*" Grid.RowSpan="2" Margin="0 0 0 74">
+      <!-- 左侧导航 -->
+      <Border Grid.Column="0"  BorderBrush="{DynamicResource SystemControlForegroundBaseMediumLowBrush}"
+              BorderThickness="0,0,1,0" Padding="8">
+        <DockPanel LastChildFill="True">
+          <StackPanel DockPanel.Dock="Top" Spacing="8" Margin="0,0,0,12">
+            <TextBlock Text="AvMusic" FontSize="20" FontWeight="Bold" Margin="8,4"/>
+            <Button Content="退出登录" Command="{Binding LogoutCommand}"
+                    HorizontalAlignment="Stretch" Margin="4,0"/>
+          </StackPanel>
+
+          <StackPanel Spacing="4">
+            <Button Content="全部歌曲" Command="{Binding Library.NavigateCommand}" CommandParameter="songs"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+            <Button Content="专辑" Command="{Binding Library.NavigateCommand}" CommandParameter="albums"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+            <Button Content="艺术家" Command="{Binding Library.NavigateCommand}" CommandParameter="artists"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+            <Button Content="文件夹" Command="{Binding Library.NavigateCommand}" CommandParameter="folders"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+            <Button Content="类型" Command="{Binding Library.NavigateCommand}" CommandParameter="genres"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+            <Button Content="搜索" Command="{Binding Library.NavigateCommand}" CommandParameter="search"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Margin="4,0"/>
+          </StackPanel>
+        </DockPanel>
+      </Border>
+
+      <!-- 内容区 -->
+      <Grid Grid.Column="1" RowDefinitions="Auto,*">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8" Margin="16,12,16,8">
+          <Button Content="← 返回" Command="{Binding Library.GoBackCommand}"
+                  IsVisible="{Binding Library.CanGoBack}"/>
+          <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold"
+                     Text="{Binding Library.CurrentPageTitle}"/>
+        </StackPanel>
+        <ContentControl Grid.Row="1" Margin="8,0,8,8" Content="{Binding Library.CurrentPage}"/>
+      </Grid>
+    </Grid>
+
+    <!-- 底部播放条 -->
+    <views:PlayerBarView Grid.Row="1" DataContext="{Binding PlayerUi}"/>
+
+    <!-- 全屏正在播放 -->
+    <Panel Grid.Row="0" Grid.RowSpan="2" IsVisible="{Binding PlayerUi.IsNowPlayingVisible}" ZIndex="100">
+      <views:NowPlayingView DataContext="{Binding PlayerUi}"/>
+    </Panel>
+  </Grid>
+</UserControl>

@@ -1,0 +1,62 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AvMusic.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="640"
+             x:Class="AvMusic.Views.LoginView"
+             x:DataType="vm:LoginViewModel">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+    <Border MaxWidth="420" Margin="32" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <StackPanel Spacing="16">
+        <StackPanel Spacing="4" HorizontalAlignment="Center">
+          <TextBlock Text="AvMusic" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+          <TextBlock Text="连接群晖 Audio Station" Opacity="0.7" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Spacing="4">
+          <TextBlock Text="服务器地址"/>
+          <TextBox Watermark="192.168.1.100 或 nas.example.com" Text="{Binding Host}"/>
+        </StackPanel>
+
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+          <StackPanel Grid.Column="0" Spacing="4">
+            <TextBlock Text="端口"/>
+            <TextBox Text="{Binding Port}"/>
+          </StackPanel>
+          <StackPanel Grid.Column="1" VerticalAlignment="Bottom" Spacing="8" Margin="0,0,0,4">
+            <CheckBox Content="HTTPS" IsChecked="{Binding UseHttps}"/>
+            <CheckBox Content="信任证书" IsChecked="{Binding TrustAllCertificates}"
+                      ToolTip.Tip="内网自签名证书时勾选"/>
+          </StackPanel>
+        </Grid>
+
+        <StackPanel Spacing="4">
+          <TextBlock Text="用户名"/>
+          <TextBox Text="{Binding Username}"/>
+        </StackPanel>
+
+        <StackPanel Spacing="4">
+          <TextBlock Text="密码"/>
+          <TextBox PasswordChar="●" Text="{Binding Password}"/>
+        </StackPanel>
+
+        <CheckBox Content="记住账号与密码" IsChecked="{Binding RememberCredentials}"/>
+
+        <TextBlock Text="{Binding ErrorMessage}"
+                   Foreground="IndianRed"
+                   TextWrapping="Wrap"
+                   IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+
+        <Button Content="登录"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Command="{Binding LoginCommand}"
+                IsEnabled="{Binding !IsBusy}"
+                Classes="accent"/>
+
+        <ProgressBar IsIndeterminate="True" IsVisible="{Binding IsBusy}" Height="4"/>
+      </StackPanel>
+    </Border>
+  </ScrollViewer>
+</UserControl>

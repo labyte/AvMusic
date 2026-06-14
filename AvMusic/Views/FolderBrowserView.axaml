@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels.Library"
+             xmlns:models="using:AvMusic.Core.Models"
+             x:Class="AvMusic.Views.FolderBrowserView"
+             x:Name="Root"
+             x:DataType="vm:FolderBrowserViewModel">
+  <Grid RowDefinitions="Auto,Auto,*">
+    <TextBlock Grid.Row="0" Text="{Binding CurrentPath}" Margin="8,8,8,4" FontWeight="SemiBold"/>
+    <TextBlock Grid.Row="1" Text="{Binding ErrorMessage}" Foreground="IndianRed" Margin="8,0"
+               IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+    <ScrollViewer Grid.Row="2" Margin="8">
+      <StackPanel Spacing="12">
+        <StackPanel Spacing="4">
+          <TextBlock Text="文件夹" FontWeight="SemiBold"/>
+          <ListBox ItemsSource="{Binding Subfolders}">
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="models:MusicFolder">
+                <Button Command="{Binding #Root.DataContext.OpenFolderCommand}"
+                        CommandParameter="{Binding}" Background="Transparent"
+                        HorizontalContentAlignment="Left" Padding="6,4">
+                  <TextBlock Text="{Binding Title}"/>
+                </Button>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </StackPanel>
+        <StackPanel Spacing="4">
+          <TextBlock Text="歌曲" FontWeight="SemiBold"/>
+          <ListBox ItemsSource="{Binding Songs}">
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="models:Song">
+                <Button Command="{Binding #Root.DataContext.PlaySongCommand}"
+                        CommandParameter="{Binding}" Background="Transparent"
+                        HorizontalContentAlignment="Stretch" Padding="6,4">
+                  <TextBlock Text="{Binding Title}"/>
+                </Button>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+    <ProgressBar Grid.Row="2" VerticalAlignment="Top" IsIndeterminate="True" IsVisible="{Binding IsLoading}" Height="4"/>
+  </Grid>
+</UserControl>

@@ -1,0 +1,76 @@
+﻿{
+    "data": {
+        "items": [
+            {
+                "criteria": {
+                    "library": "personal",
+                    "name": "粤语",
+                    "playlist": "playlist_personal_normal/粤语",
+                    "type": "normal"
+                },
+                "id": "4",
+                "name": "粤语",
+                "type": "playlist"
+            },
+            {
+                "criteria": {
+                    "folder": "dir_1055",
+                    "path": "/music/薛之谦"
+                },
+                "id": "5",
+                "name": "薛之谦",
+                "type": "folder"
+            },
+            {
+                "criteria": {
+                    "library": "personal",
+                    "name": "开车",
+                    "playlist": "playlist_personal_normal/开车",
+                    "type": "normal"
+                },
+                "id": "2",
+                "name": "开车",
+                "type": "playlist"
+            },
+            {
+                "criteria": {
+                    "library": "personal",
+                    "name": "欢快周杰伦",
+                    "playlist": "playlist_personal_normal/欢快周杰伦",
+                    "type": "normal"
+                },
+                "id": "1",
+                "name": "欢快的",
+                "type": "playlist"
+            },
+            {
+                "criteria": {
+                    "album": "90年代粵語情歌集",
+                    "album_artist": "邓丽君"
+                },
+                "id": "6",
+                "name": "90年代粵語情歌集",
+                "type": "album"
+            },
+            {
+                "criteria": {
+                    "artist": "浜崎あゆみ"
+                },
+                "id": "7",
+                "name": "浜崎あゆみ",
+                "type": "artist"
+            },
+            {
+                "criteria": {
+                    "artist": "周杰伦"
+                },
+                "id": "8",
+                "name": "周杰伦",
+                "type": "artist"
+            }
+        ],
+        "offset": 0,
+        "total": 7
+    },
+    "success": true
+}

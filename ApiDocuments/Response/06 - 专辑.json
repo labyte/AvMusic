@@ -1,0 +1,1969 @@
+﻿{
+  "data": {
+    "albums": [
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "100天",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "206",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "211",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "303",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "304",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "309",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "90年代粵語情歌集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "Back To Black 演歌的留言",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "浜崎あゆみ",
+        "artist": "",
+        "display_artist": "浜崎あゆみ",
+        "name": "GUILTY",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "筷子兄弟",
+        "artist": "",
+        "display_artist": "筷子兄弟",
+        "name": "HiFiNi.Com",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "iTunes Session",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "JJ陆",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "LPCD M2 极品天碟 邓丽君",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "THE POETESS 邓丽君70周年特集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "BoA",
+        "artist": "",
+        "display_artist": "BoA",
+        "name": "WHO'S BACK?",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "Wonderland",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "一个小心愿",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "一封情书",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "一帘幽梦",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "世纪10星 - 难忘篇",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "乐行者",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "今夜想起你泪的小雨(岛国之情歌第二集)",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "伟大的渺小",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "但愿人长久 15周年纪念集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "再见我的爱人",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘小慧",
+        "artist": "",
+        "display_artist": "刘小慧",
+        "name": "刘小慧",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "薛之谦",
+        "artist": "",
+        "display_artist": "薛之谦",
+        "name": "初学者",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "勇气",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "陈慧娴",
+        "artist": "",
+        "display_artist": "陈慧娴",
+        "name": "千千阙歌",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "单曲",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李宗盛",
+        "artist": "",
+        "display_artist": "李宗盛",
+        "name": "南下专线",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君之千言万语 - 国语3",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君之千言万语 - 国语7",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君之日和 邓丽君",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君之纪念册",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君之纪念册-邓丽君诞生六十年钻禧特集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "君怀乡土情",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "和自己对话",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "",
+        "artist": "",
+        "display_artist": "",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Beyond",
+        "artist": "",
+        "display_artist": "Beyond",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "任贤齐",
+        "artist": "",
+        "display_artist": "任贤齐",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "伍佰",
+        "artist": "",
+        "display_artist": "伍佰",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "吴雨霏",
+        "artist": "",
+        "display_artist": "吴雨霏",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "庾澄庆",
+        "artist": "",
+        "display_artist": "庾澄庆",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李栩君",
+        "artist": "",
+        "display_artist": "李栩君",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁博",
+        "artist": "",
+        "display_artist": "梁博",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梅艳芳",
+        "artist": "",
+        "display_artist": "梅艳芳",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "莫文蔚",
+        "artist": "",
+        "display_artist": "莫文蔚",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许嵩",
+        "artist": "",
+        "display_artist": "许嵩",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "谢安琪",
+        "artist": "",
+        "display_artist": "谢安琪",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "辛晓琪",
+        "artist": "",
+        "display_artist": "辛晓琪",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "陈柏宇",
+        "artist": "",
+        "display_artist": "陈柏宇",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "陈百强",
+        "artist": "",
+        "display_artist": "陈百强",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "黄小琥",
+        "artist": "",
+        "display_artist": "黄小琥",
+        "name": "喜欢",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李荣浩",
+        "artist": "",
+        "display_artist": "李荣浩",
+        "name": "嗯",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张宇",
+        "artist": "",
+        "display_artist": "张宇",
+        "name": "囚鸟",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "因你而在",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "在水一方",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "大灌篮 电影原声带",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周深",
+        "artist": "",
+        "display_artist": "周深",
+        "name": "大鱼",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘惜君&王赫野",
+        "artist": "",
+        "display_artist": "刘惜君&王赫野",
+        "name": "天赐的声音第二季 第12期",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "她说",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "学不会",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "宝丽金极品音色系列1盒2CD - 邓丽君",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "对的时间点",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "将故事写成我们",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "小冤家",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "小城故事",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "小城经典",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "幸存者 Drifter",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "怀念5年",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "薛之谦",
+        "artist": "",
+        "display_artist": "薛之谦",
+        "name": "意外",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "感爵这一刻",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "懷舊名曲選",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君&徐小凤",
+        "artist": "",
+        "display_artist": "邓丽君&徐小凤",
+        "name": "戏凤(Live)",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "我们很好",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "朴树",
+        "artist": "",
+        "display_artist": "朴树",
+        "name": "我去2000年",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李克勤",
+        "artist": "",
+        "display_artist": "李克勤",
+        "name": "我是歌手第四季 第11期: 淘汰赛",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "阿国哥",
+        "artist": "",
+        "display_artist": "阿国哥",
+        "name": "我这一生（粤语男版）",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林忆莲",
+        "artist": "",
+        "display_artist": "林忆莲",
+        "name": "拥有忆莲",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "新地球",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "无滤镜",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 4 } },
+        "album_artist": "黄霄雲",
+        "artist": "",
+        "display_artist": "黄霄雲",
+        "name": "星辰大海",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "沙宝亮",
+        "artist": "",
+        "display_artist": "沙宝亮",
+        "name": "暗香",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "曹操",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "最伟大的作品",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "",
+        "artist": "",
+        "display_artist": "",
+        "name": "李宗盛",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李荣浩",
+        "artist": "",
+        "display_artist": "李荣浩",
+        "name": "李荣浩",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "",
+        "artist": "",
+        "display_artist": "",
+        "name": "林忆莲",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "梦想的声音 第二季 第4期",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "梦想的声音 第十期",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "梦想的声音第三季 第2期",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李荣浩",
+        "artist": "",
+        "display_artist": "李荣浩",
+        "name": "模特",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "歌曲精选80首",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "歌聲妹影",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "永远の歌姫",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "淡淡幽情",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "温岚",
+        "artist": "",
+        "display_artist": "温岚",
+        "name": "温式效应",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "漫步人生3步曲",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "漫步人生路",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "陈一发儿",
+        "artist": "",
+        "display_artist": "陈一发儿",
+        "name": "热门",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘德华",
+        "artist": "",
+        "display_artist": "刘德华",
+        "name": "爱你一万年 99演唱会",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "伍佰",
+        "artist": "",
+        "display_artist": "伍佰",
+        "name": "爱情的尽头",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "齐秦",
+        "artist": "",
+        "display_artist": "齐秦",
+        "name": "狼的专辑",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "朴树",
+        "artist": "",
+        "display_artist": "朴树",
+        "name": "猎户星座",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "朴树",
+        "artist": "",
+        "display_artist": "朴树",
+        "name": "猎户星座实体专辑版",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李宗盛",
+        "artist": "",
+        "display_artist": "李宗盛",
+        "name": "理性与感性 作品音乐会",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李宗盛",
+        "artist": "",
+        "display_artist": "李宗盛",
+        "name": "理性与感性作品音乐会CD1",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "甜蜜蜜",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "朴树",
+        "artist": "",
+        "display_artist": "朴树",
+        "name": "生如夏花",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "Twins",
+        "artist": "",
+        "display_artist": "Twins",
+        "name": "相爱6年限量珍藏版",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘德华",
+        "artist": "",
+        "display_artist": "刘德华",
+        "name": "真永远",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "空",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "",
+        "artist": "",
+        "display_artist": "",
+        "name": "粤语",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "刘小慧",
+        "artist": "",
+        "display_artist": "刘小慧",
+        "name": "粤语",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘德华",
+        "artist": "",
+        "display_artist": "刘德华",
+        "name": "粤语",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "黎瑞恩",
+        "artist": "",
+        "display_artist": "黎瑞恩",
+        "name": "粤语",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘德华",
+        "artist": "",
+        "display_artist": "刘德华",
+        "name": "經典重現.CD1",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "刘德华",
+        "artist": "",
+        "display_artist": "刘德华",
+        "name": "經典重現.CD2",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "经典大碟3In1套装",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "编号89757",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李荣浩",
+        "artist": "",
+        "display_artist": "李荣浩",
+        "name": "老街",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "李荣浩",
+        "artist": "",
+        "display_artist": "李荣浩",
+        "name": "耳朵",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "背新娘之青春少女篇(四)",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "任素汐",
+        "artist": "",
+        "display_artist": "任素汐",
+        "name": "胡广生（《无名之辈》电影宣传推广曲）",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "西界",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王杰",
+        "artist": "",
+        "display_artist": "王杰",
+        "name": "谁明浪子心",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "超越无限",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君 日语纪念特別专辑 第七辑",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君 永恒不朽 原声经典 1",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君 纪念特别专辑 第一辑",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君 纪念特别专辑 第二辑",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君15周年",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君15周年·30周年(限量版)",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君4 in 1珍藏集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君第二十集",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君精选1",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "邓丽君精选2",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "邓紫棋",
+        "artist": "",
+        "display_artist": "邓紫棋",
+        "name": "邓紫棋",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "酒醉的探戈(日)",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "重拾_快乐（实体版）",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "阿密特2",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "陈慧娴",
+        "artist": "",
+        "display_artist": "陈慧娴",
+        "name": "陈慧娴",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "霍元甲",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "邓丽君",
+        "artist": "",
+        "display_artist": "邓丽君",
+        "name": "音乐手札7 热情篇",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "音乐进化全过程",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "黄龄",
+        "artist": "",
+        "display_artist": "黄龄",
+        "name": "黄龄",
+        "year": 0
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "王靖雯",
+        "year": 1989
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "Everything",
+        "year": 1990
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "You're the only one",
+        "year": 1990
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "Coming Home",
+        "year": 1992
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "十万个为什么",
+        "year": 1993
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "执迷不悔",
+        "year": 1993
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "天空",
+        "year": 1994
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "胡思乱想",
+        "year": 1994
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "讨好自己",
+        "year": 1994
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "迷",
+        "year": 1994
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "Di-Dar",
+        "year": 1995
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "菲靡靡之音",
+        "year": 1995
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "浮躁",
+        "year": 1996
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "BAD BOY",
+        "year": 1997
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "在别处",
+        "year": 1997
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "妹力四射CD1",
+        "year": 1997
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林子祥",
+        "artist": "",
+        "display_artist": "林子祥",
+        "name": "精选17首(华纳超极品音色系列)",
+        "year": 1997
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "牵手",
+        "year": 1998
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "一夜长大",
+        "year": 1999
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "我可以抱你嗎",
+        "year": 1999
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "Jay",
+        "year": 2000
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "不顧一切",
+        "year": 2000
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "給雨生的歌",
+        "year": 2000
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "那一年",
+        "year": 2000
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "我只有两天精选",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "旅程CD1",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "旅程CD2",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "真實",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 2.5 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "范特西",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "范特西PLUS",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "闪亮的星",
+        "year": 2001
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Sophie Ellis-Bextor",
+        "artist": "",
+        "display_artist": "Sophie Ellis-Bextor",
+        "name": "Read My Lips",
+        "year": 2002
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "八度空间",
+        "year": 2002
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "发烧",
+        "year": 2002
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "我喜欢 Sunrise",
+        "year": 2002
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "时光·漫步",
+        "year": 2002
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "勇敢",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "叶惠美",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "寻找周杰伦",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "",
+        "artist": "",
+        "display_artist": "",
+        "name": "恋爱的力量",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张学友",
+        "artist": "",
+        "display_artist": "张学友",
+        "name": "环球DSD视听之王",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "美丽人生",
+        "year": 2003
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "The Original",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "七里香",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "也許明天",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "每一刻都是崭新的",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "燕尾蝶",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "第二天堂",
+        "year": 2004
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "丝路",
+        "year": 2005
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "十一月的萧邦",
+        "year": 2005
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "亲亲",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "依然范特西",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "在路上",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "我要快乐",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "曾经的你   CD1",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "曾经的你   CD2",
+        "year": 2006
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "STAR",
+        "year": 2007
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "崇拜",
+        "year": 2007
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "我很忙",
+        "year": 2007
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "彭佳慧",
+        "artist": "",
+        "display_artist": "彭佳慧",
+        "name": "绝对收藏彭佳慧",
+        "year": 2007
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "彭佳慧",
+        "artist": "",
+        "display_artist": "彭佳慧",
+        "name": "绝对珍藏彭佳慧-Disc B",
+        "year": 2007
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "今天情人节",
+        "year": 2008
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "爱如少年",
+        "year": 2008
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "魔杰座",
+        "year": 2008
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "阿密特",
+        "year": 2009
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "静茹&情歌 别再为他流泪",
+        "year": 2009
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "情歌没有告诉你",
+        "year": 2010
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "晨星",
+        "year": 2010
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "跨时代",
+        "year": 2010
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "一时 Remix概念精选辑",
+        "year": 2011
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "你在看我吗",
+        "year": 2011
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "惊叹号",
+        "year": 2011
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "梁静茹",
+        "artist": "",
+        "display_artist": "梁静茹",
+        "name": "现在开始我爱你",
+        "year": 2011
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "十二新作",
+        "year": 2012
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "此时此刻",
+        "year": 2012
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "偏执面",
+        "year": 2014
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "哎呦，不错哦",
+        "year": 2014
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "灿烂",
+        "year": 2015
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "第三极",
+        "year": 2015
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "周杰伦的床边故事",
+        "year": 2016
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "生活不止眼前的苟且",
+        "year": 2016
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "张惠妹",
+        "artist": "",
+        "display_artist": "张惠妹",
+        "name": "偷故事的人",
+        "year": 2017
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "流浪途中爱上你",
+        "year": 2017
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "我的爱",
+        "year": 2018
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "无人知晓",
+        "year": 2018
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "许巍",
+        "artist": "",
+        "display_artist": "许巍",
+        "name": "无尽光芒",
+        "year": 2018
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "进阶",
+        "year": 2018
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "Mojito",
+        "year": 2020
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "交换余生",
+        "year": 2020
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "Like You Do 如你",
+        "year": 2021
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "王菲",
+        "artist": "",
+        "display_artist": "王菲",
+        "name": "王菲-单曲",
+        "year": 2021
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Djo",
+        "artist": "",
+        "display_artist": "Djo",
+        "name": "DECIDE",
+        "year": 2022
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "林俊杰",
+        "artist": "",
+        "display_artist": "林俊杰",
+        "name": "Happily, Painfully After",
+        "year": 2023
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Jack Harlow",
+        "artist": "",
+        "display_artist": "Jack Harlow",
+        "name": "Lovin On Me",
+        "year": 2023
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Bailey Zimmerman",
+        "artist": "",
+        "display_artist": "Bailey Zimmerman",
+        "name": "Religiously. The Album.",
+        "year": 2023
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "Dua Lipa",
+        "artist": "",
+        "display_artist": "Dua Lipa",
+        "name": "Training Season",
+        "year": 2024
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "album_artist": "夕照影音",
+        "artist": "",
+        "display_artist": "夕照影音",
+        "name": "王家衛《繁花》收官，《再回首》音樂響起繁華落幕，聽得淚流滿面",
+        "year": 2024
+      }
+    ],
+    "offset": 0,
+    "total": 245
+  },
+  "success": true
+}

@@ -1,0 +1,261 @@
+﻿{
+  "data": {
+    "albums": [
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "单曲",
+        "year": 0
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "大灌篮 电影原声带",
+        "year": 0
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "霍元甲",
+        "year": 0
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "Jay",
+        "year": 2000
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 2.5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "范特西",
+        "year": 2001
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "范特西PLUS",
+        "year": 2001
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "八度空间",
+        "year": 2002
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "叶惠美",
+        "year": 2003
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "寻找周杰伦",
+        "year": 2003
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "七里香",
+        "year": 2004
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "十一月的萧邦",
+        "year": 2005
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "依然范特西",
+        "year": 2006
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "我很忙",
+        "year": 2007
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "魔杰座",
+        "year": 2008
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "跨时代",
+        "year": 2010
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "惊叹号",
+        "year": 2011
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "十二新作",
+        "year": 2012
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "哎呦，不错哦",
+        "year": 2014
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "周杰伦的床边故事",
+        "year": 2016
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 0
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "Mojito",
+        "year": 2020
+      },
+      {
+        "additional": {
+          "avg_rating": {
+            "rating": 5
+          }
+        },
+        "album_artist": "周杰伦",
+        "artist": "",
+        "display_artist": "周杰伦",
+        "name": "最伟大的作品",
+        "year": 2022
+      }
+    ],
+    "offset": 0,
+    "total": 21
+  },
+  "success": true
+}

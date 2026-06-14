@@ -1,0 +1,5055 @@
+﻿{
+  "data": {
+    "offset": 0,
+    "songs": [
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 901000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 185,
+            "filesize": 20853678,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Mojito",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "酷我音乐",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2020
+          }
+        },
+        "id": "music_5968",
+        "path": "/music/周杰伦/Mojito/周杰伦-Mojito.flac",
+        "title": "Mojito",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 962000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 293,
+            "filesize": 36758101,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "周杰伦",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2000
+          }
+        },
+        "id": "music_5976",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 双刀.flac",
+        "title": "双刀",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 865000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 268,
+            "filesize": 30494062,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "Pop; Pop; Pop; Pop; Pop; Pop",
+            "track": 0,
+            "year": 2000
+          }
+        },
+        "id": "music_5977",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 娘子.flac",
+        "title": "娘子",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 911000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 27864481,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "[51ape.com]",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2000
+          }
+        },
+        "id": "music_5978",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 完美主义.flac",
+        "title": "完美主义",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 884000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 276,
+            "filesize": 30525096,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2000
+          }
+        },
+        "id": "music_5979",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 斗牛.flac",
+        "title": "斗牛",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 783000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 283,
+            "filesize": 27724598,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2000
+          }
+        },
+        "id": "music_5980",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 黑色幽默.flac",
+        "title": "黑色幽默",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 852000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 209,
+            "filesize": 22521585,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 7,
+            "year": 2000
+          }
+        },
+        "id": "music_5981",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 伊斯坦堡.flac",
+        "title": "伊斯坦堡",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 882000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 250,
+            "filesize": 27903766,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 9,
+            "year": 2000
+          }
+        },
+        "id": "music_5982",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 龙卷风.flac",
+        "title": "龙卷风",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 865000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 259,
+            "filesize": 28126205,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2000
+          }
+        },
+        "id": "music_5983",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 星晴.flac",
+        "title": "星晴",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 890000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 304,
+            "filesize": 33952389,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2000
+          }
+        },
+        "id": "music_5984",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 印第安老斑鸠.flac",
+        "title": "印第安老斑鸠",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 880000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 258,
+            "filesize": 28468618,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "Jay",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2000
+          }
+        },
+        "id": "music_5985",
+        "path": "/music/周杰伦/2000-Jay/周杰伦 - 反方向的钟.flac",
+        "title": "反方向的钟",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1483000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 29,
+            "filesize": 5678572,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6130",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - Intro.flac",
+        "title": "Intro",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1713000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 185,
+            "filesize": 39846141,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6132",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - Mojito.flac",
+        "title": "Mojito",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1700000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 245,
+            "filesize": 52403527,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6125",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 不爱我就拉倒.flac",
+        "title": "不爱我就拉倒",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1717000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 234,
+            "filesize": 50413894,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6136",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 倒影.flac",
+        "title": "倒影",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1697000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 266,
+            "filesize": 56663167,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6133",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 我是如此相信.flac",
+        "title": "我是如此相信",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 882000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 27068405,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6135",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 最伟大的作品.flac",
+        "title": "最伟大的作品",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1713000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 270,
+            "filesize": 57956831,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6126",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 等你下课 (with 杨瑞代).flac",
+        "title": "等你下课 (with 杨瑞代)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1726000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 186,
+            "filesize": 40451732,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6127",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 粉色海洋.flac",
+        "title": "粉色海洋",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1644000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 257,
+            "filesize": 53001397,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6134",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 红颜如霜.flac",
+        "title": "红颜如霜",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1579000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 222,
+            "filesize": 43980903,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6131",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 说好不哭 (with 五月天阿信).flac",
+        "title": "说好不哭 (with 五月天阿信)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1676000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 265,
+            "filesize": 55849899,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6128",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 还在流浪.flac",
+        "title": "还在流浪",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1758000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 257,
+            "filesize": 56808237,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2022
+          }
+        },
+        "id": "music_6129",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 错过的烟火.flac",
+        "title": "错过的烟火",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 821000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 221,
+            "filesize": 23034425,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 3,
+            "year": 2016
+          }
+        },
+        "id": "music_6109",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 一点点.flac",
+        "title": "一点点",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1023000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 201,
+            "filesize": 26115771,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 5,
+            "year": 2016
+          }
+        },
+        "id": "music_6110",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 英雄.flac",
+        "title": "英雄",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 903000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 290,
+            "filesize": 33218098,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "本资源由wcx980120分享，仅供试听，严禁商用，有经济条件的请支持正版，谢谢！！",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2016
+          }
+        },
+        "id": "music_6111",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 不+该.flac",
+        "title": "不该 (with aMEI)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 886000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 285,
+            "filesize": 32104917,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "本资源由wcx980120分享，仅供试听，严禁商用，有经济条件的请支持正版，谢谢！！",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 10,
+            "year": 2016
+          }
+        },
+        "id": "music_6112",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 爱情废柴.flac",
+        "title": "爱情废柴",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 977000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 226,
+            "filesize": 27780281,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2016
+          }
+        },
+        "id": "music_6103",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 床边故事.FLAC",
+        "title": "床边故事",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1036000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 266,
+            "filesize": 34617276,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2016
+          }
+        },
+        "id": "music_6104",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 说走就走.FLAC",
+        "title": "说走就走",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 877000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 200,
+            "filesize": 22163073,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2016
+          }
+        },
+        "id": "music_6105",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 前世情人.FLAC",
+        "title": "前世情人",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1026000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 195,
+            "filesize": 25264155,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2016
+          }
+        },
+        "id": "music_6106",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 土耳其冰淇淋.FLAC",
+        "title": "土耳其冰淇淋",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 928000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 215,
+            "filesize": 25127985,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2016
+          }
+        },
+        "id": "music_6107",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - 告白气球.FLAC",
+        "title": "告白气球",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1041000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 174,
+            "filesize": 22815848,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "周杰伦的床边故事",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2016
+          }
+        },
+        "id": "music_6108",
+        "path": "/music/周杰伦/2016-周杰伦的床边故事/周杰伦 - Now You See Me.FLAC",
+        "title": "Now You See Me",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 937000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 261,
+            "filesize": 30630811,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2006
+          }
+        },
+        "id": "music_6038",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 退后.flac",
+        "title": "退后",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 966000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 228,
+            "filesize": 27730442,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2006
+          }
+        },
+        "id": "music_6039",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 夜的第七章.FLAC",
+        "title": "夜的第七章",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 949000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 265,
+            "filesize": 31617018,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2006
+          }
+        },
+        "id": "music_6040",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 听妈妈的话.FLAC",
+        "title": "听妈妈的话",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 893000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 256,
+            "filesize": 28736913,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2006
+          }
+        },
+        "id": "music_6041",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 费玉清 - 千里之外.FLAC",
+        "title": "千里之外",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 961000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 209,
+            "filesize": 25338302,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2006
+          }
+        },
+        "id": "music_6042",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 本草纲目.FLAC",
+        "title": "本草纲目",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 930000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 185,
+            "filesize": 21658668,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 6,
+            "year": 2006
+          }
+        },
+        "id": "music_6043",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 红模仿.FLAC",
+        "title": "红模仿",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 898000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 269,
+            "filesize": 30395747,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2006
+          }
+        },
+        "id": "music_6044",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 心雨.FLAC",
+        "title": "心雨",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 957000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 272,
+            "filesize": 32710215,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2006
+          }
+        },
+        "id": "music_6045",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 白色风车.FLAC",
+        "title": "白色风车",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 944000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 251,
+            "filesize": 29774078,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2006
+          }
+        },
+        "id": "music_6046",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 迷迭香.FLAC",
+        "title": "迷迭香",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 863000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 293,
+            "filesize": 31822768,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "依然范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2006
+          }
+        },
+        "id": "music_6047",
+        "path": "/music/周杰伦/2006-依然范特西/周杰伦 - 菊花台.FLAC",
+        "title": "菊花台",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 855000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 231,
+            "filesize": 24701543,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "163 key(Don't modify):6YURAByiRHQ6CI5tvtxzQg==",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2003
+          }
+        },
+        "id": "music_6006",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 同一种调调.flac",
+        "title": "同一种调调",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1032000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 218,
+            "filesize": 28138552,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2003
+          }
+        },
+        "id": "music_6007",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 懦夫.flac",
+        "title": "懦夫",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 982000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 291,
+            "filesize": 36072371,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 11,
+            "year": 2003
+          }
+        },
+        "id": "music_6008",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 双刀.flac",
+        "title": "双刀",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 798000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 342,
+            "filesize": 34189307,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2003
+          }
+        },
+        "id": "music_6009",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 以父之名.FLAC",
+        "title": "以父之名",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 935000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 269,
+            "filesize": 31596241,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2003
+          }
+        },
+        "id": "music_6010",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 晴天.FLAC",
+        "title": "晴天",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 895000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 280,
+            "filesize": 31452239,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2003
+          }
+        },
+        "id": "music_6011",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 三年二班.FLAC",
+        "title": "三年二班",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 885000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 315,
+            "filesize": 34983453,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 5,
+            "year": 2003
+          }
+        },
+        "id": "music_6012",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 东风破.FLAC",
+        "title": "东风破",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 948000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 232,
+            "filesize": 27695394,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2003
+          }
+        },
+        "id": "music_6013",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 她的睫毛.FLAC",
+        "title": "她的睫毛",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 816000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 262,
+            "filesize": 26837090,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2003
+          }
+        },
+        "id": "music_6014",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 爱情悬崖.FLAC",
+        "title": "爱情悬崖",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 829000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 213,
+            "filesize": 22189956,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "叶惠美",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2003
+          }
+        },
+        "id": "music_6015",
+        "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 梯田.FLAC",
+        "title": "梯田",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 941000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 322,
+            "filesize": 38635529,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "寻找周杰伦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2003
+          }
+        },
+        "id": "music_6140",
+        "path": "/music/周杰伦/2003-寻找周杰伦-EP/周杰伦 - 轨迹.flac",
+        "title": "轨迹",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 888000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 297,
+            "filesize": 33132557,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "寻找周杰伦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2003
+          }
+        },
+        "id": "music_6141",
+        "path": "/music/周杰伦/2003-寻找周杰伦-EP/周杰伦 - 断了的弦.flac",
+        "title": "断了的弦",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 960000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 233,
+            "filesize": 28076746,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2007
+          }
+        },
+        "id": "music_6048",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 无双.flac",
+        "title": "无双",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 891000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 208,
+            "filesize": 23234415,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "周杰伦",
+            "disc": 0,
+            "genre": "",
+            "track": 8,
+            "year": 2007
+          }
+        },
+        "id": "music_6049",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 扯.flac",
+        "title": "扯",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 926000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 168,
+            "filesize": 19562965,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2007
+          }
+        },
+        "id": "music_6050",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 牛仔很忙.FLAC",
+        "title": "牛仔很忙",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 834000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 263,
+            "filesize": 27698971,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2007
+          }
+        },
+        "id": "music_6051",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 彩虹.FLAC",
+        "title": "彩虹",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 877000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 239,
+            "filesize": 26332271,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2007
+          }
+        },
+        "id": "music_6052",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 青花瓷.FLAC",
+        "title": "青花瓷",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 993000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 222,
+            "filesize": 27769179,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2007
+          }
+        },
+        "id": "music_6053",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 阳光宅男.FLAC",
+        "title": "阳光宅男",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 869000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 247,
+            "filesize": 26949191,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 5,
+            "year": 2007
+          }
+        },
+        "id": "music_6054",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 蒲公英的约定.FLAC",
+        "title": "蒲公英的约定",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 898000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 288,
+            "filesize": 32503987,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2007
+          }
+        },
+        "id": "music_6055",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 我不配.FLAC",
+        "title": "我不配",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 982000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 243,
+            "filesize": 30046083,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2007
+          }
+        },
+        "id": "music_6056",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 甜甜的.FLAC",
+        "title": "甜甜的",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 814000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 235,
+            "filesize": 24107415,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "我很忙",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2007
+          }
+        },
+        "id": "music_6057",
+        "path": "/music/周杰伦/2007-我很忙/周杰伦 - 最长的电影.FLAC",
+        "title": "最长的电影",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1040000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 285,
+            "filesize": 37208363,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "本资源由wcx980120分享，仅供试听，严禁商用！！",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 2,
+            "year": 2005
+          }
+        },
+        "id": "music_6026",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 蓝色风暴.flac",
+        "title": "蓝色风暴",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 983000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 248,
+            "filesize": 30537858,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 5,
+            "year": 2005
+          }
+        },
+        "id": "music_6027",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 四面楚歌.flac",
+        "title": "四面楚歌",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 946000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 226,
+            "filesize": 27000087,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2005
+          }
+        },
+        "id": "music_6028",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 夜曲.FLAC",
+        "title": "夜曲",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 955000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 295,
+            "filesize": 35415118,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2005
+          }
+        },
+        "id": "music_6029",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 一路向北.FLAC",
+        "title": "一路向北",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 971000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 299,
+            "filesize": 36407983,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2005
+          }
+        },
+        "id": "music_6030",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 发如雪.FLAC",
+        "title": "发如雪",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 898000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 252,
+            "filesize": 28380235,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2005
+          }
+        },
+        "id": "music_6031",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 黑色毛衣.FLAC",
+        "title": "黑色毛衣",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 889000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 275,
+            "filesize": 30737318,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 6,
+            "year": 2005
+          }
+        },
+        "id": "music_6032",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 枫.FLAC",
+        "title": "枫",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 854000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 240,
+            "filesize": 25758051,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2005
+          }
+        },
+        "id": "music_6033",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 浪漫手机.FLAC",
+        "title": "浪漫手机",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 936000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 234,
+            "filesize": 27533074,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2005
+          }
+        },
+        "id": "music_6034",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 逆鳞.FLAC",
+        "title": "逆鳞",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1018000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 260,
+            "filesize": 33231321,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2005
+          }
+        },
+        "id": "music_6035",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 麦芽糖.FLAC",
+        "title": "麦芽糖",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 914000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 255,
+            "filesize": 29268624,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2005
+          }
+        },
+        "id": "music_6036",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 梁心颐 - 珊瑚海.FLAC",
+        "title": "珊瑚海",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 937000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 28768555,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十一月的萧邦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 11,
+            "year": 2005
+          }
+        },
+        "id": "music_6037",
+        "path": "/music/周杰伦/2005-十一月的肖邦/周杰伦 - 飘移.FLAC",
+        "title": "飘移",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 900000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 205,
+            "filesize": 24270658,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2012
+          }
+        },
+        "id": "music_6091",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 梦想启动.flac",
+        "title": "梦想启动",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 984000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 159,
+            "filesize": 19879514,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 1,
+            "year": 2012
+          }
+        },
+        "id": "music_6101",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 四季列车.flac",
+        "title": "四季列车",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 950000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 289,
+            "filesize": 35595523,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "-=-RiP & rLs bY TSxD-=-",
+            "composer": "",
+            "disc": 0,
+            "genre": "Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop",
+            "track": 5,
+            "year": 2012
+          }
+        },
+        "id": "music_6095",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦&袁咏琳-傻笑.flac",
+        "title": "傻笑",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 892000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 252,
+            "filesize": 28437767,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2012
+          }
+        },
+        "id": "music_6102",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 比较大的大提琴.flac",
+        "title": "比较大的大提琴",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 953000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 288,
+            "filesize": 34537115,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2012
+          }
+        },
+        "id": "music_6092",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 手语.FLAC",
+        "title": "手语",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 872000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 183,
+            "filesize": 20085536,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2012
+          }
+        },
+        "id": "music_6093",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 公公偏头痛.FLAC",
+        "title": "公公偏头痛",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 851000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 260,
+            "filesize": 27838694,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2012
+          }
+        },
+        "id": "music_6094",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 明明就.FLAC",
+        "title": "明明就",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 866000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 280,
+            "filesize": 30531233,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2012
+          }
+        },
+        "id": "music_6096",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 爱你没差.FLAC",
+        "title": "爱你没差",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 834000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 274,
+            "filesize": 28722857,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2012
+          }
+        },
+        "id": "music_6097",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 红尘客栈.FLAC",
+        "title": "红尘客栈",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 896000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 242,
+            "filesize": 27328810,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2012
+          }
+        },
+        "id": "music_6098",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 大笨钟.FLAC",
+        "title": "大笨钟",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 887000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 279,
+            "filesize": 31056763,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 11,
+            "year": 2012
+          }
+        },
+        "id": "music_6099",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 哪里都是你.FLAC",
+        "title": "哪里都是你",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 948000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 175,
+            "filesize": 20903065,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "十二新作",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 12,
+            "year": 2012
+          }
+        },
+        "id": "music_6100",
+        "path": "/music/周杰伦/2012-十二新作/周杰伦 - 乌克丽丽.FLAC",
+        "title": "乌克丽丽",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 974000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 267,
+            "filesize": 33957680,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2004
+          }
+        },
+        "id": "music_6016",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 困兽之斗.flac",
+        "title": "困兽之斗",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 952000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 29274917,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2004
+          }
+        },
+        "id": "music_6017",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 我的地盘.FLAC",
+        "title": "我的地盘",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 960000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 299,
+            "filesize": 36056389,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2004
+          }
+        },
+        "id": "music_6018",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 七里香.FLAC",
+        "title": "七里香",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 886000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 260,
+            "filesize": 28995092,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2004
+          }
+        },
+        "id": "music_6019",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 借口.FLAC",
+        "title": "借口",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 940000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 28902473,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2004
+          }
+        },
+        "id": "music_6020",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 外婆.FLAC",
+        "title": "外婆",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 929000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 204,
+            "filesize": 23876446,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "Pop; Folk, World, & Country; Pop; Folk, World, & Country; Pop; Folk, World, & Country; Pop; Folk, World, & Country; Pop; Folk, W",
+            "track": 5,
+            "year": 2004
+          }
+        },
+        "id": "music_6021",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 将军.FLAC",
+        "title": "将军",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 873000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 240,
+            "filesize": 26371053,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 6,
+            "year": 2004
+          }
+        },
+        "id": "music_6022",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 搁浅.FLAC",
+        "title": "搁浅",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 950000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 279,
+            "filesize": 33405777,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2004
+          }
+        },
+        "id": "music_6023",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 乱舞春秋.FLAC",
+        "title": "乱舞春秋",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 920000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 255,
+            "filesize": 29570555,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2004
+          }
+        },
+        "id": "music_6024",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 园游会.FLAC",
+        "title": "园游会",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 878000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 274,
+            "filesize": 30328633,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "七里香",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2004
+          }
+        },
+        "id": "music_6025",
+        "path": "/music/周杰伦/2004-七里香/周杰伦 - 止战之殇.FLAC",
+        "title": "止战之殇",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1013000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 174,
+            "filesize": 23483457,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2008
+          }
+        },
+        "id": "music_6063",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 蛇舞.flac",
+        "title": "蛇舞",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 879000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 264,
+            "filesize": 29375113,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 4,
+            "year": 2008
+          }
+        },
+        "id": "music_6064",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 花海.flac",
+        "title": "花海",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 842000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 256,
+            "filesize": 27350171,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2008
+          }
+        },
+        "id": "music_6065",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 说好的幸福呢.flac",
+        "title": "说好的幸福呢",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1004000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 271,
+            "filesize": 34197696,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2008
+          }
+        },
+        "id": "music_6066",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 龙战骑士.FLAC",
+        "title": "龙战骑士",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 999000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 253,
+            "filesize": 31840960,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2008
+          }
+        },
+        "id": "music_6067",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 给我一首歌的时间.FLAC",
+        "title": "给我一首歌的时间",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 896000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 227,
+            "filesize": 25650835,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 5,
+            "year": 2008
+          }
+        },
+        "id": "music_6068",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 魔术先生.FLAC",
+        "title": "魔术先生",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 894000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 253,
+            "filesize": 28532508,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2008
+          }
+        },
+        "id": "music_6058",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 兰亭序.FLAC",
+        "title": "兰亭序",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 972000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 169,
+            "filesize": 20714453,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2008
+          }
+        },
+        "id": "music_6059",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 杨瑞代 - 流浪诗人.FLAC",
+        "title": "流浪诗人",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 985000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 311,
+            "filesize": 38581714,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2008
+          }
+        },
+        "id": "music_6060",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 时光机.FLAC",
+        "title": "时光机",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 985000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 256,
+            "filesize": 31774982,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2008
+          }
+        },
+        "id": "music_6061",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 乔克叔叔.FLAC",
+        "title": "乔克叔叔",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 934000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 223,
+            "filesize": 26249966,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "魔杰座",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 11,
+            "year": 2008
+          }
+        },
+        "id": "music_6062",
+        "path": "/music/周杰伦/2008-魔杰座/周杰伦 - 稻香.FLAC",
+        "title": "稻香",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 956000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 238,
+            "filesize": 28502343,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2010
+          }
+        },
+        "id": "music_6069",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 免费教学录影带.flac",
+        "title": "免费教学录影带",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 975000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 255,
+            "filesize": 31195399,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "163 key(Don't modify):6YURAByiRHQ6CI5tvtxzQg==",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2010
+          }
+        },
+        "id": "music_6070",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 爱的飞行日记.flac",
+        "title": "爱的飞行日记",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 843000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 282,
+            "filesize": 30032423,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 2,
+            "year": 2010
+          }
+        },
+        "id": "music_6071",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 说了再见.flac",
+        "title": "说了再见",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 882000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 252,
+            "filesize": 28045057,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 5,
+            "year": 2010
+          }
+        },
+        "id": "music_6072",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 好久不见.flac",
+        "title": "好久不见",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 931000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 168,
+            "filesize": 19644399,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 7,
+            "year": 2010
+          }
+        },
+        "id": "music_6073",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 嘻哈空姐.flac",
+        "title": "嘻哈空姐",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 921000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 255,
+            "filesize": 29619964,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 10,
+            "year": 2010
+          }
+        },
+        "id": "music_6074",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 自导自演.flac",
+        "title": "自导自演",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 878000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 299,
+            "filesize": 33114652,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 11,
+            "year": 2010
+          }
+        },
+        "id": "music_6075",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 超人不会飞.flac",
+        "title": "超人不会飞",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 944000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 194,
+            "filesize": 23024747,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2010
+          }
+        },
+        "id": "music_6076",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 跨时代.FLAC",
+        "title": "跨时代",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 863000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 263,
+            "filesize": 28492293,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2010
+          }
+        },
+        "id": "music_6077",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 烟花易冷.FLAC",
+        "title": "烟花易冷",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 819000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 256,
+            "filesize": 26304214,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 6,
+            "year": 2010
+          }
+        },
+        "id": "music_6078",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 雨下一整晚.FLAC",
+        "title": "雨下一整晚",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 896000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 257,
+            "filesize": 28954566,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "跨时代",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2010
+          }
+        },
+        "id": "music_6079",
+        "path": "/music/周杰伦/2010-跨时代/周杰伦 - 我落泪 情绪零碎.FLAC",
+        "title": "我落泪情绪零碎",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 863000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 161,
+            "filesize": 18919805,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2011
+          }
+        },
+        "id": "music_6084",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 水手怕水.flac",
+        "title": "水手怕水",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 837000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 199,
+            "filesize": 22392158,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2011
+          }
+        },
+        "id": "music_6086",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 琴伤.flac",
+        "title": "琴伤",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 936000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 230,
+            "filesize": 28474734,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2011
+          }
+        },
+        "id": "music_6080",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 迷魂曲.flac",
+        "title": "迷魂曲",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1012000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 231,
+            "filesize": 29636094,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 1,
+            "year": 2011
+          }
+        },
+        "id": "music_6090",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 惊叹号.flac",
+        "title": "惊叹号",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 883000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 268,
+            "filesize": 29972571,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 3,
+            "year": 2011
+          }
+        },
+        "id": "music_6087",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - MineMine.flac",
+        "title": "MineMine",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 963000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 218,
+            "filesize": 26714934,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 4,
+            "year": 2011
+          }
+        },
+        "id": "music_6089",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 公主病.flac",
+        "title": "公主病",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1029000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 186,
+            "filesize": 24120403,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "本资源由wcx980120分享，仅供试听，严禁商用！！",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2011
+          }
+        },
+        "id": "music_6085",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 疗伤烧肉粽.flac",
+        "title": "疗伤烧肉粽",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 970000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 263,
+            "filesize": 33454888,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "163 key(Don't modify):6YURAByiRHQ6CI5tvtxzQg==",
+            "composer": "",
+            "disc": 0,
+            "genre": "Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop; Pop",
+            "track": 9,
+            "year": 2011
+          }
+        },
+        "id": "music_6082",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 世界未末日.flac",
+        "title": "世界未末日",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 927000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 156,
+            "filesize": 18514674,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 11,
+            "year": 2011
+          }
+        },
+        "id": "music_6088",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 超跑女神.flac",
+        "title": "超跑女神",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 731000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 224,
+            "filesize": 20597041,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 5,
+            "year": 2011
+          }
+        },
+        "id": "music_6081",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 你好吗.FLAC",
+        "title": "你好吗",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 984000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 209,
+            "filesize": 25835638,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "惊叹号",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2011
+          }
+        },
+        "id": "music_6083",
+        "path": "/music/周杰伦/2011-惊叹号/周杰伦 - 皮影戏.FLAC",
+        "title": "皮影戏",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 980000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 278,
+            "filesize": 34195984,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "霍元甲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 0
+          }
+        },
+        "id": "music_5975",
+        "path": "/music/周杰伦/周杰伦 - 霍元甲.FLAC",
+        "title": "霍元甲",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 927000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 202,
+            "filesize": 23427349,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西PLUS",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "A capella; A capella; A capella; A capella",
+            "track": 0,
+            "year": 2001
+          }
+        },
+        "id": "music_6137",
+        "path": "/music/周杰伦/2001-范特西PLUS-EP/周杰伦 - 你比从前快乐.flac",
+        "title": "你比从前快乐",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 851000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 238,
+            "filesize": 25461239,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西PLUS",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2001
+          }
+        },
+        "id": "music_6139",
+        "path": "/music/周杰伦/2001-范特西PLUS-EP/周杰伦 - 蜗牛.FLAC",
+        "title": "蜗牛 (Live)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 900000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 265,
+            "filesize": 29936410,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西PLUS",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 3,
+            "year": 2001
+          }
+        },
+        "id": "music_6138",
+        "path": "/music/周杰伦/2001-范特西PLUS-EP/周杰伦 - 世界末日.FLAC",
+        "title": "世界末日 (Live)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 956000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 270,
+            "filesize": 32386727,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 2001
+          }
+        },
+        "id": "music_5986",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 简单爱.flac",
+        "title": "简单爱",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 941000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 235,
+            "filesize": 27946407,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 2,
+            "year": 2001
+          }
+        },
+        "id": "music_5987",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 爸我回来了.flac",
+        "title": "爸我回来了",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 893000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 284,
+            "filesize": 31804072,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "周杰倫",
+            "disc": 0,
+            "genre": "不明; 不明",
+            "track": 5,
+            "year": 2001
+          }
+        },
+        "id": "music_5988",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 开不了口.flac",
+        "title": "开不了口",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 914000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 195,
+            "filesize": 22605733,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2001
+          }
+        },
+        "id": "music_5989",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 上海一九四三.flac",
+        "title": "上海一九四三",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 987000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 225,
+            "filesize": 28043791,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 7,
+            "year": 2001
+          }
+        },
+        "id": "music_5990",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 对不起.flac",
+        "title": "对不起",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 999000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 234,
+            "filesize": 29362786,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 1 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2001
+          }
+        },
+        "id": "music_5991",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 爱在西元前.FLAC",
+        "title": "爱在西元前",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1004000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 158,
+            "filesize": 19997397,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2001
+          }
+        },
+        "id": "music_5992",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 忍者.FLAC",
+        "title": "忍者",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 981000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 236,
+            "filesize": 29076510,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 4 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2001
+          }
+        },
+        "id": "music_5993",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 威廉古堡.FLAC",
+        "title": "威廉古堡",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 990000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 201,
+            "filesize": 24980483,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2001
+          }
+        },
+        "id": "music_5994",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 双截棍.FLAC",
+        "title": "双截棍",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 798000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 334,
+            "filesize": 33444869,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "范特西",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 10,
+            "year": 2001
+          }
+        },
+        "id": "music_5995",
+        "path": "/music/周杰伦/2001-范特西/周杰伦 - 安静.FLAC",
+        "title": "安静",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 970000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 279,
+            "filesize": 33881431,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "单曲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_5969",
+        "path": "/music/周杰伦/周杰伦 - 听见下雨的声音.flac",
+        "title": "听见下雨的声音",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 753000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 156,
+            "filesize": 14683492,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "单曲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_5974",
+        "path": "/music/周杰伦/周杰伦-天台的月光.flac",
+        "title": "天台的月光",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 963000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 234,
+            "filesize": 28217621,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "单曲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_5971",
+        "path": "/music/周杰伦/周杰伦 - 爱我别走.flac",
+        "title": "爱我别走",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 882000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 273,
+            "filesize": 30164263,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "单曲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_5973",
+        "path": "/music/周杰伦/周杰伦&袁咏琳 - 画沙.flac",
+        "title": "画沙",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 820000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 125,
+            "filesize": 12897229,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "单曲",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "HiFiNi.COM",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_5972",
+        "path": "/music/周杰伦/周杰伦 - 默.flac",
+        "title": "默",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1024000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 134,
+            "filesize": 17325113,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "大灌篮 电影原声带",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 0
+          }
+        },
+        "id": "music_5970",
+        "path": "/music/周杰伦/周杰伦 - 周大侠.FLAC",
+        "title": "周大侠",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 886000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 269,
+            "filesize": 30104173,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 3,
+            "year": 2002
+          }
+        },
+        "id": "music_5996",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 暗号.flac",
+        "title": "暗号",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 965000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 274,
+            "filesize": 34187141,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "周杰伦",
+            "disc": 0,
+            "genre": "",
+            "track": 5,
+            "year": 2002
+          }
+        },
+        "id": "music_5997",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 火车叨位去.flac",
+        "title": "火车叨位去",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 832000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 252,
+            "filesize": 26512008,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 6,
+            "year": 2002
+          }
+        },
+        "id": "music_5998",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 离开.flac",
+        "title": "离开",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 963000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 251,
+            "filesize": 30472206,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 10,
+            "year": 2002
+          }
+        },
+        "id": "music_5999",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 最后的战役.flac",
+        "title": "最后的战役",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 970000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 247,
+            "filesize": 30090222,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 1,
+            "year": 2002
+          }
+        },
+        "id": "music_6000",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 半兽人.FLAC",
+        "title": "半兽人",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 924000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 319,
+            "filesize": 36954101,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 2,
+            "year": 2002
+          }
+        },
+        "id": "music_6001",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 半岛铁盒.FLAC",
+        "title": "半岛铁盒",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 961000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 274,
+            "filesize": 33070698,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 4,
+            "year": 2002
+          }
+        },
+        "id": "music_6002",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 龙拳.FLAC",
+        "title": "龙拳",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 994000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 240,
+            "filesize": 29959919,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 7,
+            "year": 2002
+          }
+        },
+        "id": "music_6003",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 爷爷泡的茶.FLAC",
+        "title": "爷爷泡的茶",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 815000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 233,
+            "filesize": 23852736,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 8,
+            "year": 2002
+          }
+        },
+        "id": "music_6004",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 回到过去.FLAC",
+        "title": "回到过去",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 844000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 240,
+            "filesize": 25466918,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 5 },
+          "song_tag": {
+            "album": "八度空间",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "",
+            "track": 9,
+            "year": 2002
+          }
+        },
+        "id": "music_6005",
+        "path": "/music/周杰伦/2002-八度空间/周杰伦 - 米兰的小铁匠.FLAC",
+        "title": "米兰的小铁匠",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1020000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 232,
+            "filesize": 30923506,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "流行; 流行",
+            "track": 0,
+            "year": 2014
+          }
+        },
+        "id": "music_6117",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦&袁咏琳 - 怎么了.flac",
+        "title": "怎么了",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1058000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 219,
+            "filesize": 30406536,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "流行; 流行; 流行; 流行",
+            "track": 0,
+            "year": 2014
+          }
+        },
+        "id": "music_6118",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 我要夏天.flac",
+        "title": "我要夏天",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1016000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 204,
+            "filesize": 27248556,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "流行; 流行",
+            "track": 0,
+            "year": 2014
+          }
+        },
+        "id": "music_6119",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 窃爱.flac",
+        "title": "窃爱",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1065000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 152,
+            "filesize": 21620075,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "流行; 流行",
+            "track": 0,
+            "year": 2014
+          }
+        },
+        "id": "music_6120",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 阳明山.flac",
+        "title": "阳明山",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 862000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 297,
+            "filesize": 32363442,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 8,
+            "year": 2014
+          }
+        },
+        "id": "music_6113",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 手写的从前.flac",
+        "title": "手写的从前",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 946000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 221,
+            "filesize": 26461213,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 9,
+            "year": 2014
+          }
+        },
+        "id": "music_6114",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 鞋子特大号.flac",
+        "title": "鞋子特大号",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 941000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 219,
+            "filesize": 26136840,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 11,
+            "year": 2014
+          }
+        },
+        "id": "music_6115",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 美人鱼.flac",
+        "title": "美人鱼",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 965000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 279,
+            "filesize": 33985649,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 12,
+            "year": 2014
+          }
+        },
+        "id": "music_6116",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 听见下雨的声音.flac",
+        "title": "听见下雨的声音",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 884000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 289,
+            "filesize": 33333488,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "流行; 流行",
+            "track": 3,
+            "year": 2014
+          }
+        },
+        "id": "music_6121",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 算什么男人.FLAC",
+        "title": "算什么男人",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 929000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 253,
+            "filesize": 30744362,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "流行; 流行",
+            "track": 4,
+            "year": 2014
+          }
+        },
+        "id": "music_6122",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 天涯过客.FLAC",
+        "title": "天涯过客",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1038000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 158,
+            "filesize": 21950141,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "流行; 流行",
+            "track": 6,
+            "year": 2014
+          }
+        },
+        "id": "music_6123",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 一口气全念对.FLAC",
+        "title": "一口气全念对",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 912000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 263,
+            "filesize": 31374804,
+            "frequency": 44100
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "哎呦，不错哦",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 1,
+            "genre": "流行; 流行",
+            "track": 10,
+            "year": 2014
+          }
+        },
+        "id": "music_6124",
+        "path": "/music/周杰伦/2014-哎哟不错哦/周杰伦 - 听爸爸的话.FLAC",
+        "title": "听爸爸的话",
+        "type": "file"
+      }
+    ],
+    "total": 174
+  },
+  "success": true
+}

@@ -1,0 +1,359 @@
+{
+  "data": {
+    "folder_total": 0,
+    "id": "dir_955",
+    "items": [
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1483000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 29,
+            "filesize": 5678572,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6130",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - Intro.flac",
+        "title": "Intro",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1713000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 185,
+            "filesize": 39846141,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6132",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - Mojito.flac",
+        "title": "Mojito",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1700000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 245,
+            "filesize": 52403527,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6125",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 不爱我就拉倒.flac",
+        "title": "不爱我就拉倒",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1717000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 234,
+            "filesize": 50413894,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6136",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 倒影.flac",
+        "title": "倒影",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1697000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 266,
+            "filesize": 56663167,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6133",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 我是如此相信.flac",
+        "title": "我是如此相信",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 882000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 244,
+            "filesize": 27068405,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6135",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 最伟大的作品.flac",
+        "title": "最伟大的作品",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1713000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 270,
+            "filesize": 57956831,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6126",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 等你下课 (with 杨瑞代).flac",
+        "title": "等你下课 (with 杨瑞代)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1726000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 186,
+            "filesize": 40451732,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6127",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 粉色海洋.flac",
+        "title": "粉色海洋",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1644000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 257,
+            "filesize": 53001397,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6134",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 红颜如霜.flac",
+        "title": "红颜如霜",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1579000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 222,
+            "filesize": 43980903,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6131",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 说好不哭 (with 五月天阿信).flac",
+        "title": "说好不哭 (with 五月天阿信)",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1676000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 265,
+            "filesize": 55849899,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6128",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 还在流浪.flac",
+        "title": "还在流浪",
+        "type": "file"
+      },
+      {
+        "additional": {
+          "song_audio": {
+            "bitrate": 1758000,
+            "channel": 2,
+            "codec": "flac",
+            "container": "flac",
+            "duration": 257,
+            "filesize": 56808237,
+            "frequency": 48000
+          },
+          "song_rating": { "rating": 0 },
+          "song_tag": {
+            "album": "最伟大的作品",
+            "album_artist": "周杰伦",
+            "artist": "周杰伦",
+            "comment": "",
+            "composer": "",
+            "disc": 0,
+            "genre": "",
+            "track": 0,
+            "year": 0
+          }
+        },
+        "id": "music_6129",
+        "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 错过的烟火.flac",
+        "title": "错过的烟火",
+        "type": "file"
+      }
+    ],
+    "offset": 0,
+    "total": 12
+  },
+  "success": true
+}

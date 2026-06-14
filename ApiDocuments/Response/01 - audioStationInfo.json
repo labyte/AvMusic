@@ -1,0 +1,47 @@
+
+{
+    "data": {
+        "ame_status": {
+            "ame_major_version": 4,
+            "has_aac": false,
+            "has_license": true,
+            "is_aac_activated": false,
+            "is_ame_broken": false,
+            "is_ame_install": true,
+            "need_aac_transcoding": false
+        },
+        "browse_personal_library": "all",
+        "dsd_decode_capability": true,
+        "enable_equalizer": false,
+        "enable_personal_library": false,
+        "enable_user_home": true,
+        "has_music_share": true,
+        "is_manager": true,
+        "playing_queue_max": 8192,
+        "privilege": {
+            "playlist_edit": true,
+            "remote_player": true,
+            "sharing": true,
+            "tag_edit": true,
+            "upnp_browse": true
+        },
+        "remote_controller": false,
+        "same_subnet": true,
+        "serial_number": "2280RLRWEYH7S",
+        "settings": {
+            "audio_show_virtual_library": true,
+            "disable_upnp": false,
+            "enable_download": true,
+            "prefer_using_html5": true,
+            "transcode_to_mp3": true
+        },
+        "sid": "Y8pldiqYGgTIxpavIU_Bkmm07vwDqQ_DpnIWMrS9OEoLmpT-vyOwCCmE7VBFrODopnlGZvblnijpL-TNui0pIM",
+        "support_bluetooth": false,
+        "support_usb": false,
+        "support_virtual_library": true,
+        "transcode_capability": [ "wav", "mp3" ],
+        "version": 5516,
+        "version_string": "7.2.0-5516"
+    },
+    "success": true
+}

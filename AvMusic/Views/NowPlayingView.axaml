@@ -1,0 +1,57 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels"
+             x:Class="AvMusic.Views.NowPlayingView"
+             x:DataType="vm:PlayerViewModel">
+  <Border Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}">
+    <Grid RowDefinitions="Auto,*,Auto,Auto" Margin="24">
+      <Button Grid.Row="0" Content="✕ 关闭" Command="{Binding HideNowPlayingCommand}"
+              HorizontalAlignment="Right" Background="Transparent"/>
+
+      <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20" MaxWidth="420">
+        <Border Width="280" Height="280" CornerRadius="8" ClipToBounds="True" HorizontalAlignment="Center"
+                Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
+          <Panel>
+            <Image Source="{Binding Cover}" Stretch="UniformToFill"
+                   IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+            <TextBlock Text="♪" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+            <Border Background="#66000000" IsVisible="{Binding IsLoading}">
+              <ProgressBar IsIndeterminate="True" Width="48" Height="48"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+          </Panel>
+        </Border>
+
+        <StackPanel Spacing="4" HorizontalAlignment="Center">
+          <TextBlock Text="{Binding Title}" FontSize="22" FontWeight="Bold" TextAlignment="Center" TextWrapping="Wrap"/>
+          <TextBlock Text="{Binding Subtitle}" Opacity="0.7" TextAlignment="Center" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <StackPanel Spacing="8" Margin="0,8,0,0">
+          <Grid ColumnDefinitions="Auto,*,Auto">
+            <TextBlock Grid.Column="0" Text="{Binding PositionText}" Opacity="0.7"/>
+            <Slider x:Name="FullSeekSlider" Grid.Column="1" Margin="12,0"
+                    Minimum="0" Maximum="{Binding SeekMaximum}"
+                    Value="{Binding Position, Mode=TwoWay}"
+                    IsEnabled="{Binding CanSeek}"/>
+            <TextBlock Grid.Column="2" Text="{Binding DurationText}" Opacity="0.7"/>
+          </Grid>
+        </StackPanel>
+      </StackPanel>
+
+      <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="16" HorizontalAlignment="Center" Margin="0,16">
+        <Button Content="⏮" Command="{Binding PreviousCommand}" Width="48" Height="48" FontSize="18"/>
+        <Button Content="⏯" Command="{Binding PlayPauseCommand}" Width="64" Height="64" FontSize="24" Classes="accent"/>
+        <Button Content="⏭" Command="{Binding NextCommand}" Width="48" Height="48" FontSize="18"/>
+        <Button Content="{Binding FavoriteIcon}" Command="{Binding ToggleFavoriteCommand}"
+                Width="48" Height="48" FontSize="22" ToolTip.Tip="喜欢"/>
+      </StackPanel>
+
+      <StackPanel Grid.Row="3" Spacing="4" MaxWidth="320" HorizontalAlignment="Center" Margin="0,8,0,0">
+        <TextBlock Text="音量" Opacity="0.7" FontSize="12"/>
+        <Slider Minimum="0" Maximum="1" Value="{Binding Volume}" TickFrequency="0.1"/>
+      </StackPanel>
+    </Grid>
+  </Border>
+</UserControl>

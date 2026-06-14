@@ -1,0 +1,281 @@
+﻿{
+  "data": {
+    "artists": [
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": ""
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "阿国哥"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "浜崎あゆみ"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "陈百强"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "陈柏宇"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "陈慧娴"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "陈一发儿"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "戴佩妮"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "邓丽君"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "邓丽君&徐小凤"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "name": "邓紫棋"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "古巨基"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "黄龄"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 4 } },
+        "name": "黄霄雲"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "黄小琥"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "筷子兄弟"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "黎瑞恩"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "李克勤"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "李荣浩"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "李栩君"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "李宗盛"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "梁博"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "name": "梁静茹"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "梁静茹 (Feat. 光良)"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "林俊杰"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "林忆莲"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "林忆莲、李宗盛"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "林子祥"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "刘德华"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "刘惜君&王赫野"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "name": "刘小慧"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "梅艳芳"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "莫文蔚"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "彭佳慧"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "朴树"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "齐秦"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "任素汐"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "任贤齐"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "沙宝亮"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "谭咏麟"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "王菲"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "王杰"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "温岚"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "吴雨霏"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "伍佰"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "夕照影音"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "谢安琪"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "辛晓琪"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "许嵩"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "许巍"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "薛之谦"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "游鸿明"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "庾澄庆"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "name": "张惠妹"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "张韶涵"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "张学友"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "张宇"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "郑中基"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 3.5 } },
+        "name": "周杰伦"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "周深"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Bailey Zimmerman"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Beyond"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "BoA"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Djo"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Dua Lipa"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Jack Harlow"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 0 } },
+        "name": "Sophie Ellis-Bextor"
+      },
+      {
+        "additional": { "avg_rating": { "rating": 5 } },
+        "name": "Twins"
+      }
+    ],
+    "offset": 0,
+    "total": 68
+  },
+  "success": true
+}

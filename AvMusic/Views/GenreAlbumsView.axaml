@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels.Library"
+             xmlns:models="using:AvMusic.Core.Models"
+             x:Class="AvMusic.Views.GenreAlbumsView"
+             x:Name="Root"
+             x:DataType="vm:GenreAlbumsViewModel">
+  <Grid RowDefinitions="Auto,*">
+    <TextBlock Grid.Row="0" Text="{Binding ErrorMessage}" Foreground="IndianRed" Margin="8,0"
+               IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+    <ListBox Grid.Row="1" ItemsSource="{Binding Albums}" Margin="8">
+      <ListBox.ItemTemplate>
+        <DataTemplate x:DataType="models:Album">
+          <Button Command="{Binding #Root.DataContext.OpenAlbumCommand}"
+                  CommandParameter="{Binding}" Background="Transparent"
+                  HorizontalContentAlignment="Stretch" Padding="8,6">
+            <StackPanel Spacing="2">
+              <TextBlock Text="{Binding Name}" FontWeight="SemiBold"/>
+              <TextBlock Text="{Binding DisplayArtist}" Opacity="0.7" FontSize="12"/>
+            </StackPanel>
+          </Button>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+    <ProgressBar Grid.Row="1" VerticalAlignment="Top" IsIndeterminate="True" IsVisible="{Binding IsLoading}" Height="4"/>
+  </Grid>
+</UserControl>

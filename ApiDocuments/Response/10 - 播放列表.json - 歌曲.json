@@ -1,0 +1,585 @@
+﻿{
+    "data": {
+        "playlists": [
+            {
+                "additional": {
+                    "sharing_info": {
+                        "date_available": "0",
+                        "date_expired": "0",
+                        "id": "",
+                        "status": "none",
+                        "url": ""
+                    },
+                    "songs": [
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 1713000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 185,
+                                    "filesize": 39846141,
+                                    "frequency": 48000
+                                },
+                                "song_rating": {
+                                    "rating": 0
+                                },
+                                "song_tag": {
+                                    "album": "最伟大的作品",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 2022
+                                }
+                            },
+                            "id": "music_6132",
+                            "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - Mojito.flac",
+                            "title": "Mojito",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 0,
+                                    "channel": 0,
+                                    "codec": "",
+                                    "container": "",
+                                    "duration": 0,
+                                    "filesize": 0,
+                                    "frequency": 0
+                                },
+                                "song_rating": {
+                                    "rating": 0
+                                },
+                                "song_tag": {
+                                    "album": "",
+                                    "album_artist": "",
+                                    "artist": "",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_/volume1/music/日语/刘小慧 - 初恋情人.flac",
+                            "path": "/music/日语/刘小慧 - 初恋情人.flac",
+                            "title": "刘小慧 - 初恋情人.flac",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 898000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 286,
+                                    "filesize": 32305422,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "The Original",
+                                    "album_artist": "张惠妹",
+                                    "artist": "张惠妹",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 4,
+                                    "year": 2004
+                                }
+                            },
+                            "id": "music_6304",
+                            "path": "/music/张惠妹/2004-The Original/04. 解脫.flac",
+                            "title": "解脫",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 320000,
+                                    "channel": 2,
+                                    "codec": "mp3",
+                                    "container": "mp3",
+                                    "duration": 170,
+                                    "filesize": 6974261,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "xXx: Return of Xander Cage (Music from the Motion Picture)",
+                                    "album_artist": "Bishop Briggs",
+                                    "artist": "Bishop Briggs",
+                                    "comment": "163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/ay9WZadyMD0m16ByE15gnRZz4xuj1S2jF4jJE9uA3xOo2bZ+1FUCZ0z2c+uATpRUS+lE4JrYKSqk53wfTrWdqEdr9dcvYZQli9qMDAaArOrktjdHMnOqhmUUZ36g9ITaGfeD/1SmrsJNUklRHf8+mBDbE2Jkt9mwhNtYz7+fN10unQCVCGbtDLMK6TII8d76NaMXok0Fm+VdFp5J3fy5",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 6,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_7355",
+                            "path": "/music/英文/Bishop Briggs - Mercy.mp3",
+                            "title": "Mercy",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 950000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 279,
+                                    "filesize": 33405777,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "七里香",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 1,
+                                    "genre": "",
+                                    "track": 7,
+                                    "year": 2004
+                                }
+                            },
+                            "id": "music_6023",
+                            "path": "/music/周杰伦/2004-七里香/周杰伦 - 乱舞春秋.FLAC",
+                            "title": "乱舞春秋",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 844000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 334,
+                                    "filesize": 35311819,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "偷故事的人",
+                                    "album_artist": "张惠妹",
+                                    "artist": "张惠妹",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 2017
+                                }
+                            },
+                            "id": "music_6387",
+                            "path": "/music/张惠妹/2017-偷故事的人/张惠妹 - 连名带姓.flac",
+                            "title": "连名带姓",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 844000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 240,
+                                    "filesize": 25466918,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "八度空间",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 1,
+                                    "genre": "",
+                                    "track": 9,
+                                    "year": 2002
+                                }
+                            },
+                            "id": "music_6005",
+                            "path": "/music/周杰伦/2002-八度空间/周杰伦 - 米兰的小铁匠.FLAC",
+                            "title": "米兰的小铁匠",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 855000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 231,
+                                    "filesize": 24701543,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "叶惠美",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "163 key(Don't modify):6YURAByiRHQ6CI5tvtxzQg==",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 2003
+                                }
+                            },
+                            "id": "music_6006",
+                            "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 同一种调调.flac",
+                            "title": "同一种调调",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 798000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 342,
+                                    "filesize": 34189307,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "叶惠美",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 1,
+                                    "genre": "",
+                                    "track": 1,
+                                    "year": 2003
+                                }
+                            },
+                            "id": "music_6009",
+                            "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 以父之名.FLAC",
+                            "title": "以父之名",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 885000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 315,
+                                    "filesize": 34983453,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "叶惠美",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 1,
+                                    "genre": "",
+                                    "track": 5,
+                                    "year": 2003
+                                }
+                            },
+                            "id": "music_6012",
+                            "path": "/music/周杰伦/2003-叶惠美/周杰伦 - 东风破.FLAC",
+                            "title": "东风破",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 959000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 274,
+                                    "filesize": 33256182,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "崇拜",
+                                    "album_artist": "梁静茹",
+                                    "artist": "梁静茹",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "pop; pop",
+                                    "track": 4,
+                                    "year": 2007
+                                }
+                            },
+                            "id": "music_6856",
+                            "path": "/music/梁静茹/04. 梁静茹 - 会呼吸的痛.flac",
+                            "title": "会呼吸的痛",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 1644000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 257,
+                                    "filesize": 53001397,
+                                    "frequency": 48000
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "最伟大的作品",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 2022
+                                }
+                            },
+                            "id": "music_6134",
+                            "path": "/music/周杰伦/2022-最伟大的作品/周杰伦 - 红颜如霜.flac",
+                            "title": "红颜如霜",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 1525000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 246,
+                                    "filesize": 53061957,
+                                    "frequency": 48000
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "热门",
+                                    "album_artist": "陈一发儿",
+                                    "artist": "陈一发儿",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_6883",
+                            "path": "/music/热门/陈一发儿 - 阿婆说.flac",
+                            "title": "阿婆说",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 891000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 208,
+                                    "filesize": 24340279,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "相爱6年限量珍藏版",
+                                    "album_artist": "Twins",
+                                    "artist": "Twins",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_6154",
+                            "path": "/music/喜欢/Twins - 下一站天后.flac",
+                            "title": "下一站天后",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 979000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 281,
+                                    "filesize": 35447117,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "粤语",
+                                    "album_artist": "刘小慧",
+                                    "artist": "刘小慧",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_5961",
+                            "path": "/music/刘小慧/刘小慧 - 初恋情人.flac",
+                            "title": "初恋情人",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 882000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 252,
+                                    "filesize": 28045057,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "跨时代",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 5,
+                                    "year": 2010
+                                }
+                            },
+                            "id": "music_6072",
+                            "path": "/music/周杰伦/2010-跨时代/周杰伦 - 好久不见.flac",
+                            "title": "好久不见",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 878000,
+                                    "channel": 2,
+                                    "codec": "flac",
+                                    "container": "flac",
+                                    "duration": 299,
+                                    "filesize": 33114652,
+                                    "frequency": 44100
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "跨时代",
+                                    "album_artist": "周杰伦",
+                                    "artist": "周杰伦",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 11,
+                                    "year": 2010
+                                }
+                            },
+                            "id": "music_6075",
+                            "path": "/music/周杰伦/2010-跨时代/周杰伦 - 超人不会飞.flac",
+                            "title": "超人不会飞",
+                            "type": "file"
+                        },
+                        {
+                            "additional": {
+                                "song_audio": {
+                                    "bitrate": 128000,
+                                    "channel": 2,
+                                    "codec": "mp3",
+                                    "container": "mp3",
+                                    "duration": 238,
+                                    "filesize": 5419443,
+                                    "frequency": 48000
+                                },
+                                "song_rating": {
+                                    "rating": 5
+                                },
+                                "song_tag": {
+                                    "album": "邓紫棋",
+                                    "album_artist": "邓紫棋",
+                                    "artist": "邓紫棋",
+                                    "comment": "",
+                                    "composer": "",
+                                    "disc": 0,
+                                    "genre": "",
+                                    "track": 0,
+                                    "year": 0
+                                }
+                            },
+                            "id": "music_7328",
+                            "path": "/music/邓紫棋/邓紫棋 - 单曲 - 孤独.mp3",
+                            "title": "邓紫棋 - 单曲 - 孤独",
+                            "type": "file"
+                        }
+                    ],
+                    "songs_offset": 0,
+                    "songs_total": 18
+                },
+                "id": "playlist_personal_normal/开车",
+                "library": "personal",
+                "name": "开车",
+                "sharing_status": "none",
+                "type": "normal"
+            }
+        ]
+    },
+    "success": true
+}
