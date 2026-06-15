@@ -1,55 +1,165 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:AvMusic.ViewModels"
+             xmlns:models="using:AvMusic.Core.Models"
+             xmlns:controls="using:AvMusic.Controls"
+             xmlns:ui="using:AvMusic.Ui"
              x:Class="AvMusic.Views.PlayerBarView"
-             x:DataType="vm:PlayerViewModel"  Margin="0">
-  <Grid RowDefinitions="Auto *">
-       <Grid ColumnDefinitions="Auto,*,Auto" Margin="4 0">
-          <TextBlock Grid.Column="0" Text="{Binding PositionText}" FontSize="11" Opacity="0.7" VerticalAlignment="Center"/>
-          <Slider x:Name="SeekSlider" Grid.Column="1" Background="Red"
-                  Minimum="0" Maximum="{Binding SeekMaximum}"
-                  Value="{Binding Position, Mode=TwoWay}"
-                  IsEnabled="{Binding CanSeek}"/>
-          <TextBlock Grid.Column="2" Text="{Binding DurationText}" FontSize="11" Opacity="0.7" VerticalAlignment="Center"/>
+             x:DataType="vm:PlayerViewModel">
+    <Panel>
+        <Grid RowDefinitions="Auto,*" >
+            <Slider x:Name="SeekSlider" VerticalAlignment="Top"
+                        Minimum="0" Maximum="{Binding SeekMaximum}" 
+                        Value="{Binding Position, Mode=TwoWay}"
+                        IsEnabled="{Binding CanSeek}"/>
+
+            <!-- 底层：封面 + 歌曲信息（靠左）+ 右侧工具；上层：播放控制整栏居中 -->
+            <Grid Grid.Row="1" Margin="8,0,0,6" >
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                    <!-- 第一列：封面 -->
+                    <Button Grid.Column="0" Classes="ghost-button"
+                            Command="{Binding ShowNowPlayingCommand}"
+                            Width="52" Height="52" Padding="0" VerticalAlignment="Center">
+                        <Border Width="52" Height="52" CornerRadius="4" ClipToBounds="True"
+                                Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
+                            <Panel>
+                                <Image Source="{Binding Cover}" Stretch="UniformToFill"
+                                       IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+                                <controls:AppIcon Kind="{x:Static ui:AppIconKind.MusicNote}" IconSize="24"
+                                                  HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                  IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+                                <Border Background="#66000000" IsVisible="{Binding IsLoading}">
+                                    <ProgressBar IsIndeterminate="True" Width="20" Height="20"
+                                                 HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </Panel>
+                        </Border>
+                    </Button>
+
+                    <!-- 第二列：歌曲信息（靠左） -->
+                    <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center"
+                                HorizontalAlignment="Left" MaxWidth="420">
+                        <Button Classes="ghost-button player-bar-link" Command="{Binding ShowNowPlayingCommand}"
+                                HorizontalAlignment="Left" HorizontalContentAlignment="Left" Padding="0">
+                            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="14"
+                                       TextTrimming="CharacterEllipsis"/>
+                        </Button>
+                        <StackPanel Orientation="Horizontal" Spacing="0" HorizontalAlignment="Left">
+                            <Button Classes="player-bar-link" Content="{Binding DisplayArtistName}"
+                                    Command="{Binding OpenArtistCommand}"
+                                    IsEnabled="{Binding CanOpenArtist}"/>
+                            <TextBlock Text=" · " Opacity="0.75" FontSize="12" VerticalAlignment="Center"/>
+                            <Button Classes="player-bar-link" Content="{Binding DisplayAlbumName}"
+                                    Command="{Binding OpenAlbumCommand}"
+                                    IsEnabled="{Binding CanOpenAlbum}"/>
+                        </StackPanel>
+                        <TextBlock Text="{Binding TechnicalInfoText}" Opacity="0.5" FontSize="11"
+                                   TextTrimming="CharacterEllipsis"/>
+                    </StackPanel>
+
+                    <!-- 第四列：音量、播放列表（靠右） -->
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="12"
+                                VerticalAlignment="Center" HorizontalAlignment="Right"
+                                Margin="0,0,16,0">
+                        <Slider Width="96" Minimum="0" Maximum="1" Value="{Binding Volume}"
+                                VerticalAlignment="Center" Margin="0,0,4,0"
+                                IsVisible="{Binding IsVolumePopupOpen}"/>
+                        <controls:IconButton x:Name="VolumeButton"
+                                             Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.Volume}"
+                                             IconSize="22"
+                                             Command="{Binding ToggleVolumePopupCommand}"
+                                             ToolTip.Tip="音量"/>
+                        <controls:IconButton x:Name="QueueButton"
+                                             Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.QueueList}"
+                                             IconSize="22"
+                                             Command="{Binding ToggleQueuePopupCommand}"
+                                             ToolTip.Tip="播放列表"/>
+
+                        <StackPanel Orientation="Vertical" Margin="24 ,0,0,0">
+                            <TextBlock Text="{Binding PositionText}" FontSize="11" Opacity="0.9" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding DurationText}" FontSize="11" Opacity="0.7" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <!-- 第三列：播放控制（相对整页横向居中） -->
+                <StackPanel Orientation="Horizontal" Spacing="6"
+                            VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <controls:IconButton Classes="icon-button-favorite player-bar-icon player-bar-favorite"
+                                         Icon="{x:Static ui:AppIconKind.Heart}"
+                                         IconSize="22"
+                                         IconFilled="{Binding IsFavorite}"
+                                         Command="{Binding ToggleFavoriteCommand}"
+                                         ToolTip.Tip="喜欢"/>
+                    <controls:IconButton Classes="icon-button player-bar-icon"
+                                         Icon="{x:Static ui:AppIconKind.Previous}"
+                                         IconSize="24"
+                                         Command="{Binding PreviousCommand}"
+                                         ToolTip.Tip="上一首"/>
+                    <controls:IconButton Classes="icon-button-accent player-bar-main"
+                                         Icon="{x:Static ui:AppIconKind.Play}"
+                                         AlternateIcon="{x:Static ui:AppIconKind.Pause}"
+                                         UseAlternateIcon="{Binding IsPlaying}"
+                                         IconSize="28"
+                                         Command="{Binding PlayPauseCommand}"
+                                         ToolTip.Tip="播放/暂停"/>
+                    <controls:IconButton Classes="icon-button player-bar-icon"
+                                         Icon="{x:Static ui:AppIconKind.Next}"
+                                         IconSize="24"
+                                         Command="{Binding NextCommand}"
+                                         ToolTip.Tip="下一首"/>
+                    <Panel Width="42" Height="42">
+                        <controls:IconButton Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.PlayOrder}"
+                                             IconSize="22"
+                                             Command="{Binding TogglePlayModeCommand}"
+                                             ToolTip.Tip="顺序播放"
+                                             IsVisible="{Binding IsSequentialMode}"/>
+                        <controls:IconButton Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.RepeatAll}"
+                                             IconSize="22"
+                                             Command="{Binding TogglePlayModeCommand}"
+                                             ToolTip.Tip="列表循环"
+                                             IsVisible="{Binding IsRepeatAllMode}"/>
+                        <controls:IconButton Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.RepeatOne}"
+                                             IconSize="22"
+                                             Command="{Binding TogglePlayModeCommand}"
+                                             ToolTip.Tip="单曲循环"
+                                             IsVisible="{Binding IsRepeatOneMode}"/>
+                        <controls:IconButton Classes="icon-button player-bar-icon"
+                                             Icon="{x:Static ui:AppIconKind.Shuffle}"
+                                             IconSize="22"
+                                             Command="{Binding TogglePlayModeCommand}"
+                                             ToolTip.Tip="随机播放"
+                                             IsVisible="{Binding IsShuffleMode}"/>
+                    </Panel>
+                </StackPanel>
+            </Grid>
         </Grid>
-    <Grid Grid.Row="1" ColumnDefinitions="Auto,Auto,*,Auto" ColumnSpacing="12">
-      <!-- 封面缩略图，点击打开全屏 -->
-      <Button Grid.Column="0" Command="{Binding ShowNowPlayingCommand}"
-              Width="48" Height="48" Padding="0" Background="Transparent">
-        <Border Width="48" Height="48" CornerRadius="4" ClipToBounds="True"
-                Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
-          <Panel>
-            <Image Source="{Binding Cover}" Stretch="UniformToFill"
-                   IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-            <TextBlock Text="♪" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"
-                       IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
-            <Border Background="#66000000" IsVisible="{Binding IsLoading}">
-              <ProgressBar IsIndeterminate="True" Width="20" Height="20"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Popup IsOpen="{Binding IsQueuePopupOpen}"
+               PlacementTarget="{Binding #QueueButton}"
+               Placement="Top" VerticalOffset="-8" HorizontalOffset="-220">
+            <Border Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}"
+                    BorderBrush="{DynamicResource SystemControlForegroundBaseMediumLowBrush}"
+                    BorderThickness="1" CornerRadius="8" Padding="8">
+                <StackPanel Spacing="8" MinWidth="280" MaxHeight="320">
+                    <TextBlock Text="播放列表" FontWeight="SemiBold" FontSize="13"/>
+                    <ListBox ItemsSource="{Binding QueueSongs}" MaxHeight="260">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate x:DataType="models:Song">
+                                <StackPanel Spacing="2" Margin="0,2">
+                                    <TextBlock Text="{Binding Title}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Text="{Binding Artist}" Opacity="0.65" FontSize="11" TextTrimming="CharacterEllipsis"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
             </Border>
-          </Panel>
-        </Border>
-      </Button>
-
-      <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="4" VerticalAlignment="Center">
-        <Button Content="⏮" Command="{Binding PreviousCommand}" ToolTip.Tip="上一首"/>
-        <Button Content="⏯" Command="{Binding PlayPauseCommand}" ToolTip.Tip="播放/暂停"/>
-        <Button Content="⏭" Command="{Binding NextCommand}" ToolTip.Tip="下一首"/>
-      </StackPanel>
-
-      <StackPanel Grid.Column="2" Spacing="2" VerticalAlignment="Center" Margin="0,0,8,0">
-        <Button Command="{Binding ShowNowPlayingCommand}" Background="Transparent"
-                HorizontalContentAlignment="Stretch" Padding="0">
-          <StackPanel Spacing="0">
-            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/>
-            <TextBlock Text="{Binding Subtitle}" Opacity="0.7" FontSize="11" TextTrimming="CharacterEllipsis"/>
-          </StackPanel>
-        </Button>
-       
-      </StackPanel>
-
-      <Button Grid.Column="3" Content="{Binding FavoriteIcon}" Command="{Binding ToggleFavoriteCommand}"
-              ToolTip.Tip="喜欢" FontSize="18" VerticalAlignment="Center"/>
-    </Grid>
-  </Grid>
+        </Popup>
+    </Panel>
 </UserControl>

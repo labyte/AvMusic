@@ -1,16 +1,23 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:AvMusic.ViewModels.Library"
+             xmlns:controls="using:AvMusic.Controls"
+             xmlns:ui="using:AvMusic.Ui"
              x:Class="AvMusic.Views.ArtistDetailView"
              x:DataType="vm:ArtistDetailViewModel">
   <Grid RowDefinitions="Auto,Auto,*">
     <TextBlock Grid.Row="0" Text="{Binding ErrorMessage}" Foreground="IndianRed" Margin="8,0"
                IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-    <Button Grid.Row="1" Content="播放全部" Command="{Binding PlayAllCommand}" Margin="8,8,8,4" HorizontalAlignment="Left"/>
+    <Button Grid.Row="1" Command="{Binding PlayAllCommand}" Margin="8,8,8,4" HorizontalAlignment="Left" Classes="accent">
+      <StackPanel Orientation="Horizontal" Spacing="8">
+        <controls:AppIcon Kind="{x:Static ui:AppIconKind.PlayCircle}" IconSize="18"/>
+        <TextBlock Text="播放全部" VerticalAlignment="Center"/>
+      </StackPanel>
+    </Button>
     <ListBox Grid.Row="2" ItemsSource="{Binding SongRows}" Margin="8">
       <ListBox.ItemTemplate>
         <DataTemplate x:DataType="vm:SongRowViewModel">
-          <Button Command="{Binding PlayCommand}" Background="Transparent"
+          <Button Command="{Binding PlayCommand}" Classes="ghost-button"
                   HorizontalContentAlignment="Stretch" Padding="8,6">
             <Grid ColumnDefinitions="*,Auto">
               <StackPanel Grid.Column="0" Spacing="2">

@@ -89,6 +89,9 @@ public sealed class SongAudioDto
 
     [JsonPropertyName("filesize")]
     public long Filesize { get; init; }
+
+    [JsonPropertyName("frequency")]
+    public int Frequency { get; init; }
 }
 
 public sealed class RatingDto

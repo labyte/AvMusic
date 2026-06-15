@@ -1,4 +1,5 @@
 using AvMusic.Core.Session;
+using Avalonia.Threading;
 using ReactiveUI;
 
 namespace AvMusic.ViewModels;
@@ -35,6 +36,17 @@ public class AppShellViewModel : ViewModelBase
         private set => this.RaiseAndSetIfChanged(ref _currentViewModel, value);
     }
 
-    private void OnSessionChanged(object? sender, EventArgs e) =>
-        CurrentViewModel = SessionState.IsAuthenticated ? MainViewModel : LoginViewModel;
+    private void OnSessionChanged(object? sender, EventArgs e)
+    {
+        // 登录/登出可能在后台线程完成，必须在 UI 线程切换页面并创建 View
+        var next = (ViewModelBase)(SessionState.IsAuthenticated ? MainViewModel : LoginViewModel);
+        if (Dispatcher.UIThread.CheckAccess())
+        {
+            CurrentViewModel = next;
+        }
+        else
+        {
+            Dispatcher.UIThread.Post(() => CurrentViewModel = next);
+        }
+    }
 }

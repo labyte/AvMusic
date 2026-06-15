@@ -1,12 +1,18 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:AvMusic.ViewModels"
+             xmlns:controls="using:AvMusic.Controls"
+             xmlns:ui="using:AvMusic.Ui"
              x:Class="AvMusic.Views.NowPlayingView"
              x:DataType="vm:PlayerViewModel">
   <Border Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}">
     <Grid RowDefinitions="Auto,*,Auto,Auto" Margin="24">
-      <Button Grid.Row="0" Content="✕ 关闭" Command="{Binding HideNowPlayingCommand}"
-              HorizontalAlignment="Right" Background="Transparent"/>
+      <controls:IconButton Grid.Row="0"
+                           Classes="text-button"
+                           Icon="{x:Static ui:AppIconKind.Close}"
+                           Command="{Binding HideNowPlayingCommand}"
+                           HorizontalAlignment="Right"
+                           ToolTip.Tip="关闭"/>
 
       <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20" MaxWidth="420">
         <Border Width="280" Height="280" CornerRadius="8" ClipToBounds="True" HorizontalAlignment="Center"
@@ -14,8 +20,9 @@
           <Panel>
             <Image Source="{Binding Cover}" Stretch="UniformToFill"
                    IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-            <TextBlock Text="♪" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"
-                       IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+            <controls:AppIcon Kind="{x:Static ui:AppIconKind.MusicNote}" IconSize="72"
+                              HorizontalAlignment="Center" VerticalAlignment="Center"
+                              IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
             <Border Background="#66000000" IsVisible="{Binding IsLoading}">
               <ProgressBar IsIndeterminate="True" Width="48" Height="48"
                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -41,15 +48,31 @@
       </StackPanel>
 
       <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="16" HorizontalAlignment="Center" Margin="0,16">
-        <Button Content="⏮" Command="{Binding PreviousCommand}" Width="48" Height="48" FontSize="18"/>
-        <Button Content="⏯" Command="{Binding PlayPauseCommand}" Width="64" Height="64" FontSize="24" Classes="accent"/>
-        <Button Content="⏭" Command="{Binding NextCommand}" Width="48" Height="48" FontSize="18"/>
-        <Button Content="{Binding FavoriteIcon}" Command="{Binding ToggleFavoriteCommand}"
-                Width="48" Height="48" FontSize="22" ToolTip.Tip="喜欢"/>
+        <controls:IconButton Icon="{x:Static ui:AppIconKind.Previous}"
+                             IconSize="22"
+                             Command="{Binding PreviousCommand}"/>
+        <controls:IconButton Classes="icon-button-accent"
+                             Icon="{x:Static ui:AppIconKind.Play}"
+                             AlternateIcon="{x:Static ui:AppIconKind.Pause}"
+                             UseAlternateIcon="{Binding IsPlaying}"
+                             IconSize="26"
+                             Command="{Binding PlayPauseCommand}"/>
+        <controls:IconButton Icon="{x:Static ui:AppIconKind.Next}"
+                             IconSize="22"
+                             Command="{Binding NextCommand}"/>
+        <controls:IconButton Classes="icon-button-favorite"
+                             Icon="{x:Static ui:AppIconKind.Heart}"
+                             IconFilled="{Binding IsFavorite}"
+                             IconSize="22"
+                             Command="{Binding ToggleFavoriteCommand}"
+                             ToolTip.Tip="喜欢"/>
       </StackPanel>
 
       <StackPanel Grid.Row="3" Spacing="4" MaxWidth="320" HorizontalAlignment="Center" Margin="0,8,0,0">
-        <TextBlock Text="音量" Opacity="0.7" FontSize="12"/>
+        <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center">
+          <controls:AppIcon Kind="{x:Static ui:AppIconKind.Volume}" IconSize="18" Opacity="0.7"/>
+          <TextBlock Text="音量" Opacity="0.7" FontSize="12" VerticalAlignment="Center"/>
+        </StackPanel>
         <Slider Minimum="0" Maximum="1" Value="{Binding Volume}" TickFrequency="0.1"/>
       </StackPanel>
     </Grid>

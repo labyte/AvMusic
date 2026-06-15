@@ -1,0 +1,161 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- 通用图标按钮 -->
+  <Style Selector="Button.icon-button">
+    <Setter Property="Width" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="Height" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="MinWidth" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="MinHeight" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="18"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+  </Style>
+
+  <Style Selector="Button.icon-button /template/ ContentPresenter">
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="VerticalAlignment" Value="Stretch"/>
+  </Style>
+
+  <Style Selector="Button.icon-button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#22FFFFFF"/>
+  </Style>
+
+  <Style Selector="Button.icon-button:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="#33FFFFFF"/>
+  </Style>
+
+  <!-- 播放主按钮：红色圆形 -->
+  <Style Selector="Button.icon-button-accent">
+    <Setter Property="Width" Value="{StaticResource PlayerMainButtonSize}"/>
+    <Setter Property="Height" Value="{StaticResource PlayerMainButtonSize}"/>
+    <Setter Property="MinWidth" Value="{StaticResource PlayerMainButtonSize}"/>
+    <Setter Property="MinHeight" Value="{StaticResource PlayerMainButtonSize}"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="Background" Value="{StaticResource AvAccentBrush}"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="22"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+  </Style>
+
+  <Style Selector="Button.icon-button-accent:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#FF4A4A"/>
+  </Style>
+
+  <Style Selector="Button.icon-button-accent:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="#C62828"/>
+  </Style>
+
+  <!-- 收藏按钮激活态 -->
+  <Style Selector="Button.icon-button-favorite">
+    <Setter Property="Width" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="Height" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="MinWidth" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="MinHeight" Value="{StaticResource IconButtonSize}"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="18"/>
+    <Setter Property="Foreground" Value="{StaticResource AvAccentBrush}"/>
+  </Style>
+
+  <!-- 幽灵按钮：列表行等 -->
+  <Style Selector="Button.ghost-button">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+  </Style>
+
+  <Style Selector="Button.ghost-button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#18FFFFFF"/>
+  </Style>
+
+  <!-- 文字按钮 -->
+  <Style Selector="Button.text-button">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="8,4"/>
+  </Style>
+
+  <Style Selector="Button.text-button:pointerover">
+    <Setter Property="Foreground" Value="{StaticResource AvAccentBrush}"/>
+  </Style>
+
+  <!-- 底部播放栏：更大按钮 + 更明显悬停 -->
+  <Style Selector="Button.player-bar-icon">
+    <Setter Property="Width" Value="{StaticResource PlayerBarIconButtonSize}"/>
+    <Setter Property="Height" Value="{StaticResource PlayerBarIconButtonSize}"/>
+    <Setter Property="MinWidth" Value="{StaticResource PlayerBarIconButtonSize}"/>
+    <Setter Property="MinHeight" Value="{StaticResource PlayerBarIconButtonSize}"/>
+    <Setter Property="CornerRadius" Value="21"/>
+    <Setter Property="RenderTransformOrigin" Value="50%,50%"/>
+    <Setter Property="Transitions">
+      <Transitions>
+        <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.15"/>
+      </Transitions>
+    </Setter>
+  </Style>
+
+  <Style Selector="Button.player-bar-icon:pointerover">
+    <Setter Property="RenderTransform" Value="scale(1.08)"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-icon:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#40FFFFFF"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-icon:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="#55FFFFFF"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-main">
+    <Setter Property="Width" Value="{StaticResource PlayerBarMainButtonSize}"/>
+    <Setter Property="Height" Value="{StaticResource PlayerBarMainButtonSize}"/>
+    <Setter Property="MinWidth" Value="{StaticResource PlayerBarMainButtonSize}"/>
+    <Setter Property="MinHeight" Value="{StaticResource PlayerBarMainButtonSize}"/>
+    <Setter Property="CornerRadius" Value="26"/>
+    <Setter Property="RenderTransformOrigin" Value="50%,50%"/>
+    <Setter Property="Transitions">
+      <Transitions>
+        <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.15"/>
+      </Transitions>
+    </Setter>
+  </Style>
+
+  <Style Selector="Button.player-bar-main:pointerover">
+    <Setter Property="RenderTransform" Value="scale(1.06)"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-main:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#FF5252"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-favorite:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#30E83C3C"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-favorite:pointerover">
+    <Setter Property="RenderTransform" Value="scale(1.08)"/>
+  </Style>
+
+  <!-- 播放栏歌手/专辑链接 -->
+  <Style Selector="Button.player-bar-link">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="MinHeight" Value="0"/>
+    <Setter Property="FontSize" Value="12"/>
+    <Setter Property="Opacity" Value="0.75"/>
+  </Style>
+
+  <Style Selector="Button.player-bar-link:pointerover">
+    <Setter Property="Foreground" Value="{StaticResource AvAccentBrush}"/>
+    <Setter Property="Opacity" Value="1"/>
+  </Style>
+
+</Styles>

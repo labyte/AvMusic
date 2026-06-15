@@ -19,7 +19,11 @@ internal static class EntityMapper
             AlbumArtist = tag?.AlbumArtist,
             DurationSeconds = audio?.Duration ?? 0,
             Rating = (int)(dto.Additional?.SongRating?.Rating ?? 0),
-            Codec = audio?.Codec
+            Codec = audio?.Codec,
+            Container = audio?.Container,
+            Bitrate = audio?.Bitrate ?? 0,
+            Frequency = audio?.Frequency ?? 0,
+            FileSize = audio?.Filesize ?? 0
         };
     }
 

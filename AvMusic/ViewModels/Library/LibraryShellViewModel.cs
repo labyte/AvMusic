@@ -9,6 +9,7 @@ public class LibraryShellViewModel : ViewModelBase
     private readonly Stack<ViewModelBase> _backStack = new();
     private ViewModelBase _currentPage;
     private bool _canGoBack;
+    private string _activeNavKey = "songs";
 
     public LibraryShellViewModel(
         LibraryNavigationService navigation,
@@ -66,6 +67,13 @@ public class LibraryShellViewModel : ViewModelBase
         private set => this.RaiseAndSetIfChanged(ref _canGoBack, value);
     }
 
+    /// <summary>侧栏当前选中的导航项 key。</summary>
+    public string ActiveNavKey
+    {
+        get => _activeNavKey;
+        private set => this.RaiseAndSetIfChanged(ref _activeNavKey, value);
+    }
+
     public ReactiveCommand<string, Unit> NavigateCommand { get; }
 
     public ReactiveCommand<Unit, Unit> GoBackCommand { get; }
@@ -90,6 +98,7 @@ public class LibraryShellViewModel : ViewModelBase
     {
         _backStack.Clear();
         CanGoBack = false;
+        ActiveNavKey = key;
 
         CurrentPage = key switch
         {

@@ -6,6 +6,7 @@ using AvMusic.Core.Playback;
 using AvMusic.Services;
 using AvMusic.Synology;
 using AvMusic.Synology.Services;
+using AvMusic.ViewModels.Library;
 using ReactiveUI;
 
 namespace AvMusic.ViewModels;
@@ -17,8 +18,13 @@ public class PlayerViewModel : ViewModelBase
 {
     private readonly ICoverCacheService _coverCache;
     private readonly IAudioStationService _audioStation;
+    private readonly ILibraryNavigator _navigator;
+    private readonly IAuthService _authService;
     private string _title = "未播放";
     private string _subtitle = string.Empty;
+    private string _artistName = string.Empty;
+    private string _albumName = string.Empty;
+    private string _technicalInfoText = string.Empty;
     private bool _isPlaying;
     private bool _isLoading;
     private double _position;
@@ -30,17 +36,26 @@ public class PlayerViewModel : ViewModelBase
     private Bitmap? _cover;
     private Song? _currentSong;
     private int _coverLoadGeneration;
+    private PlaybackMode _mode = PlaybackMode.Sequential;
+    private bool _isVolumePopupOpen;
+    private bool _isQueuePopupOpen;
 
     public PlayerViewModel(
         IMusicPlayerService player,
         ICoverCacheService coverCache,
-        IAudioStationService audioStation)
+        IAudioStationService audioStation,
+        ILibraryNavigator navigator,
+        IAuthService authService)
     {
         Player = player;
         _coverCache = coverCache;
         _audioStation = audioStation;
+        _navigator = navigator;
+        _authService = authService;
 
         Player.Engine.StateChanged += OnStateChanged;
+        Player.Queue.QueueChanged += OnQueueChanged;
+        _mode = Player.Mode;
         UpdateFromState(Player.Engine.State);
         _ = SetVolumeAsync(Volume);
 
@@ -53,6 +68,11 @@ public class PlayerViewModel : ViewModelBase
         ToggleFavoriteCommand = ReactiveCommand.CreateFromTask(ToggleFavoriteAsync, hasTrack);
         ShowNowPlayingCommand = ReactiveCommand.Create(() => { IsNowPlayingVisible = true; }, hasTrack);
         HideNowPlayingCommand = ReactiveCommand.Create(() => { IsNowPlayingVisible = false; });
+        TogglePlayModeCommand = ReactiveCommand.Create(TogglePlayMode);
+        ToggleVolumePopupCommand = ReactiveCommand.Create(ToggleVolumePopup);
+        ToggleQueuePopupCommand = ReactiveCommand.Create(ToggleQueuePopup);
+        OpenArtistCommand = ReactiveCommand.Create(OpenArtist, this.WhenAnyValue(x => x.CanOpenArtist));
+        OpenAlbumCommand = ReactiveCommand.Create(OpenAlbum, this.WhenAnyValue(x => x.CanOpenAlbum));
 
         this.WhenAnyValue(x => x.Volume)
             .Throttle(TimeSpan.FromMilliseconds(150))
@@ -83,6 +103,86 @@ public class PlayerViewModel : ViewModelBase
         get => _subtitle;
         private set => this.RaiseAndSetIfChanged(ref _subtitle, value);
     }
+
+    /// <summary>当前歌曲歌手名。</summary>
+    public string ArtistName
+    {
+        get => _artistName;
+        private set
+        {
+            this.RaiseAndSetIfChanged(ref _artistName, value);
+            this.RaisePropertyChanged(nameof(CanOpenArtist));
+        }
+    }
+
+    /// <summary>当前歌曲专辑名。</summary>
+    public string AlbumName
+    {
+        get => _albumName;
+        private set
+        {
+            this.RaiseAndSetIfChanged(ref _albumName, value);
+            this.RaisePropertyChanged(nameof(CanOpenAlbum));
+        }
+    }
+
+    public bool CanOpenArtist => !string.IsNullOrWhiteSpace(ArtistName);
+
+    public bool CanOpenAlbum => !string.IsNullOrWhiteSpace(AlbumName);
+
+    /// <summary>歌手 · 专辑（全屏播放页等复用）。</summary>
+    public string ArtistAlbumText =>
+        string.IsNullOrWhiteSpace(ArtistName) && string.IsNullOrWhiteSpace(AlbumName)
+            ? string.Empty
+            : $"{DisplayArtistName} · {DisplayAlbumName}";
+
+    public string DisplayArtistName =>
+        string.IsNullOrWhiteSpace(ArtistName) ? "未知歌手" : ArtistName;
+
+    public string DisplayAlbumName =>
+        string.IsNullOrWhiteSpace(AlbumName) ? "未知专辑" : AlbumName;
+
+    /// <summary>大小 · 采样率 · 比特率 · 格式（播放栏第三行）。</summary>
+    public string TechnicalInfoText
+    {
+        get => _technicalInfoText;
+        private set => this.RaiseAndSetIfChanged(ref _technicalInfoText, value);
+    }
+
+    public PlaybackMode Mode
+    {
+        get => _mode;
+        private set
+        {
+            this.RaiseAndSetIfChanged(ref _mode, value);
+            this.RaisePropertyChanged(nameof(IsSequentialMode));
+            this.RaisePropertyChanged(nameof(IsRepeatAllMode));
+            this.RaisePropertyChanged(nameof(IsRepeatOneMode));
+            this.RaisePropertyChanged(nameof(IsShuffleMode));
+        }
+    }
+
+    public bool IsSequentialMode => Mode == PlaybackMode.Sequential;
+
+    public bool IsRepeatAllMode => Mode == PlaybackMode.RepeatAll;
+
+    public bool IsRepeatOneMode => Mode == PlaybackMode.RepeatOne;
+
+    public bool IsShuffleMode => Mode == PlaybackMode.Shuffle;
+
+    public bool IsVolumePopupOpen
+    {
+        get => _isVolumePopupOpen;
+        set => this.RaiseAndSetIfChanged(ref _isVolumePopupOpen, value);
+    }
+
+    public bool IsQueuePopupOpen
+    {
+        get => _isQueuePopupOpen;
+        set => this.RaiseAndSetIfChanged(ref _isQueuePopupOpen, value);
+    }
+
+    public IReadOnlyList<Song> QueueSongs => Player.Queue.Songs;
 
     public bool IsPlaying
     {
@@ -159,13 +259,10 @@ public class PlayerViewModel : ViewModelBase
         {
             this.RaiseAndSetIfChanged(ref _rating, value);
             this.RaisePropertyChanged(nameof(IsFavorite));
-            this.RaisePropertyChanged(nameof(FavoriteIcon));
         }
     }
 
     public bool IsFavorite => Rating >= 5;
-
-    public string FavoriteIcon => IsFavorite ? "★" : "☆";
 
     public Bitmap? Cover
     {
@@ -187,7 +284,23 @@ public class PlayerViewModel : ViewModelBase
 
     public ReactiveCommand<Unit, Unit> HideNowPlayingCommand { get; }
 
+    public ReactiveCommand<Unit, Unit> TogglePlayModeCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> ToggleVolumePopupCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> ToggleQueuePopupCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> OpenArtistCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> OpenAlbumCommand { get; }
+
     public void NotifyPositionTextChanged() => this.RaisePropertyChanged(nameof(PositionText));
+
+    private void OnQueueChanged(object? sender, EventArgs e)
+    {
+        Avalonia.Threading.Dispatcher.UIThread.Post(() =>
+            this.RaisePropertyChanged(nameof(QueueSongs)));
+    }
 
     private void OnStateChanged(object? sender, PlaybackState state)
     {
@@ -216,6 +329,8 @@ public class PlayerViewModel : ViewModelBase
         {
             Subtitle = song is null ? string.Empty : $"{song.Artist} · {song.Album}";
         }
+
+        UpdateSongMetadata(song);
 
         IsPlaying = !IsLoading && (state.Status == PlaybackStatus.Playing || Player.Engine.IsPlaying);
 
@@ -331,6 +446,139 @@ public class PlayerViewModel : ViewModelBase
 
     private async Task SetVolumeAsync(double volume) =>
         await Player.SetVolumeAsync(volume).ConfigureAwait(false);
+
+    private void TogglePlayMode()
+    {
+        Player.Mode = Mode switch
+        {
+            PlaybackMode.Sequential => PlaybackMode.RepeatAll,
+            PlaybackMode.RepeatAll => PlaybackMode.RepeatOne,
+            PlaybackMode.RepeatOne => PlaybackMode.Shuffle,
+            _ => PlaybackMode.Sequential
+        };
+        Mode = Player.Mode;
+    }
+
+    private void ToggleVolumePopup()
+    {
+        IsVolumePopupOpen = !IsVolumePopupOpen;
+        if (IsVolumePopupOpen)
+        {
+            IsQueuePopupOpen = false;
+        }
+    }
+
+    private void ToggleQueuePopup()
+    {
+        IsQueuePopupOpen = !IsQueuePopupOpen;
+        if (IsQueuePopupOpen)
+        {
+            IsVolumePopupOpen = false;
+        }
+    }
+
+    private void UpdateSongMetadata(Song? song)
+    {
+        if (song is null)
+        {
+            ArtistName = string.Empty;
+            AlbumName = string.Empty;
+            TechnicalInfoText = string.Empty;
+            this.RaisePropertyChanged(nameof(ArtistAlbumText));
+            return;
+        }
+
+        ArtistName = song.Artist ?? string.Empty;
+        AlbumName = song.Album ?? string.Empty;
+        TechnicalInfoText = FormatTechnicalInfo(song);
+        this.RaisePropertyChanged(nameof(ArtistAlbumText));
+        this.RaisePropertyChanged(nameof(DisplayArtistName));
+        this.RaisePropertyChanged(nameof(DisplayAlbumName));
+    }
+
+    private void OpenArtist()
+    {
+        if (!CanOpenArtist)
+        {
+            return;
+        }
+
+        var detail = new ArtistDetailViewModel(
+            new Artist { Name = ArtistName },
+            _audioStation,
+            _authService,
+            Player);
+        _navigator.NavigateTo(detail);
+    }
+
+    private void OpenAlbum()
+    {
+        if (!CanOpenAlbum || CurrentSong is null)
+        {
+            return;
+        }
+
+        var detail = new AlbumDetailViewModel(
+            new Album
+            {
+                Name = AlbumName,
+                AlbumArtist = CurrentSong.AlbumArtist ?? CurrentSong.Artist,
+                DisplayArtist = CurrentSong.Artist
+            },
+            _audioStation,
+            _authService,
+            Player);
+        _navigator.NavigateTo(detail);
+    }
+
+    private static string FormatTechnicalInfo(Song song)
+    {
+        var parts = new List<string>(4);
+        if (song.FileSize > 0)
+        {
+            parts.Add(FormatFileSize(song.FileSize));
+        }
+
+        if (song.Frequency > 0)
+        {
+            parts.Add(song.Frequency % 1000 == 0
+                ? $"{song.Frequency / 1000} kHz"
+                : $"{song.Frequency / 1000.0:0.#} kHz");
+        }
+
+        if (song.Bitrate > 0)
+        {
+            parts.Add($"{song.Bitrate} kbps");
+        }
+
+        var format = !string.IsNullOrWhiteSpace(song.Container) ? song.Container : song.Codec;
+        if (!string.IsNullOrWhiteSpace(format))
+        {
+            parts.Add(format.ToUpperInvariant());
+        }
+
+        return parts.Count == 0 ? string.Empty : string.Join(" · ", parts);
+    }
+
+    private static string FormatFileSize(long bytes)
+    {
+        if (bytes >= 1_073_741_824)
+        {
+            return $"{bytes / 1_073_741_824.0:0.##} GB";
+        }
+
+        if (bytes >= 1_048_576)
+        {
+            return $"{bytes / 1_048_576.0:0.##} MB";
+        }
+
+        if (bytes >= 1024)
+        {
+            return $"{bytes / 1024.0:0.#} KB";
+        }
+
+        return $"{bytes} B";
+    }
 
     private static string FormatTime(double seconds)
     {

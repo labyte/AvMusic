@@ -9,7 +9,7 @@
     <ListBox Grid.Row="1" ItemsSource="{Binding SongRows}" Margin="8">
       <ListBox.ItemTemplate>
         <DataTemplate x:DataType="vm:SongRowViewModel">
-          <Button Command="{Binding PlayCommand}" Background="Transparent"
+          <Button Command="{Binding PlayCommand}" Classes="ghost-button"
                   HorizontalContentAlignment="Stretch" Padding="8,6">
             <Grid ColumnDefinitions="*,Auto">
               <StackPanel Grid.Column="0" Spacing="2">

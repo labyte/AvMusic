@@ -1,0 +1,26 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Style Selector="Button.nav-button">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="10,8"/>
+    <Setter Property="Margin" Value="4,0"/>
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    <Setter Property="CornerRadius" Value="6"/>
+  </Style>
+
+  <Style Selector="Button.nav-button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#18FFFFFF"/>
+  </Style>
+
+  <Style Selector="Button.nav-button.selected /template/ ContentPresenter">
+    <Setter Property="Background" Value="#22FFFFFF"/>
+  </Style>
+
+  <Style Selector="Button.nav-button.selected">
+    <Setter Property="FontWeight" Value="SemiBold"/>
+  </Style>
+
+</Styles>

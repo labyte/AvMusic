@@ -22,4 +22,14 @@ public sealed class Song
     public string? Path { get; init; }
 
     public string? Codec { get; init; }
+
+    /// <summary>容器格式，如 flac / mp3。</summary>
+    public string? Container { get; init; }
+
+    public int Bitrate { get; init; }
+
+    /// <summary>采样率（Hz）。</summary>
+    public int Frequency { get; init; }
+
+    public long FileSize { get; init; }
 }
