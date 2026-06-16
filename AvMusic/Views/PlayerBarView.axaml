@@ -1,7 +1,6 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:AvMusic.ViewModels"
-             xmlns:models="using:AvMusic.Core.Models"
              xmlns:controls="using:AvMusic.Controls"
              xmlns:ui="using:AvMusic.Ui"
              x:Class="AvMusic.Views.PlayerBarView"
@@ -75,7 +74,7 @@
                                              Classes="icon-button player-bar-icon"
                                              Icon="{x:Static ui:AppIconKind.QueueList}"
                                              IconSize="22"
-                                             Command="{Binding ToggleQueuePopupCommand}"
+                                             Command="{Binding ToggleQueueDrawerCommand}"
                                              ToolTip.Tip="播放列表"/>
 
                         <StackPanel Orientation="Vertical" Margin="24 ,0,0,0">
@@ -140,27 +139,5 @@
                 </StackPanel>
             </Grid>
         </Grid>
-
-        <Popup IsOpen="{Binding IsQueuePopupOpen}"
-               PlacementTarget="{Binding #QueueButton}"
-               Placement="Top" VerticalOffset="-8" HorizontalOffset="-220">
-            <Border Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}"
-                    BorderBrush="{DynamicResource SystemControlForegroundBaseMediumLowBrush}"
-                    BorderThickness="1" CornerRadius="8" Padding="8">
-                <StackPanel Spacing="8" MinWidth="280" MaxHeight="320">
-                    <TextBlock Text="播放列表" FontWeight="SemiBold" FontSize="13"/>
-                    <ListBox ItemsSource="{Binding QueueSongs}" MaxHeight="260">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate x:DataType="models:Song">
-                                <StackPanel Spacing="2" Margin="0,2">
-                                    <TextBlock Text="{Binding Title}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/>
-                                    <TextBlock Text="{Binding Artist}" Opacity="0.65" FontSize="11" TextTrimming="CharacterEllipsis"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </StackPanel>
-            </Border>
-        </Popup>
     </Panel>
 </UserControl>

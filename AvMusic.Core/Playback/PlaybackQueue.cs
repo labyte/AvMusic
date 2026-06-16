@@ -64,6 +64,44 @@ public sealed class PlaybackQueue : IPlaybackQueue
         QueueChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    public void RemoveAt(int index)
+    {
+        if (index < 0 || index >= _songs.Count)
+        {
+            return;
+        }
+
+        var wasCurrent = index == CurrentIndex;
+        _songs.RemoveAt(index);
+
+        if (_songs.Count == 0)
+        {
+            CurrentIndex = -1;
+        }
+        else if (index < CurrentIndex)
+        {
+            CurrentIndex--;
+        }
+        else if (wasCurrent && CurrentIndex >= _songs.Count)
+        {
+            CurrentIndex = _songs.Count - 1;
+        }
+
+        QueueChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public bool SetCurrentIndex(int index)
+    {
+        if (index < 0 || index >= _songs.Count)
+        {
+            return false;
+        }
+
+        CurrentIndex = index;
+        QueueChanged?.Invoke(this, EventArgs.Empty);
+        return true;
+    }
+
     public Song? MoveNext()
     {
         if (_songs.Count == 0)

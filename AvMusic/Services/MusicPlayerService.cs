@@ -78,8 +78,43 @@ public sealed class MusicPlayerService : IMusicPlayerService
         return Engine.StopAsync(CancellationToken.None);
     }
 
-    public Task PlayNextAsync(CancellationToken cancellationToken = default) =>
-        RunPlaySessionAsync(LoadAndPlayCurrentAsync);
+    public Task PlayNextAsync(CancellationToken cancellationToken = default)
+    {
+        Queue.MoveNext();
+        return RunPlaySessionAsync(LoadAndPlayCurrentAsync);
+    }
+
+    public Task PlayQueueItemAsync(int index, CancellationToken cancellationToken = default)
+    {
+        if (!Queue.SetCurrentIndex(index))
+        {
+            return Task.CompletedTask;
+        }
+
+        return RunPlaySessionAsync(LoadAndPlayCurrentAsync);
+    }
+
+    public async Task RemoveQueueItemAsync(int index, CancellationToken cancellationToken = default)
+    {
+        if (index < 0 || index >= Queue.Songs.Count)
+        {
+            return;
+        }
+
+        var wasCurrent = Queue.CurrentIndex == index;
+        Queue.RemoveAt(index);
+
+        if (Queue.Songs.Count == 0)
+        {
+            await StopAsync(cancellationToken).ConfigureAwait(true);
+            return;
+        }
+
+        if (wasCurrent)
+        {
+            await RunPlaySessionAsync(LoadAndPlayCurrentAsync).ConfigureAwait(true);
+        }
+    }
 
     public async Task PlayPreviousAsync(CancellationToken cancellationToken = default)
     {

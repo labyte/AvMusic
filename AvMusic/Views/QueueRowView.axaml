@@ -1,0 +1,136 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels"
+             xmlns:controls="using:AvMusic.Controls"
+             xmlns:ui="using:AvMusic.Ui"
+             xmlns:views="using:AvMusic.Views"
+             x:Class="AvMusic.Views.QueueRowView"
+             x:DataType="vm:QueueRowViewModel">
+  <Panel>
+    <Border x:Name="RowBorder"
+            Classes="queue-row"
+            Classes.queue-row-playing="{Binding IsCurrentPlaying}"
+            Padding="4,0"
+            Height="64">
+      <Grid ColumnDefinitions="Auto,*,Auto">
+        <Panel Grid.Column="0" Width="48" Height="48" VerticalAlignment="Center">
+          <Border Width="48"
+                  Height="48"
+                  CornerRadius="4"
+                  ClipToBounds="True"
+                  Background="#12000000">
+            <Panel>
+              <Image Source="{Binding Cover}"
+                     Stretch="UniformToFill"
+                     IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.MusicNote}"
+                                IconSize="20"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+              <controls:PlayingIndicator Classes="queue-row-indicator"
+                                         HorizontalAlignment="Center"
+                                         VerticalAlignment="Center"/>
+              <Border Classes="queue-cover-play-overlay"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      CornerRadius="4">
+                <controls:IconButton Classes="icon-button queue-cover-play"
+                                     Icon="{x:Static ui:AppIconKind.Play}"
+                                     IconSize="22"
+                                     Foreground="White"
+                                     Command="{Binding PlayCommand}"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Center"
+                                     ToolTip.Tip="播放"/>
+              </Border>
+            </Panel>
+          </Border>
+        </Panel>
+
+        <StackPanel Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Margin="12,0,8,0"
+                    Spacing="4">
+          <TextBlock Text="{Binding Title}"
+                     FontSize="14"
+                     FontWeight="Medium"
+                     TextTrimming="CharacterEllipsis"/>
+          <TextBlock Text="{Binding ArtistName}"
+                     FontSize="12"
+                     Opacity="0.5"
+                     TextTrimming="CharacterEllipsis"/>
+        </StackPanel>
+
+        <Panel Grid.Column="2" VerticalAlignment="Center" MinWidth="96">
+          <TextBlock Classes="queue-row-duration"
+                     Text="{Binding DurationText}"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Center"
+                     Opacity="0.45"
+                     FontSize="13"
+                     Margin="0,0,8,0"/>
+          <StackPanel Classes="queue-row-actions"
+                      Orientation="Horizontal"
+                      Spacing="4"
+                      Margin="0,0,8,0"
+                      HorizontalAlignment="Right"
+                      VerticalAlignment="Center">
+            <controls:IconButton Classes="icon-button queue-row-action"
+                                 Icon="{x:Static ui:AppIconKind.Heart}"
+                                 IconSize="18"
+                                 IconFilled="{Binding IsFavorite}"
+                                 Command="{Binding ToggleFavoriteCommand}"
+                                 ToolTip.Tip="喜欢"/>
+            <controls:IconButton Classes="icon-button queue-row-action"
+                                 Icon="{x:Static ui:AppIconKind.PlaylistAdd}"
+                                 IconSize="18"
+                                 Command="{Binding MenuFavoriteCommand}"
+                                 ToolTip.Tip="收藏"/>
+            <controls:IconButton x:Name="MoreButton"
+                                 Classes="icon-button queue-row-action"
+                                 Icon="{x:Static ui:AppIconKind.MoreHorizontal}"
+                                 IconSize="18"
+                                 Command="{Binding ToggleMenuCommand}"
+                                 ToolTip.Tip="更多"/>
+          </StackPanel>
+        </Panel>
+      </Grid>
+    </Border>
+
+    <Popup IsOpen="{Binding IsMenuOpen, Mode=TwoWay}"
+           IsLightDismissEnabled="True"
+           PlacementTarget="{Binding #MoreButton}"
+           Placement="BottomEdgeAlignedRight"
+           VerticalOffset="4"
+           HorizontalOffset="-8">
+      <Border Background="White"
+              BorderBrush="#22000000"
+              BorderThickness="1"
+              CornerRadius="8"
+              Padding="4"
+              BoxShadow="0 4 16 0 #22000000">
+        <StackPanel Spacing="2" MinWidth="180">
+          <Button Classes="queue-menu-item" Command="{Binding MenuPlayCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Play}" IconSize="18"/>
+              <TextBlock Text="播放" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="queue-menu-item" Command="{Binding MenuFavoriteCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.PlaylistAdd}" IconSize="18"/>
+              <TextBlock Text="收藏" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="queue-menu-item" Command="{Binding MenuRemoveCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Trash}" IconSize="18"/>
+              <TextBlock Text="从列表删除" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+        </StackPanel>
+      </Border>
+    </Popup>
+  </Panel>
+</UserControl>

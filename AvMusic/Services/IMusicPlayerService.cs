@@ -33,6 +33,12 @@ public interface IMusicPlayerService
 
     Task PlayPreviousAsync(CancellationToken cancellationToken = default);
 
+    /// <summary>从队列指定位置开始播放。</summary>
+    Task PlayQueueItemAsync(int index, CancellationToken cancellationToken = default);
+
+    /// <summary>从队列移除指定位置；若移除正在播放的曲目则播放新的当前项。</summary>
+    Task RemoveQueueItemAsync(int index, CancellationToken cancellationToken = default);
+
     Task SeekAsync(TimeSpan position, CancellationToken cancellationToken = default);
 
     Task SetVolumeAsync(double volume, CancellationToken cancellationToken = default);

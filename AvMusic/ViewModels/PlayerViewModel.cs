@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Reactive;
 using System.Reactive.Linq;
 using Avalonia.Media.Imaging;
@@ -38,7 +39,8 @@ public class PlayerViewModel : ViewModelBase
     private int _coverLoadGeneration;
     private PlaybackMode _mode = PlaybackMode.Sequential;
     private bool _isVolumePopupOpen;
-    private bool _isQueuePopupOpen;
+    private bool _isQueueDrawerOpen;
+    private QueueRowViewModel? _openMenuRow;
 
     public PlayerViewModel(
         IMusicPlayerService player,
@@ -70,9 +72,15 @@ public class PlayerViewModel : ViewModelBase
         HideNowPlayingCommand = ReactiveCommand.Create(() => { IsNowPlayingVisible = false; });
         TogglePlayModeCommand = ReactiveCommand.Create(TogglePlayMode);
         ToggleVolumePopupCommand = ReactiveCommand.Create(ToggleVolumePopup);
-        ToggleQueuePopupCommand = ReactiveCommand.Create(ToggleQueuePopup);
+        ToggleQueueDrawerCommand = ReactiveCommand.Create(ToggleQueueDrawer);
+        CloseQueueDrawerCommand = ReactiveCommand.Create(CloseQueueDrawer);
+        ClearQueueCommand = ReactiveCommand.CreateFromTask(ClearQueueAsync);
+        FavoriteAllQueueCommand = ReactiveCommand.CreateFromTask(FavoriteAllQueueAsync);
         OpenArtistCommand = ReactiveCommand.Create(OpenArtist, this.WhenAnyValue(x => x.CanOpenArtist));
         OpenAlbumCommand = ReactiveCommand.Create(OpenAlbum, this.WhenAnyValue(x => x.CanOpenAlbum));
+
+        QueueRows.Clear();
+        RefreshQueueRows();
 
         this.WhenAnyValue(x => x.Volume)
             .Throttle(TimeSpan.FromMilliseconds(150))
@@ -176,11 +184,17 @@ public class PlayerViewModel : ViewModelBase
         set => this.RaiseAndSetIfChanged(ref _isVolumePopupOpen, value);
     }
 
-    public bool IsQueuePopupOpen
+    public bool IsQueueDrawerOpen
     {
-        get => _isQueuePopupOpen;
-        set => this.RaiseAndSetIfChanged(ref _isQueuePopupOpen, value);
+        get => _isQueueDrawerOpen;
+        set => this.RaiseAndSetIfChanged(ref _isQueueDrawerOpen, value);
     }
+
+    public ObservableCollection<QueueRowViewModel> QueueRows { get; } = [];
+
+    public int QueueCount => Player.Queue.Songs.Count;
+
+    public string QueueCountText => QueueCount.ToString();
 
     public IReadOnlyList<Song> QueueSongs => Player.Queue.Songs;
 
@@ -288,7 +302,13 @@ public class PlayerViewModel : ViewModelBase
 
     public ReactiveCommand<Unit, Unit> ToggleVolumePopupCommand { get; }
 
-    public ReactiveCommand<Unit, Unit> ToggleQueuePopupCommand { get; }
+    public ReactiveCommand<Unit, Unit> ToggleQueueDrawerCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> CloseQueueDrawerCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> ClearQueueCommand { get; }
+
+    public ReactiveCommand<Unit, Unit> FavoriteAllQueueCommand { get; }
 
     public ReactiveCommand<Unit, Unit> OpenArtistCommand { get; }
 
@@ -296,10 +316,137 @@ public class PlayerViewModel : ViewModelBase
 
     public void NotifyPositionTextChanged() => this.RaisePropertyChanged(nameof(PositionText));
 
+    public Task PlayQueueItemAsync(int index) => Player.PlayQueueItemAsync(index);
+
+    public Task RemoveQueueItemAsync(int index) => Player.RemoveQueueItemAsync(index);
+
+    public Task<Bitmap?> GetCoverAsync(string songId) => _coverCache.GetCoverAsync(songId);
+
+    /// <summary>切换收藏并返回新评级。</summary>
+    public async Task<int> ToggleSongFavoriteAsync(Song song, bool isFavorite)
+    {
+        var newRating = isFavorite ? 0 : 5;
+        try
+        {
+            await _audioStation.SetSongRatingAsync(song.Id, newRating).ConfigureAwait(true);
+            if (CurrentSong?.Id == song.Id)
+            {
+                Rating = newRating;
+            }
+
+            foreach (var row in QueueRows)
+            {
+                if (row.Song.Id == song.Id)
+                {
+                    row.UpdateRating(newRating);
+                }
+            }
+        }
+        catch (SynologyApiException)
+        {
+            return song.Rating;
+        }
+
+        return newRating;
+    }
+
     private void OnQueueChanged(object? sender, EventArgs e)
     {
         Avalonia.Threading.Dispatcher.UIThread.Post(() =>
-            this.RaisePropertyChanged(nameof(QueueSongs)));
+        {
+            RefreshQueueRows();
+            this.RaisePropertyChanged(nameof(QueueSongs));
+            this.RaisePropertyChanged(nameof(QueueCount));
+            this.RaisePropertyChanged(nameof(QueueCountText));
+        });
+    }
+
+    private void RefreshQueueRows()
+    {
+        var songs = Player.Queue.Songs;
+        var currentId = Player.Queue.Current?.Id;
+        var currentPlaying = IsPlaying && currentId is not null;
+
+        var needRebuild = QueueRows.Count != songs.Count;
+        if (!needRebuild)
+        {
+            for (var i = 0; i < songs.Count; i++)
+            {
+                if (QueueRows[i].Song.Id != songs[i].Id)
+                {
+                    needRebuild = true;
+                    break;
+                }
+            }
+        }
+
+        if (needRebuild)
+        {
+            CloseOpenQueueMenu();
+            QueueRows.Clear();
+            for (var i = 0; i < songs.Count; i++)
+            {
+                var song = songs[i];
+                QueueRows.Add(new QueueRowViewModel(
+                    this,
+                    song,
+                    i,
+                    song.Id == currentId,
+                    currentPlaying && song.Id == currentId,
+                    OnQueueMenuOpening,
+                    OnQueueMenuClosed));
+            }
+
+            return;
+        }
+
+        for (var i = 0; i < songs.Count; i++)
+        {
+            var song = songs[i];
+            QueueRows[i].UpdateIndex(i, song.Id == currentId, currentPlaying && song.Id == currentId);
+        }
+    }
+
+    private void RefreshQueuePlaybackState()
+    {
+        if (QueueRows.Count == 0)
+        {
+            return;
+        }
+
+        var currentId = Player.Queue.Current?.Id;
+        var currentPlaying = IsPlaying && currentId is not null;
+
+        foreach (var row in QueueRows)
+        {
+            row.UpdatePlaybackState(row.Song.Id == currentId, currentPlaying && row.Song.Id == currentId);
+        }
+    }
+
+    private void OnQueueMenuOpening(QueueRowViewModel row)
+    {
+        if (_openMenuRow is not null && _openMenuRow != row)
+        {
+            _openMenuRow.IsMenuOpen = false;
+        }
+
+        _openMenuRow = row;
+    }
+
+    private void OnQueueMenuClosed(QueueRowViewModel row)
+    {
+        if (_openMenuRow == row)
+        {
+            _openMenuRow = null;
+        }
+    }
+
+    private void CloseOpenQueueMenu()
+    {
+        if (_openMenuRow is not null)
+        {
+            _openMenuRow.IsMenuOpen = false;
+        }
     }
 
     private void OnStateChanged(object? sender, PlaybackState state)
@@ -365,6 +512,8 @@ public class PlayerViewModel : ViewModelBase
         {
             _ = LoadCoverAsync(song);
         }
+
+        RefreshQueuePlaybackState();
     }
 
     private async Task LoadCoverAsync(Song? song)
@@ -464,16 +613,45 @@ public class PlayerViewModel : ViewModelBase
         IsVolumePopupOpen = !IsVolumePopupOpen;
         if (IsVolumePopupOpen)
         {
-            IsQueuePopupOpen = false;
+            IsQueueDrawerOpen = false;
         }
     }
 
-    private void ToggleQueuePopup()
+    private void ToggleQueueDrawer()
     {
-        IsQueuePopupOpen = !IsQueuePopupOpen;
-        if (IsQueuePopupOpen)
+        IsQueueDrawerOpen = !IsQueueDrawerOpen;
+        if (IsQueueDrawerOpen)
         {
             IsVolumePopupOpen = false;
+            RefreshQueueRows();
+        }
+        else
+        {
+            CloseOpenQueueMenu();
+        }
+    }
+
+    private void CloseQueueDrawer()
+    {
+        IsQueueDrawerOpen = false;
+        CloseOpenQueueMenu();
+    }
+
+    private async Task ClearQueueAsync()
+    {
+        CloseOpenQueueMenu();
+        Player.Queue.Clear();
+        await Player.StopAsync().ConfigureAwait(true);
+    }
+
+    private async Task FavoriteAllQueueAsync()
+    {
+        foreach (var song in Player.Queue.Songs)
+        {
+            if (song.Rating < 5)
+            {
+                await ToggleSongFavoriteAsync(song, false).ConfigureAwait(true);
+            }
         }
     }
 

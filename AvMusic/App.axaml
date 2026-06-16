@@ -34,5 +34,6 @@
         <StyleInclude Source="avares://AvMusic/Styles/Nav.axaml"/>
         <StyleInclude Source="avares://AvMusic/Styles/Player.axaml"/>
         <StyleInclude Source="avares://AvMusic/Styles/SongsLibrary.axaml"/>
+        <StyleInclude Source="avares://AvMusic/Styles/QueueDrawer.axaml"/>
     </Application.Styles>
 </Application>

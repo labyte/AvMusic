@@ -96,6 +96,10 @@
 
     <views:PlayerBarView Grid.Row="1" DataContext="{Binding PlayerUi}"/>
 
+    <Panel Grid.Row="0" IsVisible="{Binding PlayerUi.IsQueueDrawerOpen}" ZIndex="90" Background="Transparent">
+      <views:QueueDrawerView DataContext="{Binding PlayerUi}"/>
+    </Panel>
+
     <Panel Grid.Row="0" Grid.RowSpan="2" IsVisible="{Binding PlayerUi.IsNowPlayingVisible}" ZIndex="100">
       <views:NowPlayingView DataContext="{Binding PlayerUi}"/>
     </Panel>

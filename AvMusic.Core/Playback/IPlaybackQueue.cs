@@ -24,6 +24,12 @@ public interface IPlaybackQueue
 
     void Clear();
 
+    /// <summary>从队列中移除指定索引的歌曲。</summary>
+    void RemoveAt(int index);
+
+    /// <summary>切换当前播放索引（不改动队列内容）。</summary>
+    bool SetCurrentIndex(int index);
+
     /// <summary>移动到下一首并返回；若无法继续则返回 null。</summary>
     Song? MoveNext();
 

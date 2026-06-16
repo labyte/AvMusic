@@ -34,5 +34,7 @@ public enum AppIconKind
     Download,
     Info,
     MoreVertical,
-    MoreHorizontal
+    MoreHorizontal,
+    Trash,
+    PlaylistAdd
 }

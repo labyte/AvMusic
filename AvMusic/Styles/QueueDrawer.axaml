@@ -1,0 +1,124 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:AvMusic.Controls">
+
+  <!-- 播放列表抽屉：阴影与内容分层（阴影层不可 ClipToBounds） -->
+  <Style Selector="Button.queue-drawer-backdrop /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Button.queue-drawer-backdrop:pointerover /template/ ContentPresenter,
+                   Button.queue-drawer-backdrop:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Border.queue-drawer-shadow">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="12"/>
+    <Setter Property="BoxShadow" Value="0 8 32 -6 #28000000, -2 0 16 -4 #14000000"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.queue-drawer-panel">
+    <Setter Property="Background" Value="White"/>
+    <Setter Property="BorderBrush" Value="#22000000"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="CornerRadius" Value="12"/>
+  </Style>
+
+  <Style Selector="Button.queue-header-action">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="8,4"/>
+    <Setter Property="FontSize" Value="13"/>
+    <Setter Property="Foreground" Value="#99000000"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.queue-header-action:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#0A000000"/>
+  </Style>
+
+  <!-- 队列行 -->
+  <Style Selector="Border.queue-row">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="CornerRadius" Value="6"/>
+  </Style>
+
+  <Style Selector="Border.queue-row:pointerover">
+    <Setter Property="Background" Value="#0A000000"/>
+  </Style>
+
+  <Style Selector="Border.queue-row StackPanel.queue-row-actions">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.queue-row:pointerover StackPanel.queue-row-actions">
+    <Setter Property="IsVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="Border.queue-row TextBlock.queue-row-duration">
+    <Setter Property="IsVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="Border.queue-row:pointerover TextBlock.queue-row-duration">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.queue-cover-play-overlay">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="IsVisible" Value="False"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.queue-row:pointerover Border.queue-cover-play-overlay">
+    <Setter Property="Background" Value="#66000000"/>
+    <Setter Property="IsVisible" Value="True"/>
+    <Setter Property="IsHitTestVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="controls|IconButton.queue-cover-play">
+    <Setter Property="Width" Value="48"/>
+    <Setter Property="Height" Value="48"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Border.queue-row-playing controls|PlayingIndicator.queue-row-indicator">
+    <Setter Property="IsVisible" Value="True"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.queue-row-playing:pointerover controls|PlayingIndicator.queue-row-indicator">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="controls|PlayingIndicator.queue-row-indicator">
+    <Setter Property="IsVisible" Value="False"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="controls|IconButton.queue-row-action">
+    <Setter Property="Width" Value="32"/>
+    <Setter Property="Height" Value="32"/>
+    <Setter Property="MinWidth" Value="32"/>
+    <Setter Property="MinHeight" Value="32"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.queue-menu-item">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="10,8"/>
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    <Setter Property="FontSize" Value="14"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.queue-menu-item:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#EEEEEE"/>
+  </Style>
+
+</Styles>
