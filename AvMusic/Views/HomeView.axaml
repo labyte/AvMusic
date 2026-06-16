@@ -11,7 +11,7 @@
              x:Class="AvMusic.Views.HomeView"
              x:DataType="vm:MainViewModel">
   <Grid RowDefinitions="*,Auto" RowSpacing="0">
-    <Grid Grid.Row="0" ColumnDefinitions="200,*"   Margin="0,0,0,-24">
+    <Grid Grid.Row="0" ColumnDefinitions="200,*"   Margin="0,0,0,-4">
       <!-- 左侧导航 -->
       <Border Grid.Column="0" BorderBrush="{DynamicResource SystemControlForegroundBaseMediumLowBrush}"
               BorderThickness="0,0,1,0" Padding="8">

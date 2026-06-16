@@ -1,0 +1,196 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:AvMusic.Controls">
+
+  <!-- 歌曲页操作按钮 -->
+  <Style Selector="Button.song-action-button">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderBrush" Value="#33000000"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="CornerRadius" Value="6"/>
+    <Setter Property="Padding" Value="14,8"/>
+    <Setter Property="FontSize" Value="13"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.song-action-button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#0A000000"/>
+  </Style>
+
+  <Style Selector="Button.song-action-icon-button">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderBrush" Value="#33000000"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="CornerRadius" Value="6"/>
+    <Setter Property="Width" Value="36"/>
+    <Setter Property="Height" Value="36"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="FontSize" Value="18"/>
+    <Setter Property="Foreground" Value="#99000000"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.song-action-icon-button:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#0A000000"/>
+  </Style>
+
+  <!-- 歌曲行 -->
+  <Style Selector="Border.song-row">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Border.song-row:pointerover">
+    <Setter Property="Background" Value="#08000000"/>
+  </Style>
+
+  <!-- 歌曲行悬停与序号列状态（由 :pointerover 驱动，不依赖 Pointer 事件） -->
+  <Style Selector="Border.song-row StackPanel.song-row-actions">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.song-row:pointerover StackPanel.song-row-actions">
+    <Setter Property="IsVisible" Value="True"/>
+  </Style>
+
+  <!-- 序号：默认显示，悬停或正在播放时隐藏 -->
+  <Style Selector="Border.song-row:pointerover TextBlock.song-index,
+                   Border.song-row-playing TextBlock.song-index">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <!-- 播放动画：正在播放且未悬停 -->
+  <Style Selector="controls|PlayingIndicator.song-index-indicator">
+    <Setter Property="IsVisible" Value="False"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.song-row-playing controls|PlayingIndicator.song-index-indicator">
+    <Setter Property="IsVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="Border.song-row-playing:pointerover controls|PlayingIndicator.song-index-indicator">
+    <Setter Property="IsVisible" Value="False"/>
+  </Style>
+
+  <!-- 悬停播放/暂停按钮 -->
+  <Style Selector="controls|IconButton.song-index-play,
+                   controls|IconButton.song-index-pause">
+    <Setter Property="IsVisible" Value="False"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.song-row:pointerover controls|IconButton.song-index-play">
+    <Setter Property="IsVisible" Value="True"/>
+    <Setter Property="IsHitTestVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="Border.song-row-playing:pointerover controls|IconButton.song-index-play">
+    <Setter Property="IsVisible" Value="False"/>
+    <Setter Property="IsHitTestVisible" Value="False"/>
+  </Style>
+
+  <Style Selector="Border.song-row-playing:pointerover controls|IconButton.song-index-pause">
+    <Setter Property="IsVisible" Value="True"/>
+    <Setter Property="IsHitTestVisible" Value="True"/>
+  </Style>
+
+  <Style Selector="Button.song-artist-link">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="MinHeight" Value="0"/>
+    <Setter Property="MinWidth" Value="0"/>
+    <Setter Property="FontSize" Value="12"/>
+    <Setter Property="Opacity" Value="0.5"/>
+    <Setter Property="HorizontalAlignment" Value="Left"/>
+    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.song-artist-link:pointerover">
+    <Setter Property="Foreground" Value="{StaticResource AvAccentBrush}"/>
+    <Setter Property="Opacity" Value="1"/>
+  </Style>
+
+  <Style Selector="Button.song-artist-link:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Button.song-artist-link:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Button.song-artist-link:disabled">
+    <Setter Property="Opacity" Value="0.5"/>
+    <Setter Property="Cursor" Value="Arrow"/>
+  </Style>
+
+  <Style Selector="Button.song-album-link">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="0"/>
+    <Setter Property="MinHeight" Value="0"/>
+    <Setter Property="MinWidth" Value="0"/>
+    <Setter Property="FontSize" Value="14"/>
+    <Setter Property="Opacity" Value="0.6"/>
+    <Setter Property="HorizontalAlignment" Value="Left"/>
+    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.song-album-link:pointerover">
+    <Setter Property="Foreground" Value="{StaticResource AvAccentBrush}"/>
+    <Setter Property="Opacity" Value="1"/>
+  </Style>
+
+  <Style Selector="Button.song-album-link:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Button.song-album-link:pressed /template/ ContentPresenter">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Button.song-album-link:disabled">
+    <Setter Property="Opacity" Value="0.5"/>
+    <Setter Property="Cursor" Value="Arrow"/>
+  </Style>
+
+  <Style Selector="controls|IconButton.song-index-action">
+    <Setter Property="Width" Value="32"/>
+    <Setter Property="Height" Value="32"/>
+    <Setter Property="MinWidth" Value="32"/>
+    <Setter Property="MinHeight" Value="32"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="controls|IconButton.song-row-action">
+    <Setter Property="Width" Value="32"/>
+    <Setter Property="Height" Value="32"/>
+    <Setter Property="MinWidth" Value="32"/>
+    <Setter Property="MinHeight" Value="32"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <!-- 行内下拉菜单 -->
+  <Style Selector="Button.song-menu-item">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Padding" Value="10,8"/>
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    <Setter Property="FontSize" Value="14"/>
+    <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+
+  <Style Selector="Button.song-menu-item:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#EEEEEE"/>
+  </Style>
+
+  <Style Selector="TextBlock.songs-col-header">
+    <Setter Property="FontSize" Value="12"/>
+    <Setter Property="Opacity" Value="0.45"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+  </Style>
+
+</Styles>

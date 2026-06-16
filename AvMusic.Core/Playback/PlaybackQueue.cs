@@ -26,6 +26,37 @@ public sealed class PlaybackQueue : IPlaybackQueue
         QueueChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    public void InsertNext(Song song)
+    {
+        if (_songs.Count == 0)
+        {
+            SetQueue([song], 0);
+            return;
+        }
+
+        var insertAt = CurrentIndex >= 0 ? CurrentIndex + 1 : _songs.Count;
+        _songs.Insert(insertAt, song);
+        QueueChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void AppendSongs(IReadOnlyList<Song> songs)
+    {
+        if (songs.Count == 0)
+        {
+            return;
+        }
+
+        var hadCurrent = CurrentIndex >= 0;
+        _songs.AddRange(songs);
+
+        if (!hadCurrent && _songs.Count > 0)
+        {
+            CurrentIndex = 0;
+        }
+
+        QueueChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     public void Clear()
     {
         _songs = [];

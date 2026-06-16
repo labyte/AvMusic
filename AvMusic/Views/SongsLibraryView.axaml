@@ -1,30 +1,155 @@
 <UserControl xmlns="https://github.com/avaloniaui"
+
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
              xmlns:vm="using:AvMusic.ViewModels.Library"
+
+             xmlns:controls="using:AvMusic.Controls"
+
+             xmlns:ui="using:AvMusic.Ui"
+
+             xmlns:views="using:AvMusic.Views"
+
              x:Class="AvMusic.Views.SongsLibraryView"
+
              x:DataType="vm:SongsLibraryViewModel">
-  <Grid RowDefinitions="Auto,*,Auto">
-    <TextBlock Grid.Row="0" Text="{Binding ErrorMessage}" Foreground="IndianRed" Margin="8,0"
-               IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-    <ListBox Grid.Row="1" ItemsSource="{Binding SongRows}" Margin="8">
-      <ListBox.ItemTemplate>
-        <DataTemplate x:DataType="vm:SongRowViewModel">
-          <Button Command="{Binding PlayCommand}" Classes="ghost-button"
-                  HorizontalContentAlignment="Stretch" Padding="8,6">
-            <Grid ColumnDefinitions="*,Auto">
-              <StackPanel Grid.Column="0" Spacing="2">
-                <TextBlock Text="{Binding Title}" FontWeight="SemiBold"/>
-                <TextBlock Text="{Binding Subtitle}" Opacity="0.7" FontSize="12"/>
-              </StackPanel>
-              <TextBlock Grid.Column="1" Text="{Binding DurationText}" Opacity="0.5" VerticalAlignment="Center"/>
-            </Grid>
+
+  <!-- 左右边距随窗口宽度按比例伸缩（约 4% + 内容 + 4%） -->
+
+  <Grid ColumnDefinitions="8*,92*,8*">
+
+    <Grid Grid.Column="1" RowDefinitions="Auto,Auto,Auto,*">
+
+      <TextBlock Grid.Row="0"
+
+                 Text="{Binding ErrorMessage}"
+
+                 Foreground="IndianRed"
+
+                 Margin="0,8,0,0"
+
+                 IsVisible="{Binding ErrorMessage, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+
+
+
+      <!-- 页头 -->
+
+      <StackPanel Grid.Row="1" Margin="0,16,0,12" Spacing="10">
+
+        <TextBlock Text="全部歌曲" FontSize="28" FontWeight="Bold"/>
+
+        <TextBlock Text="{Binding SongCountSummary}" FontSize="13" Opacity="0.55"/>
+
+        <StackPanel Orientation="Horizontal" Spacing="10">
+
+          <Button Classes="song-action-button" Command="{Binding PlayAllCommand}">
+
+            <StackPanel Orientation="Horizontal" Spacing="8">
+
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Play}" IconSize="16"/>
+
+              <TextBlock Text="播放全部" VerticalAlignment="Center"/>
+
+            </StackPanel>
+
           </Button>
-        </DataTemplate>
-      </ListBox.ItemTemplate>
-    </ListBox>
-    <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8" Margin="8">
-      <Button Content="加载更多" Command="{Binding LoadMoreCommand}" IsVisible="{Binding HasMore}"/>
-      <ProgressBar IsIndeterminate="True" IsVisible="{Binding IsLoading}" Width="120"/>
-    </StackPanel>
+
+          <Button Classes="song-action-button" Command="{Binding AddAllToQueueCommand}">
+
+            <StackPanel Orientation="Horizontal" Spacing="8">
+
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.QueueList}" IconSize="16"/>
+
+              <TextBlock Text="全部加入队列" VerticalAlignment="Center"/>
+
+            </StackPanel>
+
+          </Button>
+
+          <Button Classes="song-action-icon-button" Content="⋯" ToolTip.Tip="更多"/>
+
+        </StackPanel>
+
+      </StackPanel>
+
+
+
+      <!-- 表头 -->
+
+      <Grid Grid.Row="2"
+
+            ColumnDefinitions="48,*,200,56,72" Margin="16,0"
+
+            Height="36">
+
+        <Border Grid.ColumnSpan="5"
+
+                BorderBrush="#22000000"
+
+                BorderThickness="0,0,0,1"
+
+                VerticalAlignment="Bottom"
+
+                HorizontalAlignment="Stretch"/>
+
+        <TextBlock Grid.Column="0" Classes="songs-col-header" Text="#"/>
+
+        <TextBlock Grid.Column="1" Classes="songs-col-header" Text="标题"/>
+
+        <TextBlock Grid.Column="2" Classes="songs-col-header" Text="专辑"/>
+
+        <TextBlock Grid.Column="3" Classes="songs-col-header" Text="喜欢" HorizontalAlignment="Center"/>
+
+        <TextBlock Grid.Column="4" Classes="songs-col-header" Text="时长" HorizontalAlignment="Right" Margin="0,0,16,0"/>
+
+      </Grid>
+
+
+
+      <!-- 列表 + 滚动加载 -->
+
+      <Panel Grid.Row="3">
+
+        <ScrollViewer x:Name="SongsScroll"
+
+                      Margin="0,0,0,8" Padding="16,0"
+
+                      HorizontalScrollBarVisibility="Disabled"
+
+                      VerticalScrollBarVisibility="Auto">
+
+          <ItemsControl ItemsSource="{Binding SongRows}" >
+
+            <ItemsControl.ItemTemplate>
+
+              <DataTemplate x:DataType="vm:SongRowViewModel">
+
+                <views:SongRowView/>
+
+              </DataTemplate>
+
+            </ItemsControl.ItemTemplate>
+
+          </ItemsControl>
+
+        </ScrollViewer>
+
+
+
+        <ProgressBar VerticalAlignment="Bottom"
+
+                     Height="3"
+
+                     IsIndeterminate="True"
+
+                     IsVisible="{Binding IsLoading}"/>
+
+      </Panel>
+
+    </Grid>
+
   </Grid>
+
 </UserControl>
+
+

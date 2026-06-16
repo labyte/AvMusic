@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="using:AvMusic.Controls"
+             x:Class="AvMusic.Controls.SeekSlider"
+             Classes="seek-slider-host"
+             Height="12"
+             MinHeight="12"
+             MaxHeight="12"
+             VerticalAlignment="Center">
+  <Grid>
+    <!-- 连续视觉轨道（不受 Thumb 分割） -->
+    <Grid x:Name="PART_TrackLayer"
+          Classes="seek-track-layer"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Center">
+      <Border Classes="seek-track-bg"
+              Background="{StaticResource SeekSliderTrackBrush}"
+              CornerRadius="2"/>
+      <Border x:Name="PART_TrackProgress"
+              Classes="seek-track-fill"
+              Background="{StaticResource AvAccentBrush}"
+              CornerRadius="2"
+              HorizontalAlignment="Left"/>
+    </Grid>
+
+    <!-- 透明轨道，仅负责点击/拖动与拖块 -->
+    <Slider x:Name="PART_Slider"
+            Classes="seek-slider-interaction"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Minimum="{Binding Minimum, RelativeSource={RelativeSource AncestorType=controls:SeekSlider}}"
+            Maximum="{Binding Maximum, RelativeSource={RelativeSource AncestorType=controls:SeekSlider}}"
+            Value="{Binding Value, RelativeSource={RelativeSource AncestorType=controls:SeekSlider}, Mode=TwoWay}"
+            IsEnabled="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType=controls:SeekSlider}}"/>
+  </Grid>
+</UserControl>

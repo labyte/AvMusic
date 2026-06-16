@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-using Avalonia.Controls.Primitives;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using AvMusic.ViewModels;
@@ -7,13 +6,28 @@ using AvMusic.ViewModels;
 namespace AvMusic.Views;
 
 /// <summary>
-/// 为播放进度 Slider 绑定拖动与松手 Seek（兼容 Thumb 捕获指针的情况）。
+/// 为播放进度 Slider 绑定拖动与松手 Seek，并在拖动期间保持交互态样式。
 /// </summary>
 internal static class SeekSliderBehavior
 {
-    public static void Attach(Slider slider, Func<PlayerViewModel?> getViewModel)
+    private const string ActiveClass = "seek-slider-active";
+
+    public static void Attach(Slider slider, Func<PlayerViewModel?> getViewModel, Control? activeHost = null)
     {
+        var host = activeHost ?? slider;
         var dragging = false;
+
+        slider.Focusable = false;
+
+        slider.PointerExited += (_, _) =>
+        {
+            if (dragging)
+            {
+                return;
+            }
+
+            ClearFocus(slider);
+        };
 
         slider.AddHandler(
             InputElement.PointerPressedEvent,
@@ -26,6 +40,7 @@ internal static class SeekSliderBehavior
 
                 dragging = true;
                 vm.IsSeeking = true;
+                host.Classes.Add(ActiveClass);
             },
             RoutingStrategies.Tunnel);
 
@@ -48,6 +63,9 @@ internal static class SeekSliderBehavior
             }
 
             dragging = false;
+            host.Classes.Remove(ActiveClass);
+            ClearFocus(slider);
+
             if (getViewModel() is not { } vm)
             {
                 return;
@@ -65,5 +83,16 @@ internal static class SeekSliderBehavior
             InputElement.PointerCaptureLostEvent,
             (_, _) => EndDrag(),
             RoutingStrategies.Tunnel | RoutingStrategies.Bubble);
+    }
+
+    private static void ClearFocus(Slider slider)
+    {
+        if (!slider.IsKeyboardFocusWithin)
+        {
+            return;
+        }
+
+        var topLevel = TopLevel.GetTopLevel(slider);
+        topLevel?.FocusManager?.ClearFocus();
     }
 }

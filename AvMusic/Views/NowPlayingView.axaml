@@ -38,10 +38,13 @@
         <StackPanel Spacing="8" Margin="0,8,0,0">
           <Grid ColumnDefinitions="Auto,*,Auto">
             <TextBlock Grid.Column="0" Text="{Binding PositionText}" Opacity="0.7"/>
-            <Slider x:Name="FullSeekSlider" Grid.Column="1" Margin="12,0"
-                    Minimum="0" Maximum="{Binding SeekMaximum}"
-                    Value="{Binding Position, Mode=TwoWay}"
-                    IsEnabled="{Binding CanSeek}"/>
+            <controls:SeekSlider x:Name="FullSeekSlider"
+                                 Grid.Column="1"
+                                 Margin="12,0"
+                                 Minimum="0"
+                                 Maximum="{Binding SeekMaximum}"
+                                 Value="{Binding Position, Mode=TwoWay}"
+                                 IsEnabled="{Binding CanSeek}"/>
             <TextBlock Grid.Column="2" Text="{Binding DurationText}" Opacity="0.7"/>
           </Grid>
         </StackPanel>

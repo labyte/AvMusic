@@ -28,5 +28,11 @@ public enum AppIconKind
     Close,
     Expand,
     SignOut,
-    PlayCircle
+    PlayCircle,
+    PlayNext,
+    QueueAdd,
+    Download,
+    Info,
+    MoreVertical,
+    MoreHorizontal
 }

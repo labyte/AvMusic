@@ -1,10 +1,12 @@
 using AvMusic.Core.Models;
 using AvMusic.Synology.Dto;
+using System.Text.RegularExpressions;
 
 namespace AvMusic.Synology.Mapping;
 
 internal static class EntityMapper
 {
+    private static readonly Regex TrackNumberPrefixRegex = new(@"^\d+\s+(.+)$", RegexOptions.Compiled);
     public static Song ToSong(SongItemDto dto)
     {
         var tag = dto.Additional?.SongTag;
@@ -12,7 +14,7 @@ internal static class EntityMapper
         return new Song
         {
             Id = dto.Id,
-            Title = dto.Title,
+            Title = ResolveSongTitle(dto),
             Path = dto.Path,
             Artist = tag?.Artist,
             Album = tag?.Album,
@@ -25,6 +27,94 @@ internal static class EntityMapper
             Frequency = audio?.Frequency ?? 0,
             FileSize = audio?.Filesize ?? 0
         };
+    }
+
+    /// <summary>优先使用 ID3/元数据标题；若 API title 为文件名则从路径或文件名解析歌名。</summary>
+    private static string ResolveSongTitle(SongItemDto dto)
+    {
+        var tagTitle = dto.Additional?.SongTag?.Title;
+        if (!string.IsNullOrWhiteSpace(tagTitle))
+        {
+            return tagTitle.Trim();
+        }
+
+        var title = dto.Title?.Trim() ?? string.Empty;
+        if (string.IsNullOrWhiteSpace(title))
+        {
+            return ExtractTitleFromPath(dto.Path);
+        }
+
+        if (LooksLikeFileName(title))
+        {
+            var fromPath = ExtractTitleFromPath(dto.Path);
+            if (!string.IsNullOrWhiteSpace(fromPath))
+            {
+                return fromPath;
+            }
+
+            return CleanFileNameTitle(title);
+        }
+
+        return title;
+    }
+
+    private static bool LooksLikeFileName(string title)
+    {
+        string[] extensions =
+        [
+            ".flac", ".mp3", ".wav", ".aac", ".m4a", ".ogg", ".wma", ".ape", ".dsf", ".dff", ".aiff", ".alac"
+        ];
+
+        foreach (var ext in extensions)
+        {
+            if (title.EndsWith(ext, StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static string ExtractTitleFromPath(string? path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+        {
+            return string.Empty;
+        }
+
+        var fileName = Path.GetFileNameWithoutExtension(path);
+        return ParseTrackTitle(fileName);
+    }
+
+    private static string CleanFileNameTitle(string title)
+    {
+        var withoutExt = Path.GetFileNameWithoutExtension(title);
+        return ParseTrackTitle(withoutExt);
+    }
+
+    /// <summary>从「艺术家 - 歌名」或「01 歌名」等文件名格式提取元数据歌名。</summary>
+    private static string ParseTrackTitle(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw))
+        {
+            return string.Empty;
+        }
+
+        var text = raw.Trim();
+        var artistSeparator = text.LastIndexOf(" - ", StringComparison.Ordinal);
+        if (artistSeparator >= 0 && artistSeparator + 3 < text.Length)
+        {
+            return text[(artistSeparator + 3)..].Trim();
+        }
+
+        var trackMatch = TrackNumberPrefixRegex.Match(text);
+        if (trackMatch.Success)
+        {
+            return trackMatch.Groups[1].Value.Trim();
+        }
+
+        return text;
     }
 
     public static Album ToAlbum(AlbumItemDto dto) => new()

@@ -34,6 +34,12 @@ public static class AppIconGeometry
         [(AppIconKind.PlayCircle, false)] = "M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zm-2,14.5v-9l6,4.5 -6,4.5z",
         [(AppIconKind.QueueList, false)] = "M15,6H3v2h12V6zm0,4H3v2h12v-2zm0,4H3v2h12v-2zM7,13h2v-2H7v2zm0,4h2v-2H7v2zm0,-8h2V7H7v2zm4,4h14v-2H11v2zm0,4h14v-2H11v2zM11,7v2h14V7H11z",
         [(AppIconKind.PlayOrder, false)] = "M3,14h4v-4H3v4zm0,5h4v-4H3v4zM3,9h4V5H3v4zm5,5h13v-4H8v4zm0,5h13v-4H8v4zM8,5v4h13V5H8z",
+        [(AppIconKind.PlayNext, false)] = "M6,18l8.5,-6L6,6v12zM16,6v12h2V6h-2z",
+        [(AppIconKind.QueueAdd, false)] = "M21,11H7v2h14v-2zm0,-4H7v2h14V7zm0,8H7v2h14v-2zM3,7h2v2H3V7zm0,4h2v2H3v-2zm0,4h2v2H3v-2z",
+        [(AppIconKind.Download, false)] = "M19,9h-4V3H9v6H5l7,7 7,-7zM5,18v2h14v-2H5z",
+        [(AppIconKind.Info, false)] = "M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zm1,15h-2v-6h2v6zm0,-8h-2V7h2v2z",
+        [(AppIconKind.MoreVertical, false)] = "M12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zm0,2c-1.1,0 -2,0.9 -2,2s0.9,2 2,2 2,-0.9 2,-2 -0.9,-2 -2,-2zm0,6c-1.1,0 -2,0.9 -2,2s0.9,2 2,2 2,-0.9 2,-2 -0.9,-2 -2,-2z",
+        [(AppIconKind.MoreHorizontal, false)] = "M6,10c-1.1,0 -2,0.9 -2,2s0.9,2 2,2 2,-0.9 2,-2 -0.9,-2 -2,-2zm8,0c-1.1,0 -2,0.9 -2,2s0.9,2 2,2 2,-0.9 2,-2 -0.9,-2 -2,-2zm8,0c-1.1,0 -2,0.9 -2,2s0.9,2 2,2 2,-0.9 2,-2 -0.9,-2 -2,-2z",
     };
 
     public static StreamGeometry? GetGeometry(AppIconKind kind, bool filled = false)

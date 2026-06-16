@@ -1,0 +1,94 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:AvMusic.Controls">
+
+  <!-- 连续视觉轨道 -->
+  <Style Selector="Grid.seek-track-layer">
+    <Setter Property="Height" Value="3"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="Transitions">
+      <Transitions>
+        <DoubleTransition Property="Height" Duration="0:0:0.12"/>
+      </Transitions>
+    </Setter>
+  </Style>
+
+  <Style Selector="controls|SeekSlider:pointerover Grid.seek-track-layer,
+                   controls|SeekSlider.seek-slider-active Grid.seek-track-layer">
+    <Setter Property="Height" Value="5"/>
+  </Style>
+
+  <!-- 交互 Slider：轨道透明，仅显示拖块 -->
+  <Style Selector="Slider.seek-slider-interaction">
+    <Setter Property="Focusable" Value="False"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Foreground" Value="Transparent"/>
+    <Setter Property="Height" Value="12"/>
+    <Setter Property="MinHeight" Value="12"/>
+    <Setter Property="MaxHeight" Value="12"/>
+    <Setter Property="Padding" Value="0"/>
+    <Style.Resources>
+      <x:Double x:Key="SliderHorizontalHeight">12</x:Double>
+      <GridLength x:Key="SliderPreContentMargin">0</GridLength>
+      <GridLength x:Key="SliderPostContentMargin">0</GridLength>
+      <CornerRadius x:Key="SliderThumbCornerRadius">6</CornerRadius>
+    </Style.Resources>
+  </Style>
+
+  <Style Selector="Slider.seek-slider-interaction /template/ Grid#SliderContainer">
+    <Setter Property="Background" Value="Transparent"/>
+  </Style>
+
+  <Style Selector="Slider.seek-slider-interaction /template/ Track#PART_Track">
+    <Setter Property="VerticalAlignment" Value="Center"/>
+  </Style>
+
+  <!-- 隐藏 Slider 自带轨道，保留点击区域 -->
+  <Style Selector="Slider.seek-slider-interaction /template/ RepeatButton Border#TrackBackground">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Opacity" Value="0"/>
+    <Setter Property="Height" Value="12"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+  </Style>
+
+  <Style Selector="Slider.seek-slider-interaction /template/ RepeatButton#PART_DecreaseButton,
+                   Slider.seek-slider-interaction /template/ RepeatButton#PART_IncreaseButton">
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="VerticalAlignment" Value="Stretch"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+  </Style>
+
+  <!-- 常态：拖块不占宽度 -->
+  <Style Selector="Slider.seek-slider-interaction /template/ Thumb">
+    <Setter Property="Width" Value="0"/>
+    <Setter Property="Height" Value="0"/>
+    <Setter Property="MinWidth" Value="0"/>
+    <Setter Property="MinHeight" Value="0"/>
+    <Setter Property="Opacity" Value="0"/>
+    <Setter Property="Background" Value="{StaticResource SeekSliderThumbBrush}"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Focusable" Value="False"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="Transitions">
+      <Transitions>
+        <DoubleTransition Property="Opacity" Duration="0:0:0.12"/>
+        <DoubleTransition Property="Width" Duration="0:0:0.12"/>
+        <DoubleTransition Property="Height" Duration="0:0:0.12"/>
+      </Transitions>
+    </Setter>
+  </Style>
+
+  <!-- 交互态：显示淡蓝拖块（不影响底层连续轨道） -->
+  <Style Selector="controls|SeekSlider:pointerover Slider.seek-slider-interaction /template/ Thumb,
+                   controls|SeekSlider.seek-slider-active Slider.seek-slider-interaction /template/ Thumb,
+                   Slider.seek-slider-interaction:pressed /template/ Thumb,
+                   Slider.seek-slider-interaction /template/ Thumb:pressed">
+    <Setter Property="Width" Value="12"/>
+    <Setter Property="Height" Value="12"/>
+    <Setter Property="MinWidth" Value="12"/>
+    <Setter Property="MinHeight" Value="12"/>
+    <Setter Property="Opacity" Value="1"/>
+    <Setter Property="Background" Value="{StaticResource SeekSliderThumbBrush}"/>
+  </Style>
+
+</Styles>

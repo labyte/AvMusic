@@ -2,9 +2,9 @@ using Avalonia.Controls;
 
 namespace AvMusic.Views;
 
-public partial class NowPlayingView : UserControl
+public partial class SongRowView : UserControl
 {
-    public NowPlayingView()
+    public SongRowView()
     {
         InitializeComponent();
     }

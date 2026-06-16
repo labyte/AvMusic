@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AvMusic.Controls.PlayingIndicator"
+             Width="16"
+             Height="16">
+  <StackPanel Orientation="Horizontal"
+              Spacing="2"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+    <Border x:Name="Bar1" Width="2" Height="6" CornerRadius="1" VerticalAlignment="Center"
+            Background="{StaticResource AvAccentBrush}"/>
+    <Border x:Name="Bar2" Width="2" Height="10" CornerRadius="1" VerticalAlignment="Center"
+            Background="{StaticResource AvAccentBrush}"/>
+    <Border x:Name="Bar3" Width="2" Height="8" CornerRadius="1" VerticalAlignment="Center"
+            Background="{StaticResource AvAccentBrush}"/>
+    <Border x:Name="Bar4" Width="2" Height="12" CornerRadius="1" VerticalAlignment="Center"
+            Background="{StaticResource AvAccentBrush}"/>
+  </StackPanel>
+</UserControl>

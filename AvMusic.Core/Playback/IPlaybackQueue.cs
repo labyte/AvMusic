@@ -16,6 +16,12 @@ public interface IPlaybackQueue
 
     void SetQueue(IReadOnlyList<Song> songs, int startIndex = 0);
 
+    /// <summary>在当前曲目之后插入下一首播放。</summary>
+    void InsertNext(Song song);
+
+    /// <summary>在现有队列末尾追加歌曲。</summary>
+    void AppendSongs(IReadOnlyList<Song> songs);
+
     void Clear();
 
     /// <summary>移动到下一首并返回；若无法继续则返回 null。</summary>

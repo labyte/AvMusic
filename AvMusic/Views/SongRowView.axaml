@@ -1,0 +1,193 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:AvMusic.ViewModels.Library"
+             xmlns:controls="using:AvMusic.Controls"
+             xmlns:ui="using:AvMusic.Ui"
+             x:Class="AvMusic.Views.SongRowView"
+             x:DataType="vm:SongRowViewModel">
+  <Panel>
+    <Border x:Name="RowBorder"
+            Classes="song-row"
+            Classes.song-row-playing="{Binding IsCurrentTrackPlaying}"
+            Height="56">
+      <Grid ColumnDefinitions="48,*,200,56,72">
+        <Panel Grid.Column="0" Width="48" VerticalAlignment="Center">
+          <TextBlock Text="{Binding IndexText}"
+                     Classes="song-index"
+                     VerticalAlignment="Center"
+                     Opacity="0.45"
+                     FontSize="13"/>
+          <controls:PlayingIndicator Classes="song-index-indicator"
+                                     HorizontalAlignment="Center"/>
+          <controls:IconButton Classes="icon-button song-index-action song-index-play"
+                               Icon="{x:Static ui:AppIconKind.Play}"
+                               IconSize="18"
+                               Cursor="Hand"
+                               Command="{Binding IndexActionCommand}"
+                               HorizontalAlignment="Center"
+                               ToolTip.Tip="播放"/>
+          <controls:IconButton Classes="icon-button song-index-action song-index-pause"
+                               Icon="{x:Static ui:AppIconKind.Pause}"
+                               IconSize="18"
+                               Cursor="Hand"
+                               Command="{Binding IndexActionCommand}"
+                               HorizontalAlignment="Center"
+                               ToolTip.Tip="暂停"/>
+        </Panel>
+
+        <Grid Grid.Column="1" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+          <Border Grid.Column="0"
+                  Width="40"
+                  Height="40"
+                  CornerRadius="4"
+                  ClipToBounds="True"
+                  Background="#12000000"
+                  VerticalAlignment="Center">
+            <Panel>
+              <Image Source="{Binding Cover}"
+                     Stretch="UniformToFill"
+                     IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.MusicNote}"
+                                IconSize="18"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+            </Panel>
+          </Border>
+
+          <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="2">
+            <TextBlock Text="{Binding Title}"
+                       FontSize="14"
+                       FontWeight="Medium"
+                       TextTrimming="CharacterEllipsis"/>
+            <Button Classes="song-artist-link"
+                    Content="{Binding ArtistName}"
+                    Command="{Binding OpenArtistCommand}"
+                    IsEnabled="{Binding CanOpenArtist}"
+                    HorizontalAlignment="Left"/>
+          </StackPanel>
+
+          <StackPanel Grid.Column="2"
+                      Classes="song-row-actions"
+                      Orientation="Horizontal"
+                      Spacing="8"
+                      Margin="8,0,16,0"
+                      VerticalAlignment="Center">
+            <controls:IconButton Classes="icon-button song-row-action"
+                                 Icon="{x:Static ui:AppIconKind.QueueAdd}"
+                                 IconSize="18"
+                                 Command="{Binding AddToQueueCommand}"
+                                 ToolTip.Tip="加入队列"/>
+            <controls:IconButton x:Name="MoreButton"
+                                 Classes="icon-button song-row-action"
+                                 Icon="{x:Static ui:AppIconKind.MoreHorizontal}"
+                                 IconSize="18"
+                                 Command="{Binding ToggleMenuCommand}"
+                                 ToolTip.Tip="更多"/>
+          </StackPanel>
+        </Grid>
+
+        <Button Grid.Column="2"
+                Classes="song-album-link"
+                Content="{Binding AlbumName}"
+                Command="{Binding OpenAlbumCommand}"
+                IsEnabled="{Binding CanOpenAlbum}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="0,0,8,0"/>
+
+        <controls:IconButton Grid.Column="3"
+                             Classes="icon-button song-row-action"
+                             Icon="{x:Static ui:AppIconKind.Heart}"
+                             IconSize="18"
+                             IconFilled="{Binding IsFavorite}"
+                             Cursor="Hand"
+                             Command="{Binding ToggleFavoriteCommand}"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             ToolTip.Tip="喜欢"/>
+
+        <TextBlock Grid.Column="4"
+                   Text="{Binding DurationText}"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Opacity="0.5"
+                   FontSize="13"
+                   Margin="0,0,16,0"/>
+      </Grid>
+    </Border>
+
+    <Popup x:Name="MenuPopup"
+           IsOpen="{Binding IsMenuOpen, Mode=TwoWay}"
+           IsLightDismissEnabled="True"
+           PlacementTarget="{Binding #MoreButton}"
+           Placement="BottomEdgeAlignedRight"
+           VerticalOffset="4"
+           HorizontalOffset="-8">
+      <Border Classes="song-row-menu"
+              Background="White"
+              BorderBrush="#22000000"
+              BorderThickness="1"
+              CornerRadius="8"
+              Padding="4"
+              BoxShadow="0 4 16 0 #22000000">
+        <StackPanel Spacing="2" MinWidth="180">
+          <Button Classes="song-menu-item" Command="{Binding MenuPlayCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Play}" IconSize="18"/>
+              <TextBlock Text="播放" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="song-menu-item" Command="{Binding MenuPlayNextCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.PlayNext}" IconSize="18"/>
+              <TextBlock Text="下一首播放" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="song-menu-item" Command="{Binding MenuToggleFavoriteCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Heart}" IconSize="18"/>
+              <TextBlock Text="收藏" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="song-menu-item" Command="{Binding MenuAddToQueueCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.QueueAdd}" IconSize="18"/>
+              <TextBlock Text="加入队列" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="song-menu-item" Command="{Binding MenuDownloadCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Download}" IconSize="18"/>
+              <TextBlock Text="下载" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+          <Button Classes="song-menu-item" Command="{Binding MenuShowInfoCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.Info}" IconSize="18"/>
+              <TextBlock Text="歌曲信息" VerticalAlignment="Center"/>
+            </StackPanel>
+          </Button>
+        </StackPanel>
+      </Border>
+    </Popup>
+
+    <Popup IsOpen="{Binding IsInfoOpen}"
+           PlacementTarget="{Binding #RowBorder}"
+           Placement="Center"
+           IsLightDismissEnabled="True">
+      <Border Background="White"
+              BorderBrush="#33000000"
+              BorderThickness="1"
+              CornerRadius="8"
+              Padding="20"
+              MaxWidth="420"
+              BoxShadow="0 8 24 0 #33000000">
+        <StackPanel Spacing="12">
+          <TextBlock Text="歌曲信息" FontSize="16" FontWeight="SemiBold"/>
+          <TextBlock Text="{Binding SongInfoText}" TextWrapping="Wrap" Opacity="0.85" FontSize="13"/>
+        </StackPanel>
+      </Border>
+    </Popup>
+  </Panel>
+</UserControl>

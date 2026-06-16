@@ -8,13 +8,14 @@
              x:DataType="vm:PlayerViewModel">
     <Panel>
         <Grid RowDefinitions="Auto,*" >
-            <Slider x:Name="SeekSlider" VerticalAlignment="Top"
-                        Minimum="0" Maximum="{Binding SeekMaximum}" 
-                        Value="{Binding Position, Mode=TwoWay}"
-                        IsEnabled="{Binding CanSeek}"/>
+            <controls:SeekSlider x:Name="SeekSlider"
+                                 Minimum="0"
+                                 Maximum="{Binding SeekMaximum}"
+                                 Value="{Binding Position, Mode=TwoWay}"
+                                 IsEnabled="{Binding CanSeek}"/>
 
             <!-- 底层：封面 + 歌曲信息（靠左）+ 右侧工具；上层：播放控制整栏居中 -->
-            <Grid Grid.Row="1" Margin="8,0,0,6" >
+            <Grid Grid.Row="1" Margin="8,8,0,12" >
                 <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
                     <!-- 第一列：封面 -->
                     <Button Grid.Column="0" Classes="ghost-button"
