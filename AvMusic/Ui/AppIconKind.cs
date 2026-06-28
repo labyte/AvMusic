@@ -36,5 +36,8 @@ public enum AppIconKind
     MoreVertical,
     MoreHorizontal,
     Trash,
-    PlaylistAdd
+    PlaylistAdd,
+    Pen,
+    Save,
+    Mic
 }

@@ -42,6 +42,17 @@ public class PlayerViewModel : ViewModelBase
     private bool _isQueueDrawerOpen;
     private QueueRowViewModel? _openMenuRow;
 
+    // 歌词相关字段
+    private List<LyricsLine> _lyricsLines = [];
+    private string _rawLyricsText = string.Empty;
+    private int _currentLyricsLineIndex = -1;
+    private bool _hasLyrics;
+    private bool _isLyricsSearchVisible;
+    private bool _isEditingLyrics;
+    private string _lyricsEditText = string.Empty;
+    private string _lyricsStatusText = string.Empty;
+    private IDisposable? _lyricsPositionSub;
+
     public PlayerViewModel(
         IMusicPlayerService player,
         ICoverCacheService coverCache,
@@ -78,6 +89,13 @@ public class PlayerViewModel : ViewModelBase
         FavoriteAllQueueCommand = ReactiveCommand.CreateFromTask(FavoriteAllQueueAsync);
         OpenArtistCommand = ReactiveCommand.Create(OpenArtist, this.WhenAnyValue(x => x.CanOpenArtist));
         OpenAlbumCommand = ReactiveCommand.Create(OpenAlbum, this.WhenAnyValue(x => x.CanOpenAlbum));
+        ToggleLyricsSearchCommand = ReactiveCommand.Create(ToggleLyricsSearch);
+        CloseLyricsSearchCommand = ReactiveCommand.Create(() => { IsLyricsSearchVisible = false; });
+        ToggleLyricsEditCommand = ReactiveCommand.Create(ToggleLyricsEdit);
+        SaveLyricsEditCommand = ReactiveCommand.Create(SaveLyricsEdit);
+        CancelLyricsEditCommand = ReactiveCommand.Create(CancelLyricsEdit);
+        LoadLyricsCommand = ReactiveCommand.CreateFromTask(LoadLyricsAsync);
+
 
         QueueRows.Clear();
         RefreshQueueRows();
@@ -86,6 +104,24 @@ public class PlayerViewModel : ViewModelBase
             .Throttle(TimeSpan.FromMilliseconds(150))
             .ObserveOn(RxApp.MainThreadScheduler)
             .Subscribe(v => _ = SetVolumeAsync(v));
+
+        // 位置变化时更新当前歌词行
+        _lyricsPositionSub = this.WhenAnyValue(x => x.Position)
+            .Throttle(TimeSpan.FromMilliseconds(100))
+            .ObserveOn(RxApp.MainThreadScheduler)
+            .Subscribe(_ => UpdateCurrentLyricsLine());
+
+        // 歌曲切换时自动加载歌词
+        this.WhenAnyValue(x => x.CurrentSong)
+            .Subscribe(song =>
+            {
+                if (song is null)
+                {
+                    ClearLyrics();
+                    return;
+                }
+                _ = LoadLyricsAsync();
+            });
     }
 
     public IMusicPlayerService Player { get; }
@@ -313,6 +349,206 @@ public class PlayerViewModel : ViewModelBase
     public ReactiveCommand<Unit, Unit> OpenArtistCommand { get; }
 
     public ReactiveCommand<Unit, Unit> OpenAlbumCommand { get; }
+
+    #region 歌词
+
+    public ReactiveCommand<Unit, Unit> ToggleLyricsSearchCommand { get; }
+    public ReactiveCommand<Unit, Unit> CloseLyricsSearchCommand { get; }
+    public ReactiveCommand<Unit, Unit> ToggleLyricsEditCommand { get; }
+    public ReactiveCommand<Unit, Unit> SaveLyricsEditCommand { get; }
+    public ReactiveCommand<Unit, Unit> CancelLyricsEditCommand { get; }
+    public ReactiveCommand<Unit, Unit> LoadLyricsCommand { get; }
+
+    public List<LyricsLine> LyricsLines
+    {
+        get => _lyricsLines;
+        private set => this.RaiseAndSetIfChanged(ref _lyricsLines, value);
+    }
+
+    public string RawLyricsText
+    {
+        get => _rawLyricsText;
+        private set => this.RaiseAndSetIfChanged(ref _rawLyricsText, value);
+    }
+
+    public int CurrentLyricsLineIndex
+    {
+        get => _currentLyricsLineIndex;
+        private set => this.RaiseAndSetIfChanged(ref _currentLyricsLineIndex, value);
+    }
+
+    public bool HasLyrics
+    {
+        get => _hasLyrics;
+        private set => this.RaiseAndSetIfChanged(ref _hasLyrics, value);
+    }
+
+    public string LyricsStatusText
+    {
+        get => _lyricsStatusText;
+        private set => this.RaiseAndSetIfChanged(ref _lyricsStatusText, value);
+    }
+
+    public bool IsLyricsSearchVisible
+    {
+        get => _isLyricsSearchVisible;
+        set => this.RaiseAndSetIfChanged(ref _isLyricsSearchVisible, value);
+    }
+
+    public bool IsEditingLyrics
+    {
+        get => _isEditingLyrics;
+        set => this.RaiseAndSetIfChanged(ref _isEditingLyrics, value);
+    }
+
+    public string LyricsEditText
+    {
+        get => _lyricsEditText;
+        set => this.RaiseAndSetIfChanged(ref _lyricsEditText, value);
+    }
+
+    #endregion
+
+
+    private async Task LoadLyricsAsync()
+    {
+        var song = CurrentSong;
+        if (song is null)
+        {
+            ClearLyrics();
+            return;
+        }
+
+        try
+        {
+            LyricsStatusText = "加载歌词…";
+            var lrcText = await _audioStation.GetLyricsAsync(song.Id).ConfigureAwait(true);
+
+            if (CurrentSong?.Id != song.Id)
+                return;
+
+            if (!string.IsNullOrWhiteSpace(lrcText))
+            {
+                RawLyricsText = lrcText;
+                var parsed = LrcParser.Parse(lrcText);
+                LyricsLines = parsed;
+                HasLyrics = parsed.Count > 0;
+                LyricsStatusText = parsed.Count > 0 ? string.Empty : "暂无歌词";
+                UpdateCurrentLyricsLine();
+            }
+            else
+            {
+                ClearLyrics();
+                LyricsStatusText = "未找到歌词";
+            }
+        }
+        catch (Exception)
+        {
+            if (CurrentSong?.Id == song.Id)
+            {
+                ClearLyrics();
+                LyricsStatusText = "歌词加载失败";
+            }
+        }
+    }
+
+    private void ClearLyrics()
+    {
+        LyricsLines = [];
+        RawLyricsText = string.Empty;
+        CurrentLyricsLineIndex = -1;
+        HasLyrics = false;
+    }
+
+    private void UpdateCurrentLyricsLine()
+    {
+        var lines = LyricsLines;
+        if (lines.Count == 0)
+        {
+            CurrentLyricsLineIndex = -1;
+            return;
+        }
+
+        var posSec = Position;
+        var index = -1;
+        for (var i = 0; i < lines.Count; i++)
+        {
+            if (posSec >= lines[i].Timestamp.TotalSeconds)
+            {
+                index = i;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        CurrentLyricsLineIndex = index;
+    }
+
+    private void ToggleLyricsSearch()
+    {
+        IsLyricsSearchVisible = !IsLyricsSearchVisible;
+        if (!IsLyricsSearchVisible)
+        {
+            IsEditingLyrics = false;
+        }
+    }
+
+    private void ToggleLyricsEdit()
+    {
+        if (!HasLyrics)
+            return;
+        IsEditingLyrics = !IsEditingLyrics;
+        if (IsEditingLyrics)
+        {
+            LyricsEditText = RawLyricsText;
+        }
+    }
+
+    private void SaveLyricsEdit()
+    {
+        var text = LyricsEditText;
+        if (string.IsNullOrWhiteSpace(text))
+        {
+            ClearLyrics();
+            LyricsStatusText = "已清除歌词";
+            IsEditingLyrics = false;
+            return;
+        }
+
+        var parsed = LrcParser.Parse(text);
+        if (parsed.Count == 0)
+        {
+            // 用户输入了非 LRC 格式文本，包装成纯文本歌词行
+            var simpleLines = new List<LyricsLine>();
+            foreach (var line in text.Split('\n'))
+            {
+                var trimmed = line.Trim();
+                if (!string.IsNullOrWhiteSpace(trimmed))
+                {
+                    simpleLines.Add(new LyricsLine { Timestamp = TimeSpan.Zero, Text = trimmed });
+                }
+            }
+            LyricsLines = simpleLines;
+        }
+        else
+        {
+            RawLyricsText = text;
+            LyricsLines = parsed;
+        }
+
+        HasLyrics = LyricsLines.Count > 0;
+        LyricsStatusText = HasLyrics ? string.Empty : "暂无歌词";
+        UpdateCurrentLyricsLine();
+        IsLyricsSearchVisible = false;
+        IsEditingLyrics = false;
+    }
+
+    private void CancelLyricsEdit()
+    {
+        IsEditingLyrics = false;
+    }
 
     public void NotifyPositionTextChanged() => this.RaisePropertyChanged(nameof(PositionText));
 
@@ -685,6 +921,7 @@ public class PlayerViewModel : ViewModelBase
             new Artist { Name = ArtistName },
             _audioStation,
             _authService,
+            (LibraryNavigationService)_navigator,
             Player);
         _navigator.NavigateTo(detail);
     }

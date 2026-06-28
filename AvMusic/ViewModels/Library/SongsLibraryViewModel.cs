@@ -220,6 +220,7 @@ public sealed class SongsLibraryViewModel : LibraryPageBase
             new Artist { Name = song.Artist },
             AudioStation,
             AuthService,
+            (LibraryNavigationService)Navigator,
             Player);
         Navigator.NavigateTo(detail);
         return Task.CompletedTask;

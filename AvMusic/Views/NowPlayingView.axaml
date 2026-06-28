@@ -2,20 +2,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:AvMusic.ViewModels"
              xmlns:controls="using:AvMusic.Controls"
+             xmlns:core="using:AvMusic.Core.Models"
              xmlns:ui="using:AvMusic.Ui"
              x:Class="AvMusic.Views.NowPlayingView"
              x:DataType="vm:PlayerViewModel">
-  <Border Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}">
-    <Grid RowDefinitions="Auto,*,Auto,Auto" Margin="24">
-      <controls:IconButton Grid.Row="0"
-                           Classes="text-button"
-                           Icon="{x:Static ui:AppIconKind.Close}"
-                           Command="{Binding HideNowPlayingCommand}"
-                           HorizontalAlignment="Right"
-                           ToolTip.Tip="关闭"/>
 
-      <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20" MaxWidth="420">
-        <Border Width="280" Height="280" CornerRadius="8" ClipToBounds="True" HorizontalAlignment="Center"
+  <Grid RowDefinitions="*,Auto" Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}">
+
+    <!-- ===== 主内容区：左侧封面 + 右侧歌词 ===== -->
+    <Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto" Margin="0">
+
+      <!-- 关闭按钮 -->
+      <controls:IconButton Grid.Column="0" Grid.ColumnSpan="3"
+                           Classes="text-button"
+                           Icon="{x:Static ui:AppIconKind.ChevronLeft}"
+                           Command="{Binding HideNowPlayingCommand}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="12,12,0,0"
+                           ToolTip.Tip="返回"/>
+
+      <!-- 左侧：封面 + 歌曲信息 -->
+      <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                  Spacing="20" Margin="48,0,48,0" MaxWidth="340">
+
+        <!-- 封面 -->
+        <Border Width="300" Height="300" CornerRadius="12" ClipToBounds="True"
                 Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
           <Panel>
             <Image Source="{Binding Cover}" Stretch="UniformToFill"
@@ -30,54 +42,275 @@
           </Panel>
         </Border>
 
-        <StackPanel Spacing="4" HorizontalAlignment="Center">
-          <TextBlock Text="{Binding Title}" FontSize="22" FontWeight="Bold" TextAlignment="Center" TextWrapping="Wrap"/>
-          <TextBlock Text="{Binding Subtitle}" Opacity="0.7" TextAlignment="Center" TextWrapping="Wrap"/>
-        </StackPanel>
-
-        <StackPanel Spacing="8" Margin="0,8,0,0">
-          <Grid ColumnDefinitions="Auto,*,Auto">
-            <TextBlock Grid.Column="0" Text="{Binding PositionText}" Opacity="0.7"/>
-            <controls:SeekSlider x:Name="FullSeekSlider"
-                                 Grid.Column="1"
-                                 Margin="12,0"
-                                 Minimum="0"
-                                 Maximum="{Binding SeekMaximum}"
-                                 Value="{Binding Position, Mode=TwoWay}"
-                                 IsEnabled="{Binding CanSeek}"/>
-            <TextBlock Grid.Column="2" Text="{Binding DurationText}" Opacity="0.7"/>
-          </Grid>
+        <!-- 歌曲信息 -->
+        <StackPanel Spacing="6" HorizontalAlignment="Center" MaxWidth="300">
+          <TextBlock Text="{Binding Title}" FontSize="22" FontWeight="Bold"
+                     TextAlignment="Center" TextWrapping="Wrap"/>
+          <TextBlock Text="{Binding ArtistAlbumText}" FontSize="14" Opacity="0.7"
+                     TextAlignment="Center" TextWrapping="Wrap"/>
+          <TextBlock Text="{Binding TechnicalInfoText}" FontSize="11" Opacity="0.5"
+                     TextAlignment="Center" TextWrapping="Wrap"
+                     IsVisible="{Binding TechnicalInfoText, Converter={x:Static ObjectConverters.IsNotNull}}"/>
         </StackPanel>
       </StackPanel>
 
-      <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="16" HorizontalAlignment="Center" Margin="0,16">
-        <controls:IconButton Icon="{x:Static ui:AppIconKind.Previous}"
-                             IconSize="22"
-                             Command="{Binding PreviousCommand}"/>
-        <controls:IconButton Classes="icon-button-accent"
-                             Icon="{x:Static ui:AppIconKind.Play}"
-                             AlternateIcon="{x:Static ui:AppIconKind.Pause}"
-                             UseAlternateIcon="{Binding IsPlaying}"
-                             IconSize="26"
-                             Command="{Binding PlayPauseCommand}"/>
-        <controls:IconButton Icon="{x:Static ui:AppIconKind.Next}"
-                             IconSize="22"
-                             Command="{Binding NextCommand}"/>
-        <controls:IconButton Classes="icon-button-favorite"
-                             Icon="{x:Static ui:AppIconKind.Heart}"
-                             IconFilled="{Binding IsFavorite}"
-                             IconSize="22"
-                             Command="{Binding ToggleFavoriteCommand}"
-                             ToolTip.Tip="喜欢"/>
-      </StackPanel>
+      <!-- 分隔线 -->
+      <Rectangle Grid.Column="1" Width="1" Fill="{DynamicResource SystemControlForegroundBaseMediumLowBrush}"
+                 Opacity="0.3" Margin="0,60,0,60"/>
 
-      <StackPanel Grid.Row="3" Spacing="4" MaxWidth="320" HorizontalAlignment="Center" Margin="0,8,0,0">
-        <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center">
-          <controls:AppIcon Kind="{x:Static ui:AppIconKind.Volume}" IconSize="18" Opacity="0.7"/>
-          <TextBlock Text="音量" Opacity="0.7" FontSize="12" VerticalAlignment="Center"/>
-        </StackPanel>
-        <Slider Minimum="0" Maximum="1" Value="{Binding Volume}" TickFrequency="0.1"/>
-      </StackPanel>
+      <!-- 右侧：歌词区域 -->
+      <Grid Grid.Column="2" Margin="0,40,48,40">
+        <Grid RowDefinitions="Auto,*,Auto">
+
+          <!-- 歌词工具栏 -->
+          <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8"
+                      HorizontalAlignment="Center" Margin="0,0,0,12">
+            <TextBlock Text="歌词" FontSize="16" FontWeight="SemiBold"
+                       VerticalAlignment="Center" Opacity="0.8"/>
+            <controls:IconButton Classes="text-button"
+                                 Icon="{x:Static ui:AppIconKind.Search}"
+                                 Command="{Binding ToggleLyricsSearchCommand}"
+                                 ToolTip.Tip="搜索歌词"/>
+            <controls:IconButton Classes="text-button"
+                                 Icon="{x:Static ui:AppIconKind.Pen}"
+                                 Command="{Binding ToggleLyricsEditCommand}"
+                                 ToolTip.Tip="编辑歌词"
+                                 IsVisible="{Binding HasLyrics}"/>
+          </StackPanel>
+
+          <!-- 歌词列表（自动滚动） -->
+          <ScrollViewer Grid.Row="1" x:Name="LyricsScrollViewer"
+                        HorizontalScrollBarVisibility="Disabled"
+                        VerticalScrollBarVisibility="Hidden"
+                        Margin="0,0,0,12">
+            <ItemsControl x:Name="LyricsItemsControl"
+                          ItemsSource="{Binding LyricsLines}"
+                          HorizontalAlignment="Center">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                  <VirtualizingStackPanel VerticalAlignment="Center"/>
+                </ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+              <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="core:LyricsLine">
+                  <TextBlock Text="{Binding Text}"
+                             TextWrapping="Wrap"
+                             HorizontalAlignment="Center"
+                             TextAlignment="Center"
+                             FontSize="16"
+                             Margin="0,8"/>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </ScrollViewer>
+
+          <!-- 歌词状态 -->
+          <TextBlock Grid.Row="1" Text="{Binding LyricsStatusText}"
+                     FontSize="16" Opacity="0.5"
+                     HorizontalAlignment="Center" VerticalAlignment="Center"
+                     IsVisible="{Binding LyricsStatusText, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+
+          <!-- 歌词搜索面板（覆盖在歌词区域上方） -->
+          <Border Grid.Row="1" Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}"
+                  CornerRadius="8" Padding="16"
+                  IsVisible="{Binding IsLyricsSearchVisible}">
+            <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="12">
+              <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center">
+                <TextBlock Text="手动输入歌词" FontSize="15" FontWeight="SemiBold"
+                           VerticalAlignment="Center"/>
+                <controls:IconButton Classes="text-button"
+                                     Icon="{x:Static ui:AppIconKind.Close}"
+                                     Command="{Binding CloseLyricsSearchCommand}"
+                                     ToolTip.Tip="关闭"/>
+              </StackPanel>
+
+              <TextBox Grid.Row="1" Text="{Binding LyricsEditText}"
+                       AcceptsReturn="True"
+                       Watermark="在此粘贴或输入歌词文本（支持 LRC 格式）…"
+                       MinHeight="120" MaxHeight="240"
+                       FontSize="13"
+                       TextWrapping="Wrap"/>
+
+              <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                <Button Classes="text-button" Command="{Binding CloseLyricsSearchCommand}">
+                  <TextBlock Text="取消"/>
+                </Button>
+                <Button Classes="icon-button-accent" Command="{Binding SaveLyricsEditCommand}" Padding="8,4">
+                  <StackPanel Orientation="Horizontal" Spacing="6">
+                    <controls:AppIcon Kind="{x:Static ui:AppIconKind.Save}" IconSize="18"/>
+                    <TextBlock Text="应用歌词" VerticalAlignment="Center"/>
+                  </StackPanel>
+                </Button>
+              </StackPanel>
+            </Grid>
+          </Border>
+
+          <!-- 歌词编辑面板 -->
+          <Border Grid.Row="1" Background="{DynamicResource SystemControlBackgroundChromeMediumBrush}"
+                  CornerRadius="8" Padding="16"
+                  IsVisible="{Binding IsEditingLyrics}">
+            <Grid RowDefinitions="Auto,*,Auto" RowSpacing="12">
+              <TextBlock Grid.Row="0" Text="编辑歌词（LRC 格式）" FontSize="15"
+                         FontWeight="SemiBold" HorizontalAlignment="Center"/>
+
+              <ScrollViewer Grid.Row="1">
+                <TextBox Text="{Binding LyricsEditText}"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         FontSize="13"
+                         MinHeight="180"/>
+              </ScrollViewer>
+
+              <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                <Button Classes="text-button" Command="{Binding CancelLyricsEditCommand}">
+                  <TextBlock Text="取消"/>
+                </Button>
+                <Button Classes="icon-button-accent" Command="{Binding SaveLyricsEditCommand}" Padding="8,4">
+                  <StackPanel Orientation="Horizontal" Spacing="6">
+                    <controls:AppIcon Kind="{x:Static ui:AppIconKind.Save}" IconSize="18"/>
+                    <TextBlock Text="保存" VerticalAlignment="Center"/>
+                  </StackPanel>
+                </Button>
+              </StackPanel>
+            </Grid>
+          </Border>
+
+        </Grid>
+      </Grid>
+
     </Grid>
-  </Border>
+
+    <!-- ===== 底部播放控制栏（与 PlayerBarView 风格一致） ===== -->
+    <Grid Grid.Row="1" RowDefinitions="Auto,Auto"
+          Background="{StaticResource AvPlayerBarBackgroundBrush}">
+
+      <!-- 进度条 -->
+      <controls:SeekSlider Grid.Row="0" x:Name="LyricsPageSeekSlider"
+                           Minimum="0"
+                           Maximum="{Binding SeekMaximum}"
+                           Value="{Binding Position, Mode=TwoWay}"
+                           IsEnabled="{Binding CanSeek}"/>
+
+      <!-- 控制栏 -->
+      <Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" Margin="8,8,0,12">
+
+        <!-- 列 0：封面缩略图 + 歌曲信息（左对齐） -->
+        <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="10"
+                    VerticalAlignment="Center">
+          <Border Width="48" Height="48" CornerRadius="4" ClipToBounds="True"
+                  Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
+            <Panel>
+              <Image Source="{Binding Cover}" Stretch="UniformToFill"
+                     IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+              <controls:AppIcon Kind="{x:Static ui:AppIconKind.MusicNote}" IconSize="22"
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                IsVisible="{Binding Cover, Converter={x:Static ObjectConverters.IsNull}}"/>
+            </Panel>
+          </Border>
+          <StackPanel Spacing="2" VerticalAlignment="Center" MaxWidth="260">
+            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="13"
+                       TextTrimming="CharacterEllipsis"/>
+            <StackPanel Orientation="Horizontal" Spacing="0">
+              <TextBlock Text="{Binding DisplayArtistName}" FontSize="11" Opacity="0.75"/>
+              <TextBlock Text=" · " FontSize="11" Opacity="0.75"/>
+              <TextBlock Text="{Binding DisplayAlbumName}" FontSize="11" Opacity="0.75"/>
+            </StackPanel>
+          </StackPanel>
+        </StackPanel>
+
+        <!-- 列 1：播放控制（居中） -->
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+          <controls:IconButton Classes="icon-button-favorite player-bar-icon player-bar-favorite"
+                               Icon="{x:Static ui:AppIconKind.Heart}"
+                               IconSize="22" IconFilled="{Binding IsFavorite}"
+                               Command="{Binding ToggleFavoriteCommand}"
+                               ToolTip.Tip="喜欢"/>
+          <controls:IconButton Classes="icon-button player-bar-icon"
+                               Icon="{x:Static ui:AppIconKind.Previous}"
+                               IconSize="24"
+                               Command="{Binding PreviousCommand}"
+                               ToolTip.Tip="上一首"/>
+          <controls:IconButton Classes="icon-button-accent player-bar-main"
+                               Icon="{x:Static ui:AppIconKind.Play}"
+                               AlternateIcon="{x:Static ui:AppIconKind.Pause}"
+                               UseAlternateIcon="{Binding IsPlaying}"
+                               IconSize="28"
+                               Command="{Binding PlayPauseCommand}"
+                               ToolTip.Tip="播放/暂停"/>
+          <controls:IconButton Classes="icon-button player-bar-icon"
+                               Icon="{x:Static ui:AppIconKind.Next}"
+                               IconSize="24"
+                               Command="{Binding NextCommand}"
+                               ToolTip.Tip="下一首"/>
+          <Panel Width="42" Height="42">
+            <controls:IconButton Classes="icon-button player-bar-icon"
+                                 Icon="{x:Static ui:AppIconKind.PlayOrder}"
+                                 IconSize="22"
+                                 Command="{Binding TogglePlayModeCommand}"
+                                 ToolTip.Tip="顺序播放"
+                                 IsVisible="{Binding IsSequentialMode}"/>
+            <controls:IconButton Classes="icon-button player-bar-icon"
+                                 Icon="{x:Static ui:AppIconKind.RepeatAll}"
+                                 IconSize="22"
+                                 Command="{Binding TogglePlayModeCommand}"
+                                 ToolTip.Tip="列表循环"
+                                 IsVisible="{Binding IsRepeatAllMode}"/>
+            <controls:IconButton Classes="icon-button player-bar-icon"
+                                 Icon="{x:Static ui:AppIconKind.RepeatOne}"
+                                 IconSize="22"
+                                 Command="{Binding TogglePlayModeCommand}"
+                                 ToolTip.Tip="单曲循环"
+                                 IsVisible="{Binding IsRepeatOneMode}"/>
+            <controls:IconButton Classes="icon-button player-bar-icon"
+                                 Icon="{x:Static ui:AppIconKind.Shuffle}"
+                                 IconSize="22"
+                                 Command="{Binding TogglePlayModeCommand}"
+                                 ToolTip.Tip="随机播放"
+                                 IsVisible="{Binding IsShuffleMode}"/>
+          </Panel>
+        </StackPanel>
+
+        <!-- 列 2：音量 + 播放列表 + 时间（右对齐） -->
+        <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="12"
+                    VerticalAlignment="Center" HorizontalAlignment="Right"
+                    Margin="0,0,16,0">
+          <Slider Width="96" Minimum="0" Maximum="1" Value="{Binding Volume}"
+                  VerticalAlignment="Center" Margin="0,0,4,0"
+                  IsVisible="{Binding IsVolumePopupOpen}"/>
+          <controls:IconButton Classes="icon-button player-bar-icon"
+                               Icon="{x:Static ui:AppIconKind.Volume}"
+                               IconSize="22"
+                               Command="{Binding ToggleVolumePopupCommand}"
+                               ToolTip.Tip="音量"/>
+          <Panel Width="{StaticResource PlayerBarIconButtonSize}"
+                 Height="{StaticResource PlayerBarIconButtonSize}">
+            <Border CornerRadius="21" Background="{StaticResource AvAccentBrush}"
+                    Opacity="0.12"
+                    IsVisible="{Binding IsQueueDrawerOpen}"/>
+            <controls:IconButton Classes="icon-button player-bar-icon"
+                                 Icon="{x:Static ui:AppIconKind.QueueList}"
+                                 IconSize="22"
+                                 Command="{Binding ToggleQueueDrawerCommand}"
+                                 ToolTip.Tip="播放列表"/>
+            <Border CornerRadius="8" Background="{StaticResource AvAccentBrush}"
+                    HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Margin="0,2,2,0" Padding="4,1" MinWidth="16" Height="14"
+                    IsVisible="{Binding QueueCount, Converter={StaticResource IntToBoolConverter}}">
+              <TextBlock Text="{Binding QueueCountText}" FontSize="10"
+                         Foreground="White" HorizontalAlignment="Center"
+                         VerticalAlignment="Center"/>
+            </Border>
+          </Panel>
+          <StackPanel Orientation="Vertical" Margin="12,0,0,0">
+            <TextBlock Text="{Binding PositionText}" FontSize="11" Opacity="0.9"
+                       VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding DurationText}" FontSize="11" Opacity="0.7"
+                       VerticalAlignment="Center"/>
+          </StackPanel>
+        </StackPanel>
+      </Grid>
+    </Grid>
+
+  </Grid>
 </UserControl>

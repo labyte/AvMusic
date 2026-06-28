@@ -25,7 +25,7 @@ public static class LibVlcBootstrap
             var baseDir = AppContext.BaseDirectory;
             foreach (var dir in EnumerateCandidateDirectories(baseDir))
             {
-                if (File.Exists(Path.Combine(dir, "libvlc.dll")))
+                if (File.Exists(Path.Combine(dir, NativeLibName)))
                 {
                     LibVLCSharp.Shared.Core.Initialize(dir);
                     _initialized = true;
@@ -33,7 +33,7 @@ public static class LibVlcBootstrap
                 }
             }
 
-            // 回退：由 LibVLCSharp 自动探测（需启动项目引用 VideoLAN.LibVLC.Windows）
+            // 回退：由 LibVLCSharp 自动探测
             LibVLCSharp.Shared.Core.Initialize();
             _initialized = true;
         }
@@ -48,15 +48,21 @@ public static class LibVlcBootstrap
         }
         else if (OperatingSystem.IsMacOS())
         {
+            yield return baseDir;
             yield return Path.Combine(baseDir, "libvlc", "darwin-x64");
             yield return Path.Combine(baseDir, "libvlc", "darwin-arm64");
+            yield return Path.Combine(baseDir, "libvlc");
         }
         else if (OperatingSystem.IsLinux())
         {
             yield return Path.Combine(baseDir, "libvlc", "linux-x64");
+            yield return Path.Combine(baseDir, "libvlc");
         }
 
         yield return Path.Combine(baseDir, "libvlc");
         yield return baseDir;
     }
+
+    private static string NativeLibName =>
+        OperatingSystem.IsWindows() ? "libvlc.dll" : "libvlc.dylib";
 }

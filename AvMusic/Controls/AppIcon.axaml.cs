@@ -6,7 +6,7 @@ using AvMusic.Ui;
 namespace AvMusic.Controls;
 
 /// <summary>
-/// 统一矢量图标控件。
+/// 统一矢量图标控件。图标路径定义在 Assets/Icons/AppIcons.axaml 中。
 /// </summary>
 public partial class AppIcon : UserControl
 {
@@ -76,10 +76,19 @@ public partial class AppIcon : UserControl
 
         try
         {
-            var geometry = AppIconGeometry.GetGeometry(Kind, IsFilled);
-            IconPath.Data = geometry;
-            IconPath.Fill = IconBrush ?? Foreground;
-            IconPath.IsVisible = geometry is not null;
+            var key = IsFilled ? $"Icon_{Kind}_Filled" : $"Icon_{Kind}";
+
+            if (Application.Current?.TryFindResource(key, ActualThemeVariant, out var resource) == true &&
+                resource is StreamGeometry geometry)
+            {
+                IconPath.Data = geometry;
+                IconPath.Fill = IconBrush ?? Foreground;
+                IconPath.IsVisible = true;
+            }
+            else
+            {
+                IconPath.IsVisible = false;
+            }
         }
         catch
         {

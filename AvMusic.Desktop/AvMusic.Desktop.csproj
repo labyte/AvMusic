@@ -1,12 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <!--If you are willing to use platform-specific APIs, use conditional compilation.
-    See https://docs.avaloniaui.net/docs/guides/platforms/platform-specific-code/dotnet for more details.-->
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <PlatformTarget>x64</PlatformTarget>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,8 +15,7 @@
     <PackageReference Include="VideoLAN.LibVLC.Mac" Condition="$([MSBuild]::IsOSPlatform('OSX'))" />
     <PackageReference Include="VideoLAN.LibVLC.Gtk" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
     <PackageReference Include="Avalonia.Desktop" />
-    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-    <PackageReference Include="Avalonia.Diagnostics" >
+    <PackageReference Include="Avalonia.Diagnostics">
       <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
@@ -29,4 +24,15 @@
   <ItemGroup>
     <ProjectReference Include="..\AvMusic\AvMusic.csproj" />
   </ItemGroup>
+
+  <!-- macOS: 从 VLC 3.0.21 提取的 arm64 libvlc 原生库和插件 -->
+  <Target Name="CopyLibVlcMacNative" AfterTargets="AfterBuild" Condition="$([MSBuild]::IsOSPlatform('OSX'))">
+    <ItemGroup>
+      <LibVlcFiles Include="$(MSBuildProjectDirectory)\libs\mac\libvlc.dylib" />
+      <LibVlcFiles Include="$(MSBuildProjectDirectory)\libs\mac\libvlccore.dylib" />
+      <LibVlcPlugins Include="$(MSBuildProjectDirectory)\libs\mac\plugins\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LibVlcFiles)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(LibVlcPlugins)" DestinationFolder="$(OutputPath)\plugins" SkipUnchangedFiles="true" />
+  </Target>
 </Project>

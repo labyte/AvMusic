@@ -70,14 +70,36 @@
                                              IconSize="22"
                                              Command="{Binding ToggleVolumePopupCommand}"
                                              ToolTip.Tip="音量"/>
-                        <controls:IconButton x:Name="QueueButton"
-                                             Classes="icon-button player-bar-icon"
-                                             Icon="{x:Static ui:AppIconKind.QueueList}"
-                                             IconSize="22"
-                                             Command="{Binding ToggleQueueDrawerCommand}"
-                                             ToolTip.Tip="播放列表"/>
+                        <Panel Width="{StaticResource PlayerBarIconButtonSize}"
+                                       Height="{StaticResource PlayerBarIconButtonSize}">
+                            <Border CornerRadius="21"
+                                    Background="{StaticResource AvAccentBrush}"
+                                    Opacity="0.12"
+                                    IsVisible="{Binding IsQueueDrawerOpen}"/>
+                            <controls:IconButton x:Name="QueueButton"
+                                                 Classes="icon-button player-bar-icon"
+                                                 Icon="{x:Static ui:AppIconKind.QueueList}"
+                                                 IconSize="22"
+                                                 Command="{Binding ToggleQueueDrawerCommand}"
+                                                 ToolTip.Tip="播放列表"/>
+                            <Border CornerRadius="8"
+                                    Background="{StaticResource AvAccentBrush}"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Margin="0,2,2,0"
+                                    Padding="4,1"
+                                    MinWidth="16"
+                                    Height="14"
+                                    IsVisible="{Binding QueueCount, Converter={StaticResource IntToBoolConverter}}">
+                                <TextBlock Text="{Binding QueueCountText}"
+                                           FontSize="10"
+                                           Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                            </Border>
+                        </Panel>
 
-                        <StackPanel Orientation="Vertical" Margin="24 ,0,0,0">
+                        <StackPanel Orientation="Vertical" Margin="24 ,0,0,0" width="60" HorizontalAlignment="Right" VerticalAlignment="Center">  
                             <TextBlock Text="{Binding PositionText}" FontSize="11" Opacity="0.9" VerticalAlignment="Center"/>
                             <TextBlock Text="{Binding DurationText}" FontSize="11" Opacity="0.7" VerticalAlignment="Center"/>
                         </StackPanel>

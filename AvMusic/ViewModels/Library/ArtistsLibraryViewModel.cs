@@ -51,7 +51,7 @@ public sealed class ArtistsLibraryViewModel : LibraryPageBase
 
     private void OpenArtist(Artist artist)
     {
-        var detail = new ArtistDetailViewModel(artist, AudioStation, AuthService, _player);
+        var detail = new ArtistDetailViewModel(artist, AudioStation, AuthService, Navigator, _player);
         Navigator.NavigateTo(detail);
     }
 }

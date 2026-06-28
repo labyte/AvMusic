@@ -10,22 +10,29 @@
     </Application.DataTemplates>
 
     <Application.Resources>
-        <Color x:Key="AvAccentColor">#E83C3C</Color>
-        <SolidColorBrush x:Key="AvAccentBrush" Color="{StaticResource AvAccentColor}"/>
-        <Color x:Key="AvPlayerBarBackgroundColor">#252525</Color>
-        <SolidColorBrush x:Key="AvPlayerBarBackgroundBrush" Color="{StaticResource AvPlayerBarBackgroundColor}"/>
-        <Color x:Key="SeekSliderTrackColor">#707070</Color>
-        <SolidColorBrush x:Key="SeekSliderTrackBrush" Color="{StaticResource SeekSliderTrackColor}"/>
-        <Color x:Key="SeekSliderThumbColor">#8ECAE6</Color>
-        <SolidColorBrush x:Key="SeekSliderThumbBrush" Color="{StaticResource SeekSliderThumbColor}"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="avares://AvMusic/Assets/Icons/AppIcons.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
 
-        <x:Double x:Key="IconButtonSize">36</x:Double>
-        <x:Double x:Key="PlayerMainButtonSize">44</x:Double>
-        <x:Double x:Key="PlayerBarIconButtonSize">42</x:Double>
-        <x:Double x:Key="PlayerBarMainButtonSize">52</x:Double>
-        <x:Double x:Key="IconFontSize">20</x:Double>
+            <Color x:Key="AvAccentColor">#E83C3C</Color>
+            <SolidColorBrush x:Key="AvAccentBrush" Color="{StaticResource AvAccentColor}"/>
+            <Color x:Key="AvPlayerBarBackgroundColor">#252525</Color>
+            <SolidColorBrush x:Key="AvPlayerBarBackgroundBrush" Color="{StaticResource AvPlayerBarBackgroundColor}"/>
+            <Color x:Key="SeekSliderTrackColor">#707070</Color>
+            <SolidColorBrush x:Key="SeekSliderTrackBrush" Color="{StaticResource SeekSliderTrackColor}"/>
+            <Color x:Key="SeekSliderThumbColor">#8ECAE6</Color>
+            <SolidColorBrush x:Key="SeekSliderThumbBrush" Color="{StaticResource SeekSliderThumbColor}"/>
 
-        <conv:NavSelectedConverter x:Key="NavSelectedConverter"/>
+            <x:Double x:Key="IconButtonSize">36</x:Double>
+            <x:Double x:Key="PlayerMainButtonSize">44</x:Double>
+            <x:Double x:Key="PlayerBarIconButtonSize">42</x:Double>
+            <x:Double x:Key="PlayerBarMainButtonSize">52</x:Double>
+            <x:Double x:Key="IconFontSize">20</x:Double>
+
+            <conv:NavSelectedConverter x:Key="NavSelectedConverter"/>
+            <conv:IntToBoolConverter x:Key="IntToBoolConverter"/>
+        </ResourceDictionary>
     </Application.Resources>
 
     <Application.Styles>
